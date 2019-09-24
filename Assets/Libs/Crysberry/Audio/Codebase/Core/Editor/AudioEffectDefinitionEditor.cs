@@ -25,7 +25,6 @@ namespace Crysberry.Audio.Editor
 				EditorGUILayout.PropertyField(serializedObject.FindProperty ("MixerGroup"), true);
 			}
 				
-			
 			if(EditorGUI.EndChangeCheck())
 				serializedObject.ApplyModifiedProperties();
 			
@@ -40,6 +39,8 @@ namespace Crysberry.Audio.Editor
 			{
 				EditorGUILayout.LabelField("This definition settings are controlled by group.", EditorStyles.boldLabel);
 			}
+			
+			EditorUtility.SetDirty(target);
 		}
 
 		private void DrawLifecycleSettings(AudioEffectDefinition audioEffectDefinition)
