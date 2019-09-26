@@ -20,7 +20,11 @@ public class ColorDefinition : ScriptableObject
     public float SpeedCoefitient => speedCoefitient;
     public bool IsWalkable => Mathf.Approximately(speedCoefitient, 0f);
     public EventDefinition[] Events => events;
-    public GameObject[] Prefabs => prefabs;
+
+    public GameObject GetPrefab()
+    {
+        return prefabs[Random.Range(0, prefabs.Length)];
+    }
 }
 
 #if UNITY_EDITOR

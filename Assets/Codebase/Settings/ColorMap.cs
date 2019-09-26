@@ -9,31 +9,24 @@ using UnityEditor;
 [CreateAssetMenu(fileName = "New color map", menuName = "Grainer/Colors/ColorMap")]
 public class ColorMap : ScriptableObject
 {
-    private static ColorMap cachedInstance;
-    public static ColorMap Instance
-    {
-        get
-        {
-            if (cachedInstance == null)
-            {
-                cachedInstance = Resources.Load<ColorMap>("Settings");
-            }
+    public static ColorMap Instance => Resources.LoadAll<ColorMap>("Settings").FirstOrDefault();
 
-            return cachedInstance;
-        }
-    }
-    
     [SerializeField] private ColorDefinition[] colors;
     public ColorDefinition[] Colors => colors;
 
-    private void OnValidate()
+    public bool GetDefinition(Color color, out ColorDefinition definition)
+    {
+        definition = colors.FirstOrDefault(col => col.Color.ToHexString() == color.ToHexString());
+        return definition != null;
+    }
+
+    private void OnEnable()
     {
         var colorMaps = Resources.LoadAll<ColorMap>("Settings");
         if (colorMaps.Length == 0 || colorMaps.Any(x => x != this))
         {
             Debug.LogError("You should create color map in Resources/Settings");
             return;
-            ;
         }
 
         if (colorMaps.Length > 1)

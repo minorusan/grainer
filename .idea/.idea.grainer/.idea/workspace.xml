@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b32f112-e81b-4f7c-ab13-a4d426382cbc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.grainer/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.grainer/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.grainer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.grainer/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Codebase/AssetsImport/MapsPostprocessor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Codebase/AssetsImport/MapsPostprocessor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Codebase/Settings/ColorDefinition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Codebase/Settings/ColorDefinition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Codebase/Settings/ColorMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Codebase/Settings/ColorMap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Textures/Maps/1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Textures/Maps/1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Settings/Colors/Color Map.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Settings/Colors/Color Map.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Settings/Colors/Colors/CollectibleColor.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Settings/Colors/Colors/CollectibleColor.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Settings/Colors/Colors/DefaultObstacleColor.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Settings/Colors/Colors/DefaultObstacleColor.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Settings/Colors/Colors/DefaultWalkableColor.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Settings/Colors/Colors/DefaultWalkableColor.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,48 +26,89 @@
     <session id="645170641">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.22" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="9" />
+          <entry key="cs" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="9" />
+          <entry key="C#" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="1686" />
+          <entry key="cs" value="2400" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="1686" />
+          <entry key="C#" value="2400" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Codebase/AssetsImport/MapsPostprocessor.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+            <state relative-caret-position="195">
+              <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
               <folding>
-                <marker date="1569489403992" expanded="false" signature="6:97" ph="..." />
-                <marker date="1569489403992" expanded="true" signature="150:747" ph="{...}" />
-                <marker date="1569489403992" expanded="true" signature="253:580" ph="{...}" />
-                <marker date="1569489403992" expanded="true" signature="301:574" ph="{...}" />
-                <marker date="1569489403992" expanded="true" signature="638:745" ph="{...}" />
-                <marker date="1569489403992" expanded="true" signature="686:739" ph="{...}" />
+                <marker date="1569497540183" expanded="false" signature="6:97" ph="..." />
+                <marker date="1569497540183" expanded="true" signature="150:794" ph="{...}" />
+                <marker date="1569497540183" expanded="true" signature="253:627" ph="{...}" />
+                <marker date="1569497540183" expanded="true" signature="301:621" ph="{...}" />
+                <marker date="1569497540183" expanded="true" signature="685:792" ph="{...}" />
+                <marker date="1569497540183" expanded="true" signature="733:786" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Codebase/AreaInitialisation/AreaInitializeBehaviour.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+              <folding>
+                <marker date="1569497846915" expanded="true" signature="72:1145" ph="{...}" />
+                <marker date="1569497846915" expanded="true" signature="189:282" ph="{...}" />
+                <marker date="1569497846915" expanded="true" signature="218:276" ph="{...}" />
+                <marker date="1569497846915" expanded="true" signature="333:1143" ph="{...}" />
+                <marker date="1569497846915" expanded="true" signature="548:1137" ph="{...}" />
+                <marker date="1569497846915" expanded="true" signature="610:1127" ph="{...}" />
+                <marker date="1569497846915" expanded="true" signature="743:972" ph="{...}" />
+                <marker date="1569497846915" expanded="true" signature="993:1113" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Codebase/Settings/ColorMap.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="18" column="96" selection-start-line="18" selection-start-column="96" selection-end-line="18" selection-end-column="96" />
+              <folding>
+                <marker date="1569498203382" expanded="false" signature="6:133" ph="..." />
+                <marker date="1569498203382" expanded="true" signature="266:1214" ph="{...}" />
+                <marker date="1569498203382" expanded="true" signature="544:690" ph="{...}" />
+                <marker date="1569498203382" expanded="true" signature="719:1106" ph="{...}" />
+                <marker date="1569498203382" expanded="true" signature="858:979" ph="{...}" />
+                <marker date="1569498203382" expanded="true" signature="1014:1100" ph="{...}" />
+                <marker date="1569498203382" expanded="true" signature="1135:1212" ph="{...}" />
+                <marker date="1569498203382" expanded="true" signature="1302:1573" ph="{...}" />
+                <marker date="1569498203382" expanded="true" signature="1346:1571" ph="{...}" />
+                <marker date="1569498203382" expanded="true" signature="1430:1565" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -64,13 +117,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Codebase/Settings/ColorDefinition.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" column="6" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
+            <state relative-caret-position="345">
+              <caret line="25" column="56" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
               <folding>
-                <marker date="1569489270460" expanded="true" signature="6:54" ph="..." />
-                <marker date="1569489270460" expanded="true" signature="199:724" ph="{...}" />
-                <marker date="1569489270460" expanded="true" signature="814:1018" ph="{...}" />
-                <marker date="1569489270460" expanded="true" signature="858:1016" ph="{...}" />
+                <marker date="1569496758593" expanded="false" signature="6:54" ph="..." />
+                <marker date="1569496758593" expanded="true" signature="199:784" ph="{...}" />
+                <marker date="1569496758593" expanded="true" signature="713:782" ph="{...}" />
+                <marker date="1569496758593" expanded="true" signature="874:1078" ph="{...}" />
+                <marker date="1569496758593" expanded="true" signature="918:1076" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -87,18 +141,21 @@
     <setting file="file://$PROJECT_DIR$/Assets/Libs/Crysberry/Audio/Codebase/Core/AudioEffectDefinition.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/AssetsImport/MapsPostprocessor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Libs/Crysberry/Audio/Codebase/Core/Editor/AudioEffectDefinitionEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/AreaInitialisation/AreaInitializeBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Settings/ColorMap.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Libs/Crysberry/Audio/Codebase/Core/Editor/AudioEffectDefinitionEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Codebase/Settings/ColorMap.cs" />
         <option value="$PROJECT_DIR$/Assets/Codebase/AssetsImport/Rules/AssetImportRule.cs" />
         <option value="$PROJECT_DIR$/Assets/Codebase/AssetsImport/AssetsImporter.cs" />
         <option value="$PROJECT_DIR$/Assets/Codebase/Helpers/Extentions.cs" />
         <option value="$PROJECT_DIR$/Assets/Codebase/Settings/ColorDefinition.cs" />
         <option value="$PROJECT_DIR$/Assets/Codebase/AssetsImport/MapsPostprocessor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Codebase/AreaInitialisation/AreaInitializeBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Codebase/Settings/ColorMap.cs" />
       </list>
     </option>
   </component>
@@ -124,16 +181,16 @@
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
       </pane>
+      <pane id="FileSystemExplorer" />
       <pane id="UnityExplorer">
         <option name="show-hidden-items" value="false" />
       </pane>
-      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/klimschukin/Documents/Projects/grainer/Assets/Codebase/Settings/ColorMap.cs" />
+    <property name="SearchEverywhereHistoryKey" value="Map&#9;FILE&#9;file:///Users/klimschukin/Documents/Projects/grainer/Assets/Codebase/AssetsImport/MapsPostprocessor.cs" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RunDashboard">
@@ -154,9 +211,9 @@
       <option name="pid" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="20579">
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="20579" />
       <method v="2" />
     </configuration>
     <list>
@@ -175,12 +232,13 @@
       <option name="presentableId" value="Default" />
       <updated>1569352539951</updated>
       <workItem from="1569352542377" duration="425000" />
-      <workItem from="1569483452391" duration="4508000" />
+      <workItem from="1569483452391" duration="4676000" />
+      <workItem from="1569495742871" duration="2250000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4933000" />
+    <option name="totallyTimeSpent" value="7351000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -195,13 +253,13 @@
     <frame x="0" y="23" width="1440" height="816" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39917126" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -235,8 +293,44 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Codebase/AreaInitialisation/AreaInitializeBehaviour.cs</url>
+          <line>23</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Codebase/AreaInitialisation/AreaInitializeBehaviour.cs" initialLine="23">
+            <startOffsets>
+              <option value="510" />
+            </startOffsets>
+            <endOffsets>
+              <option value="548" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Codebase/AreaInitialisation/AreaInitializeBehaviour.cs</url>
+          <line>36</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Codebase/AreaInitialisation/AreaInitializeBehaviour.cs" initialLine="36">
+            <startOffsets>
+              <option value="1032" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1095" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>colorMap.Colors[0].Color.ToHexString()</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/Libs/Crysberry/Audio/Codebase/Core/AudioEffectDefinition.cs">
@@ -285,41 +379,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Codebase/AssetsImport/Rules/AssetImportRule.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Codebase/AssetsImport/AssetsImporter.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Codebase/Settings/ColorMap.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="61" column="41" lean-forward="true" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
-          <folding>
-            <marker date="1569489270461" expanded="false" signature="6:133" ph="..." />
-            <marker date="1569489270461" expanded="true" signature="266:1214" ph="{...}" />
-            <marker date="1569489270461" expanded="true" signature="348:567" ph="{...}" />
-            <marker date="1569489270461" expanded="true" signature="366:561" ph="{...}" />
-            <marker date="1569489270461" expanded="true" signature="416:515" ph="{...}" />
-            <marker date="1569489270461" expanded="true" signature="705:1106" ph="{...}" />
-            <marker date="1569489270461" expanded="true" signature="844:979" ph="{...}" />
-            <marker date="1569489270461" expanded="true" signature="1014:1100" ph="{...}" />
-            <marker date="1569489270461" expanded="true" signature="1135:1212" ph="{...}" />
-            <marker date="1569489270461" expanded="true" signature="1302:1573" ph="{...}" />
-            <marker date="1569489270461" expanded="true" signature="1346:1571" ph="{...}" />
-            <marker date="1569489270461" expanded="true" signature="1430:1565" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Codebase/AssetsImport/Rules/AssetImportRule.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Codebase/AssetsImport/AssetsImporter.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Codebase/Helpers/Extentions.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -334,28 +395,65 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Codebase/Settings/ColorDefinition.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="6" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
+        <state relative-caret-position="345">
+          <caret line="25" column="56" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
           <folding>
-            <marker date="1569489270460" expanded="true" signature="6:54" ph="..." />
-            <marker date="1569489270460" expanded="true" signature="199:724" ph="{...}" />
-            <marker date="1569489270460" expanded="true" signature="814:1018" ph="{...}" />
-            <marker date="1569489270460" expanded="true" signature="858:1016" ph="{...}" />
+            <marker date="1569496758593" expanded="false" signature="6:54" ph="..." />
+            <marker date="1569496758593" expanded="true" signature="199:784" ph="{...}" />
+            <marker date="1569496758593" expanded="true" signature="713:782" ph="{...}" />
+            <marker date="1569496758593" expanded="true" signature="874:1078" ph="{...}" />
+            <marker date="1569496758593" expanded="true" signature="918:1076" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Codebase/AssetsImport/MapsPostprocessor.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+        <state relative-caret-position="195">
+          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
           <folding>
-            <marker date="1569489403992" expanded="false" signature="6:97" ph="..." />
-            <marker date="1569489403992" expanded="true" signature="150:747" ph="{...}" />
-            <marker date="1569489403992" expanded="true" signature="253:580" ph="{...}" />
-            <marker date="1569489403992" expanded="true" signature="301:574" ph="{...}" />
-            <marker date="1569489403992" expanded="true" signature="638:745" ph="{...}" />
-            <marker date="1569489403992" expanded="true" signature="686:739" ph="{...}" />
+            <marker date="1569497540183" expanded="false" signature="6:97" ph="..." />
+            <marker date="1569497540183" expanded="true" signature="150:794" ph="{...}" />
+            <marker date="1569497540183" expanded="true" signature="253:627" ph="{...}" />
+            <marker date="1569497540183" expanded="true" signature="301:621" ph="{...}" />
+            <marker date="1569497540183" expanded="true" signature="685:792" ph="{...}" />
+            <marker date="1569497540183" expanded="true" signature="733:786" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Codebase/AreaInitialisation/AreaInitializeBehaviour.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+          <folding>
+            <marker date="1569497846915" expanded="true" signature="72:1145" ph="{...}" />
+            <marker date="1569497846915" expanded="true" signature="189:282" ph="{...}" />
+            <marker date="1569497846915" expanded="true" signature="218:276" ph="{...}" />
+            <marker date="1569497846915" expanded="true" signature="333:1143" ph="{...}" />
+            <marker date="1569497846915" expanded="true" signature="548:1137" ph="{...}" />
+            <marker date="1569497846915" expanded="true" signature="610:1127" ph="{...}" />
+            <marker date="1569497846915" expanded="true" signature="743:972" ph="{...}" />
+            <marker date="1569497846915" expanded="true" signature="993:1113" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Codebase/Settings/ColorMap.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="18" column="96" selection-start-line="18" selection-start-column="96" selection-end-line="18" selection-end-column="96" />
+          <folding>
+            <marker date="1569498203382" expanded="false" signature="6:133" ph="..." />
+            <marker date="1569498203382" expanded="true" signature="266:1214" ph="{...}" />
+            <marker date="1569498203382" expanded="true" signature="544:690" ph="{...}" />
+            <marker date="1569498203382" expanded="true" signature="719:1106" ph="{...}" />
+            <marker date="1569498203382" expanded="true" signature="858:979" ph="{...}" />
+            <marker date="1569498203382" expanded="true" signature="1014:1100" ph="{...}" />
+            <marker date="1569498203382" expanded="true" signature="1135:1212" ph="{...}" />
+            <marker date="1569498203382" expanded="true" signature="1302:1573" ph="{...}" />
+            <marker date="1569498203382" expanded="true" signature="1346:1571" ph="{...}" />
+            <marker date="1569498203382" expanded="true" signature="1430:1565" ph="{...}" />
           </folding>
         </state>
       </provider>

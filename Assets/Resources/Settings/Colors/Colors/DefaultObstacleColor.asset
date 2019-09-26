@@ -15,4 +15,5 @@ MonoBehaviour:
   color: {r: 0, g: 0, b: 0, a: 1}
   speedCoefitient: 0
   events: []
-  prefabs: []
+  prefabs:
+  - {fileID: 3705779569890054113, guid: 94efcdecd44c7406f8c10491dc5042f7, type: 3}

@@ -14,6 +14,7 @@ public class MapsPostprocessor : AssetPostprocessor
             TextureImporter textureImporter  = (TextureImporter)assetImporter;
             textureImporter.textureType = TextureImporterType.Default;
             textureImporter.mipmapEnabled = false;
+            textureImporter.isReadable = true;
             Debug.Log($"Preprocessed {assetPath}");
         }
     }
