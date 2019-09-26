@@ -17,4 +17,12 @@ public class MapsPostprocessor : AssetPostprocessor
             Debug.Log($"Preprocessed {assetPath}");
         }
     }
+
+    private void OnPostprocessTexture(Texture2D texture)
+    {
+        if (assetPath.Contains(mapsPath))
+        {
+            //Do your stuff here
+        }
+    }
 }
