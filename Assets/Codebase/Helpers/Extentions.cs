@@ -25,4 +25,14 @@ public static class Extentions
     {
         return AreaHelper.IsWalkable(position);
     }
+
+    public static GameObject ToCellGameObject(this Vector3 position)
+    {
+        return AreaHelper.GetCell(position.ToPosition());
+    }
+
+    public static ColorDefinition ToColorDefinition(this Vector3 position)
+    {
+        return AreaHelper.GetDefinition(position);
+    }
 }

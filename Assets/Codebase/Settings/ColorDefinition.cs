@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Linq;
 #if UNITY_EDITOR
 using UnityEditor;
 
@@ -24,6 +25,19 @@ public class ColorDefinition : ScriptableObject
     public GameObject GetPrefab()
     {
         return prefabs[Random.Range(0, prefabs.Length)];
+    }
+
+    public void InvokeEvents(GameObject cell, CellEventType type)
+    {
+        if (events != null && events.Length > 0)
+        {
+            var query = events.ToList().Where(x => x != null && x.Type == type);
+            if (query != null)
+            {
+                var validEvents = query.ToList();
+                validEvents.ForEach(x => x.Invoke(cell));
+            }
+        }
     }
 }
 

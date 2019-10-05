@@ -6,7 +6,7 @@ public abstract class DebuggableBehaviour : MonoBehaviour
 {
     public bool DebugMode;
 
-    private void Awake()
+    protected virtual void Awake()
     {
 #if VERBOSE_DEBUG
         DebugMode = true;

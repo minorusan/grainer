@@ -4,10 +4,16 @@ using UnityEngine;
 #region Delegates
 
 public delegate void DirectionChangedHandler(GameObject sender, DirectionChangedEventArgs changedEventArgs);
+public delegate void CellCalbackHandler(GameObject sender, Vector3 cellPosition);
 
 #endregion
 
 #region Enums
+
+public enum CellEventType
+{
+    WillEnter, Entered, WillLeave, Left
+}
 
 public enum GameEntityType
 {
@@ -68,6 +74,11 @@ public class InputChangedEventArgs : EventArgs
 #endregion
 
 #region Structs
+
+public class GameEntityMovement
+{
+    public Vector3 WillLeavePosition, WillEnterPosition, EnteredPosition, LeftPosition;
+}
 
 public struct Position
 {

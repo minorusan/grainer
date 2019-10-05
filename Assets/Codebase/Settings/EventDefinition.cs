@@ -1,18 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using Crysberry.Routines;
 using UnityEngine;
 
-public class EventDefinition : MonoBehaviour
+public abstract class EventDefinition : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
+    public CellEventType Type;
+    public float Delay;
+
+    public void Invoke(GameObject cell)
     {
-        
+        Routiner.InvokeDelayed(() => { InvokeEvent(cell); }, Delay);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    protected abstract void InvokeEvent(GameObject cell);
 }
