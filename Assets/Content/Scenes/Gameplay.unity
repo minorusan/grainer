@@ -120,6 +120,53 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &79457722
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 79457724}
+  - component: {fileID: 79457723}
+  m_Layer: 0
+  m_Name: DesktopInputProvider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &79457723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79457722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c9b90feaee664e0e9970fa1f22cac87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Up: 273
+  Down: 274
+  Left: 276
+  Right: 275
+--- !u!4 &79457724
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79457722}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &267378639
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,7 +396,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1513945582}
   m_Layer: 0
-  m_Name: ====Decoration============= (1)
+  m_Name: ====Decoration===========================
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -380,8 +427,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1688940323}
   - component: {fileID: 1688940324}
+  - component: {fileID: 1688940325}
   m_Layer: 0
-  m_Name: ====Logic=============
+  m_Name: ====Logic================================
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -416,3 +464,15 @@ MonoBehaviour:
   DebugMode: 1
   DebugMap: {fileID: 2800000, guid: fa1569456e53b4a628b8aecf096857be, type: 3}
   TilesHub: {fileID: 267378640}
+--- !u!114 &1688940325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688940322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 563045305d2ce4def80a812dc4006db5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
