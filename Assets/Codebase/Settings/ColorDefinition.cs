@@ -18,7 +18,7 @@ public class ColorDefinition : ScriptableObject
 
     public Color Color => color;
     public float SpeedCoefitient => speedCoefitient;
-    public bool IsWalkable => Mathf.Approximately(speedCoefitient, 0f);
+    public bool IsWalkable => speedCoefitient > 0f;
     public EventDefinition[] Events => events;
 
     public GameObject GetPrefab()

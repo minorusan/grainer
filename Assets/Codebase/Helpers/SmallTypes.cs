@@ -1,8 +1,40 @@
 ﻿using System;
+using UnityEngine;
+
+#region Delegates
+
+public delegate void DirectionChangedHandler(GameObject sender, DirectionChangedEventArgs changedEventArgs);
+
+#endregion
+
+#region Enums
+
+public enum GameEntityType
+{
+    Player
+}
 
 public enum MovementDirection
 {
     None, Left, Right, Up, Down
+}
+
+#endregion
+
+#region EventArgs
+
+public class DirectionChangedEventArgs : EventArgs
+{
+    private readonly MovementDirection previous, current;
+
+    public MovementDirection Previous => previous;
+    public MovementDirection Current => current;
+
+    public DirectionChangedEventArgs(MovementDirection prev, MovementDirection cur)
+    {
+        previous = prev;
+        current = cur;
+    }
 }
 
 public class InputChangedEventArgs : EventArgs
@@ -32,3 +64,24 @@ public class InputChangedEventArgs : EventArgs
         timeSinceLevelLoad = time;
     }
 }
+
+#endregion
+
+#region Structs
+
+public struct Position
+{
+    private readonly int x, y;
+
+    public int X => x;
+
+    public int Y => y;
+
+    public Position(float x, float y)
+    {
+        this.x = Mathf.RoundToInt(x);
+        this.y = Mathf.RoundToInt(y);
+    }
+}
+
+#endregion
