@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DefaultEntranceColor
   m_EditorClassIdentifier: 
   color: {r: 0, g: 1, b: 0, a: 1}
-  speedCoefitient: 0
+  speedCoefitient: 1
   events: []
   prefabs:
   - {fileID: 8866978538582802673, guid: 043f5510056567d498f7179a4853eaf0, type: 3}

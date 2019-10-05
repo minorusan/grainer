@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Crysberry.Console
@@ -45,6 +46,13 @@ namespace Crysberry.Console
         {
             GameObject.FindObjectOfType<ConsoleWindowOutputBehaviour>().ClearWindow();
             return "Window cleared";
+        }
+
+        [CrysberryConsoleMember("poschk", "Check position")]
+        private static string CheckPosition(string[] args)
+        {
+            var position = new Vector3(Convert.ToSingle(args[0]),Convert.ToSingle(args[1]), Convert.ToSingle(args[2]));
+            return $"Walkable status of position ({position}) is '{position.IsWalkable()})'";
         }
     }
 }

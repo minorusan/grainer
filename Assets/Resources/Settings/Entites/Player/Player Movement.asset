@@ -9,11 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95e5e05d89d434c2285a98d76b560338, type: 3}
-  m_Name: DefaultExitColor
+  m_Script: {fileID: 11500000, guid: 66c56f97946d74f329bf3356fa5c8922, type: 3}
+  m_Name: Player Movement
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 0, b: 0, a: 1}
-  speedCoefitient: 1
-  events: []
-  prefabs:
-  - {fileID: 8866978538582802673, guid: 1e2cef856e95533488e0ee715a135aa4, type: 3}
+  Speed: 0.2
