@@ -8,5 +8,6 @@ public class LogCellEvent : EventDefinition
     {
         var result = new StringBuilder();
         result.Append($"Called {Type} on cell {cell} at position {cell.transform.position}");
+        Debug.Log(result.ToString());
     }
 }

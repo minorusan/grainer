@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   color: {r: 1, g: 0, b: 0, a: 1}
   speedCoefitient: 1
-  events: []
+  events:
+  - {fileID: 11400000, guid: 5386ab8c632974502813234afc538ddf, type: 2}
+  - {fileID: 11400000, guid: af2d7d65cab114a3e9b1518dbe3780ca, type: 2}
   prefabs:
   - {fileID: 8866978538582802673, guid: 1e2cef856e95533488e0ee715a135aa4, type: 3}
