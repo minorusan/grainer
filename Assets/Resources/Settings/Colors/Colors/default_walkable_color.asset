@@ -10,13 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 95e5e05d89d434c2285a98d76b560338, type: 3}
-  m_Name: CollectibleColor
+  m_Name: default_walkable_color
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 0.8489028, b: 0, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}
   speedCoefitient: 1
   events:
-  - {fileID: 11400000, guid: 3be76f1c9b05e4b53ab65d399c1ddf1c, type: 2}
-  - {fileID: 11400000, guid: c5b6573a4ecf84f3cbde0b1339a90b1f, type: 2}
-  - {fileID: 11400000, guid: db704c0b2722c46809f0440e3e719493, type: 2}
+  - {fileID: 11400000, guid: 22763f3f819db40068dc6d87d8b23fea, type: 2}
   prefabs:
-  - {fileID: 8866978538582802673, guid: b9cf0c6af73c04ee7a15ffbe0d4df327, type: 3}
+  - {fileID: 4529043368669277823, guid: 707f6ccbe96394825b438f8814f461e6, type: 3}

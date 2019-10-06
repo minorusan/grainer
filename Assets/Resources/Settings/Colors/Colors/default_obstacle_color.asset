@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 95e5e05d89d434c2285a98d76b560338, type: 3}
-  m_Name: DefaultObstacleColor
+  m_Name: default_obstacle_color
   m_EditorClassIdentifier: 
   color: {r: 0, g: 0, b: 0, a: 1}
   speedCoefitient: 0

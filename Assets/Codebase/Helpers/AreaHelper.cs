@@ -6,6 +6,7 @@ public static class AreaHelper
 {
     private static Texture2D currentMap;
     private static Dictionary<Position, GameObject> cellCoordinates = new Dictionary<Position, GameObject>();
+    private static HashSet<Position> blockedCells = new HashSet<Position>();
 
     static AreaHelper()
     {
@@ -14,6 +15,7 @@ public static class AreaHelper
 
     private static void OnSceneChanged(Scene arg0, Scene arg1)
     {
+        blockedCells.Clear();
         currentMap = null;
     }
 
@@ -30,6 +32,18 @@ public static class AreaHelper
                 var child = areaInitializer.TilesHub.GetChild(i);
                 cellCoordinates.Add(child.position.ToPosition(), child.gameObject);
             }
+        }
+    }
+
+    public static void SetWalkable(Vector3 position, bool walkable)
+    {
+        if (walkable)
+        {
+            blockedCells.Remove(position.ToPosition());
+        }
+        else
+        {
+            blockedCells.Add(position.ToPosition());
         }
     }
 
@@ -62,6 +76,10 @@ public static class AreaHelper
 
     public static bool IsWalkable(Vector3 position)
     {
+        if (blockedCells.Contains(position.ToPosition()))
+        {
+            return false;
+        }
         var definition = GetDefinition(position);
         if (definition != null)
             return definition.IsWalkable;
