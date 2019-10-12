@@ -8,6 +8,7 @@ public class MovementBehaviour : DebuggableBehaviour
     private MovementDirection currentDirection = MovementDirection.None;
 
     public static event DirectionChangedHandler DirectionChanged = delegate(GameObject sender, DirectionChangedEventArgs changedEventArgs) { };
+    public event DirectionChangedHandler OwnerDirectionChanged = delegate (GameObject sender, DirectionChangedEventArgs changedEventArgs) { };
     public static event Action<GameObject> MovementBegan = delegate (GameObject obj) { };
     public static event Action<GameObject> MovementEnded = delegate (GameObject obj) { };
     public static event CellCalbackHandler WillLeaveCell = delegate (GameObject obj, Vector3 pos) { };
@@ -52,11 +53,12 @@ public class MovementBehaviour : DebuggableBehaviour
 
                 if (currentDirection != pendingDirection)
                 {
-                    DirectionChanged(gameObject, new DirectionChangedEventArgs(currentDirection, pendingDirection));
+                    DirectionChanged(gameObject, new DirectionChangedEventArgs(currentDirection, pendingDirection));   
                 }
                 currentDirection = pendingDirection;
                 previousPosition = currentPosition;
                 nextPosition = currentPosition + currentDirection.ToVector3();
+                OwnerDirectionChanged(gameObject, new DirectionChangedEventArgs(currentDirection, pendingDirection));
                 if (!nextPosition.IsWalkable())
                 {
                     currentDirection = MovementDirection.None;

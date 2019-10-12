@@ -16,5 +16,5 @@ MonoBehaviour:
   Delay: 0
   Prefabs:
   - {fileID: 5495435277252692655, guid: 3af4216d9e9ee4f7397035a543c8b55b, type: 3}
-  RandomChance: 0.136
+  RandomChance: 0.071
   Offset: {x: 0, y: 0, z: 0}

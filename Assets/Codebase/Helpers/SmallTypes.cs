@@ -10,6 +10,11 @@ public delegate void CellCalbackHandler(GameObject sender, Vector3 cellPosition)
 
 #region Enums
 
+public enum CombinedPropDirection
+{
+    Default, Horizontal, Vertical, CornerUpLeft, CornerUpRight, CornerDownLeft, CornerDownRight, ExShaped
+}
+
 public enum CellEventType
 {
     WillEnter, Entered, WillLeave, Left
@@ -92,6 +97,16 @@ public struct Position
     {
         this.x = Mathf.RoundToInt(x);
         this.y = Mathf.RoundToInt(y);
+    }
+
+    public static bool operator ==(Position obj1, Position obj2)
+    {
+        return obj1.X == obj2.X && obj1.Y == obj2.Y;
+    }
+
+    public static bool operator !=(Position obj1, Position obj2)
+    {
+        return obj1.X != obj2.X || obj1.Y != obj2.Y;
     }
 }
 

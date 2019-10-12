@@ -49,6 +49,7 @@ public static class AreaHelper
 
     public static GameObject GetCell(Position position)
     {
+        GetTextureIfNeeded();
         if (cellCoordinates != null && cellCoordinates.TryGetValue(position, out var gameObject))
         {
             return gameObject;
