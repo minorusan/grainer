@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
-using Crysberry.Routines;
 
 public class PropsCombineBehaviour : DebuggableBehaviour
 {
@@ -10,7 +9,7 @@ public class PropsCombineBehaviour : DebuggableBehaviour
 
     public void Start()
     {
-        Routiner.InvokeNextFrame(InitializeCell);
+        InitializeCell();
     }
 
     private void InitializeCell()
