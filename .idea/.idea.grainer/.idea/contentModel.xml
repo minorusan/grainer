@@ -15,6 +15,7 @@
           </e>
           <e p="CellEvents" t="Include">
             <e p="ActivateCellComponentCellEvent.cs" t="Include" />
+            <e p="IncreamentObjectiveEvent.cs" t="Include" />
             <e p="LevelFinishedEvent.cs" t="Include" />
             <e p="LogCellEvent.cs" t="Include" />
             <e p="SpawnGameObjectCellEvent.cs" t="Include" />
@@ -23,6 +24,7 @@
           <e p="Components" t="Include">
             <e p="CellComponentType.cs" t="Include" />
             <e p="CombinedPropComponent.cs" t="Include" />
+            <e p="GameplayObjectivesBehaviour.cs" t="Include" />
             <e p="LoadSceneComponent.cs" t="Include" />
             <e p="LocalizedTextComponent.cs" t="Include" />
           </e>
@@ -41,6 +43,7 @@
             <e p="Extentions.cs" t="Include" />
             <e p="GameEntitiesHolder.cs" t="Include" />
             <e p="GameFinishedBroadcastBehaviour.cs" t="Include" />
+            <e p="GameOutcomeBehaviour.cs" t="Include" />
             <e p="SmallTypes.cs" t="Include" />
             <e p="Strings.cs" t="Include" />
             <e p="ToggleActiveStateOnEnableBehavior.cs" t="Include" />
@@ -72,6 +75,9 @@
             <e p="ColorMap.cs" t="Include" />
             <e p="EventDefinition.cs" t="Include" />
             <e p="MovementSettings.cs" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="ObjectiveFillBehaviour.cs" t="Include" />
           </e>
         </e>
         <e p="Libs" t="Include">

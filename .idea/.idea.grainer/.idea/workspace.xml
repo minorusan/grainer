@@ -4,12 +4,32 @@
     <list default="true" id="5b32f112-e81b-4f7c-ab13-a4d426382cbc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.grainer/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.grainer/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.grainer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.grainer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Codebase/Input/InputProviderBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Codebase/Input/InputProviderBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Codebase/AreaInitialisation/AreaInitializeBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Codebase/AreaInitialisation/AreaInitializeBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Codebase/Helpers/AreaHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Codebase/Helpers/AreaHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Codebase/Settings/ColorDefinition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Codebase/Settings/ColorDefinition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/CellEvents.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/CellEvents/ComponentActivation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/CellEvents/ComponentActivation/collectible_disable_gfx.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/CellEvents/ComponentActivation/collectible_disable_gfx.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/CellEvents/ComponentActivation/collectible_enable_collected_gfx.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/CellEvents/ComponentActivation/collectible_enable_collected_gfx.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/CellEvents/Spawn.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/CellEvents/Spawn/collectible_particle_spawn_event.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/CellEvents/Spawn/collectible_particle_spawn_event.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/CellEvents/Spawn/ground_particle_spawn_event.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/CellEvents/Spawn/ground_particle_spawn_event.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/CellEvents/entered_log_event.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/CellEvents/entered_log_event.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/CellEvents/level_completed.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/CellEvents/level_completed.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/CellEvents/make_cell_unwalkable_event.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/CellEvents/make_cell_unwalkable_event.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/CellEvents/will_enter_log_event.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/CellEvents/will_enter_log_event.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Content/Scenes/Gameplay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Scenes/Gameplay.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libs/Crysberry/Routines/Codebase/Routiner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/Crysberry/Routines/Codebase/Routiner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libs/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Settings/Colors/Colors/default_exit_color.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Settings/Colors/Colors/default_exit_color.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Libs/Crysberry/Console/Resources/Prefabs/Views/CommandOutput.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/Crysberry/Console/Resources/Prefabs/Views/CommandOutput.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Libs/Crysberry/Console/Resources/Prefabs/Views/ResultOutput.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/Crysberry/Console/Resources/Prefabs/Views/ResultOutput.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Settings/Colors/Colors/collectible_color.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Settings/Colors/Colors/collectible_color.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,12 +44,18 @@
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Input/SwipeInputProviderBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Input/DesktopInputProvisionBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/AreaInitialisation/AreaInitializeBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Helpers/AreaHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/CellEvents/LevelFinishedEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Helpers/GameOutcomeBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/CellEvents/IncreamentObjectiveEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Helpers/Extentions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Libs/Crysberry/Routines/Codebase/Routiner_Enumerators.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Libs/Crysberry/Audio/Codebase/Core/AudioEffectDefinition.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Helpers/GameFinishedBroadcastBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Libs/Crysberry/Routines/Codebase/Routiner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Entities/LocalizableString.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/UI/ObjectiveFillBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Libs/Crysberry/Audio/Codebase/Core/Editor/AudioGroupDefinitionEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Entities/LocalizableStringBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Libs/Crysberry/Audio/Codebase/Core/Editor/AudioEffectDefinitionEditor.cs" root0="FORCE_HIGHLIGHTING" />
@@ -47,6 +73,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Components/LoadSceneComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/AssetsImport/AssetsNameToLowerPostProcessor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Input/InputInitializeBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Components/GameplayObjectivesBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -54,8 +81,6 @@
         <option value="$PROJECT_DIR$/Assets/Codebase/AssetsImport/Rules/AssetImportRule.cs" />
         <option value="$PROJECT_DIR$/Assets/Codebase/AssetsImport/AssetsImporter.cs" />
         <option value="$PROJECT_DIR$/Assets/Codebase/Helpers/Extentions.cs" />
-        <option value="$PROJECT_DIR$/Assets/Codebase/Settings/ColorDefinition.cs" />
-        <option value="$PROJECT_DIR$/Assets/Codebase/AreaInitialisation/AreaInitializeBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Codebase/Settings/ColorMap.cs" />
         <option value="$PROJECT_DIR$/Assets/Codebase/Input/SwipeInputProviderBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Codebase/Resources/ResourceHelper.cs" />
@@ -72,6 +97,13 @@
         <option value="$PROJECT_DIR$/Assets/Codebase/Helpers/GameFinishedBroadcastBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Codebase/CellEvents/LevelFinishedEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Codebase/Input/DisabeInputOnEnableBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Codebase/Settings/ColorDefinition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Codebase/CellEvents/IncreamentObjectiveEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Codebase/UI/ObjectiveFillBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Codebase/Helpers/GameOutcomeBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Codebase/AreaInitialisation/AreaInitializeBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Codebase/Helpers/AreaHelper.cs" />
+        <option value="$PROJECT_DIR$/Assets/Codebase/Components/GameplayObjectivesBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -143,7 +175,10 @@
       <workItem from="1572690766923" duration="938000" />
       <workItem from="1572693103371" duration="991000" />
       <workItem from="1572694618096" duration="719000" />
-      <workItem from="1572696744659" duration="461000" />
+      <workItem from="1572696744659" duration="949000" />
+      <workItem from="1572704028038" duration="329000" />
+      <workItem from="1572704763298" duration="459000" />
+      <workItem from="1572705434003" duration="1071000" />
     </task>
     <servers />
   </component>
@@ -176,29 +211,32 @@
           <option name="timeStamp" value="1" />
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Codebase/Resources/ResourceHelper.cs</url>
-          <line>10</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Codebase/Resources/ResourceHelper.cs" initialLine="10">
+          <url>file://$PROJECT_DIR$/Assets/Codebase/Helpers/GameOutcomeBehaviour.cs</url>
+          <line>12</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Codebase/Helpers/GameOutcomeBehaviour.cs" initialLine="12">
             <startOffsets>
-              <option value="298" />
+              <option value="267" />
             </startOffsets>
             <endOffsets>
-              <option value="397" />
+              <option value="282" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="5" />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Codebase/CellEvents/IncreamentObjectiveEvent.cs</url>
+          <line>7</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Codebase/CellEvents/IncreamentObjectiveEvent.cs" initialLine="7">
+            <startOffsets>
+              <option value="262" />
+            </startOffsets>
+            <endOffsets>
+              <option value="303" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="evaluateExpression">
-      <expression>
-        <expression-string>colorMap.Colors[0].Color.ToHexString()</expression-string>
-        <language-id>C#</language-id>
-        <custom-info>RiderImportsList:</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
   </component>
 </project>

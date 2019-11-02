@@ -22,6 +22,8 @@ public class ColorDefinition : ScriptableObject
     public bool IsWalkable => speedCoefitient > 0f;
     public EventDefinition[] Events => events;
 
+    public bool IsObjective;
+
     public GameObject GetPrefab()
     {
         return prefabs[Random.Range(0, prefabs.Length)];

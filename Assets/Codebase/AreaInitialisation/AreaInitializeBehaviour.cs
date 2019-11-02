@@ -26,6 +26,7 @@ public class AreaInitializeBehaviour : MonoBehaviour
         var colorMap = ColorMap.Instance;
         var color = Color.white;
 
+        int objectivesCount = 0;
         for (int i = 0; i < textureWidth; i++)
         {
             for (int j = 0; j < textureHeight; j++)
@@ -33,6 +34,10 @@ public class AreaInitializeBehaviour : MonoBehaviour
                 color = texture.GetPixel(i, j);
                 if (colorMap.GetDefinition(color, out var definition))
                 {
+                    if (definition.IsObjective)
+                    {
+                        objectivesCount++;
+                    }
                     var prefab = definition.GetPrefab();
                     var tile = Instantiate(prefab, TilesHub);
                     tile.transform.localPosition = new Vector3(i, 0f, j);
@@ -43,5 +48,6 @@ public class AreaInitializeBehaviour : MonoBehaviour
                 }
             }
         }
+        AreaHelper.SetObjectivesCount(objectivesCount);
     }
 }

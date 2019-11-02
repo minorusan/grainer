@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class CellCallbackBroadcastBehaviour : DebuggableBehaviour
@@ -13,6 +14,14 @@ public class CellCallbackBroadcastBehaviour : DebuggableBehaviour
         MovementBehaviour.LeftCell += OnLeftCell;
         MovementBehaviour.WillEnterCell += OnWillEnterCell;
         MovementBehaviour.EnteredCell += OnEnteredCell;
+    }
+
+    private void OnDisable()
+    {
+        MovementBehaviour.WillLeaveCell -= OnWillLeaveCell;
+        MovementBehaviour.LeftCell -= OnLeftCell;
+        MovementBehaviour.WillEnterCell -= OnWillEnterCell;
+        MovementBehaviour.EnteredCell -= OnEnteredCell;
     }
 
     private void OnWillLeaveCell(GameObject sender, Vector3 cellPosition)

@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public static class AreaHelper 
 {
     private static Texture2D currentMap;
+    public static int ObjectivesCount { get; private set; }
     private static Dictionary<Position, GameObject> cellCoordinates = new Dictionary<Position, GameObject>();
     private static HashSet<Position> blockedCells = new HashSet<Position>();
 
@@ -16,6 +17,7 @@ public static class AreaHelper
     private static void OnSceneChanged(Scene arg0, Scene arg1)
     {
         blockedCells.Clear();
+        ObjectivesCount = 0;
         currentMap = null;
     }
 
@@ -33,6 +35,12 @@ public static class AreaHelper
                 cellCoordinates.Add(child.position.ToPosition(), child.gameObject);
             }
         }
+    }
+
+    public static void SetObjectivesCount(int count)
+    {
+        ObjectivesCount = count;
+        Debug.Log($"AreaHelper::Objectives count is {ObjectivesCount}");
     }
 
     public static void SetWalkable(Vector3 position, bool walkable)
