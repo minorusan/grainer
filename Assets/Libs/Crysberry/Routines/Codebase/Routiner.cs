@@ -12,6 +12,7 @@ namespace Crysberry.Routines
 
         public static void StartCouroutine(IEnumerator coroutine)
         {
+            CreateInstanceIfNeeded();
             _instance.StartRoutine(coroutine);
         }
         
