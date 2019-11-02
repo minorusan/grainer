@@ -10,15 +10,59 @@
             <e p="AreaInitializeBehaviour.cs" t="Include" />
           </e>
           <e p="AssetsImport" t="Include">
+            <e p="AssetsNameToLowerPostProcessor.cs" t="Include" />
             <e p="MapsPostprocessor.cs" t="Include" />
           </e>
+          <e p="CellEvents" t="Include">
+            <e p="ActivateCellComponentCellEvent.cs" t="Include" />
+            <e p="LogCellEvent.cs" t="Include" />
+            <e p="SpawnGameObjectCellEvent.cs" t="Include" />
+            <e p="ToggleWalkableStatusCellEvent.cs" t="Include" />
+          </e>
+          <e p="Components" t="Include">
+            <e p="CellComponentType.cs" t="Include" />
+            <e p="CombinedPropComponent.cs" t="Include" />
+          </e>
+          <e p="Entities" t="Include">
+            <e p="CellComponentHolderBehaviour.cs" t="Include" />
+            <e p="GameEntityBase.cs" t="Include" />
+          </e>
           <e p="Helpers" t="Include">
+            <e p="AreaHelper.cs" t="Include" />
+            <e p="CellCallbackBroadcastBehaviour.cs" t="Include" />
+            <e p="Constants.cs" t="Include" />
+            <e p="DebuggableBehaviour.cs" t="Include" />
             <e p="Extentions.cs" t="Include" />
+            <e p="GameEntitiesHolder.cs" t="Include" />
+            <e p="SmallTypes.cs" t="Include" />
+            <e p="Strings.cs" t="Include" />
+          </e>
+          <e p="Input" t="Include">
+            <e p="DesktopInputProvisionBehaviour.cs" t="Include" />
+            <e p="InputInitializeBehaviour.cs" t="Include" />
+            <e p="InputListenerBehaviour.cs" t="Include" />
+            <e p="InputProviderBase.cs" t="Include" />
+            <e p="SwipeInputProviderBehaviour.cs" t="Include" />
+          </e>
+          <e p="Misc" t="Include">
+            <e p="PropsCombineBehaviour.cs" t="Include" />
+            <e p="WatchPlayerBehaviour.cs" t="Include" />
+          </e>
+          <e p="Movement" t="Include">
+            <e p="MovementBehaviour.cs" t="Include" />
+            <e p="RotationBehaviour.cs" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="ResourceHelper.cs" t="Include" />
+          </e>
+          <e p="ScriptableEnums" t="Include">
+            <e p="CombinedPropType.cs" t="Include" />
           </e>
           <e p="Settings" t="Include">
             <e p="ColorDefinition.cs" t="Include" />
             <e p="ColorMap.cs" t="Include" />
             <e p="EventDefinition.cs" t="Include" />
+            <e p="MovementSettings.cs" t="Include" />
           </e>
         </e>
         <e p="Libs" t="Include">
@@ -139,16 +183,13 @@
       <e p="AudioTests.csproj" t="IncludeRecursive" />
       <e p="CrysberryAudio.csproj" t="IncludeRecursive" />
       <e p="grainer.sln" t="IncludeFlat" />
-      <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="Routines.csproj" t="IncludeRecursive" />
       <e p="RoutineTests.csproj" t="IncludeRecursive" />
-      <e p="Temp" t="ExcludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
-      </e>
+      <e p="Temp/bin" t="ExcludeRecursive" />
     </e>
-    <e p="$USER_HOME$/Library/Caches/Rider2018.2/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/Rider2018.2/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_grainer.-1164671730.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.2/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_grainer.-1164671730.00" t="ExcludeRecursive" />
   </component>
 </project>

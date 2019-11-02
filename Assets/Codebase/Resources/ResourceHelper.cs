@@ -9,8 +9,9 @@ public static class ResourceHelper
     {
         var inputProviders = Resources.LoadAll<InputProviderBase>(Strings.INPUT_PROVIDERS_PATH);
         InputProviderBase required = inputProviders.FirstOrDefault(x=>x is DesktopInputProvisionBehaviour);
+        
 #if !UNITY_EDITOR
-        required = something else;
+        required = inputProviders.FirstOrDefault(x=>x is SwipeInputProviderBehaviour);
 #endif
         return required;
     }
