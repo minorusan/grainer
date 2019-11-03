@@ -22,6 +22,23 @@ public class MapsPostprocessor : AssetPostprocessor
     {
         if (assetPath.Contains(mapsPath))
         {
+//            var levelHandler = new LevelHandler();
+//            var levelInfo = levelHandler.GetLevelInfo(texture);
+//            if (levelInfo.IsWorker)
+//            {
+//                Level asset = ScriptableObject.CreateInstance<Level>();
+//                asset.minTurnsCount = levelInfo.MinimumTurns;
+//                asset.readyToUse = true;
+//                asset.levelTexturePath =assetPath;
+//               var str = assetPath.Replace("Assets/Content/Textures/Maps/","");
+//                 str = str.Replace(".png","");
+//                AssetDatabase.CreateAsset(asset, "Assets/Content/Levels/Level_"+str+".asset");
+//                AssetDatabase.SaveAssets();
+//
+//                EditorUtility.FocusProjectWindow();
+//
+//                Selection.activeObject = asset;
+//            }
             //Do your stuff here
         }
     }
