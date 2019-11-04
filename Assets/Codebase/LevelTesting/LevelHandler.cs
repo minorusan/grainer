@@ -20,37 +20,25 @@ public class LevelHandler : MonoBehaviour
     private int minTurns = int.MaxValue;
     private int startCellId;
 
+    private bool start;
     private DateTime startTime;
     [SerializeField] private Texture2D texture2D;
 
     public void DisableTest()
     {
-        if (chainCollectorThread.IsAlive)
-        {
-            chainCollectorThread.Abort();
-        }
-        if (checkFinishedChainsThread.IsAlive)
-        {
-            checkFinishedChainsThread.Abort();
-        }
+        start = false;
     }
 
     public void StartTest()
     {
-//        if(!EditorApplication.isCompiling && !EditorApplication.isPlaying)
-//        {
-//            EditorApplication.isPlaying = true;
-//        }
-//        else
-//        {
-//            return;
-//        }
         CreateAndFillGrid(texture2D);
     }
 
     private void CreateAndFillGrid(Texture2D levelTexture)
     {
+        start = true;
         startTime = DateTime.Now;
+        minTurns = int.MaxValue;
         Debug.LogError("Start time: " + startTime);
         assembledChainList = new Stack<Chain>();
         cropCount = 0;
@@ -153,15 +141,22 @@ public class LevelHandler : MonoBehaviour
 
     private void ChainCollectorRoutine()
     {
+        
         while (chainList.Count > 0)
         {
+            if (!start)
+            {
+                print("ABORT. Min turns::" + minTurns);
+                return;
+                
+            }
             var tmp = chainList.Pop();
             if (minTurns>tmp.numberOfTurns)
             {
                 CheckChain(tmp);
             }
         }
-        Debug.LogError("End time: " + DateTime.Now);
+        Debug.LogError("End time: " + DateTime.Now + " MinTurns::"+minTurns);
 
     }
 
@@ -201,6 +196,12 @@ public class LevelHandler : MonoBehaviour
         {
             while (assembledChainList.Count > 0)
             {
+                if (!start)
+                {
+                    print("ABORT. Min turns::" + minTurns);
+                    return;
+                    
+                }
                 var chain = assembledChainList.Pop();
                 CheckAssembledChain(chain);
             }
@@ -250,7 +251,7 @@ public class LevelHandler : MonoBehaviour
 
         if (counter == cropCount)
         {
-            Debug.LogError("Собрали весь урожай. Поворотов " + turns);
+            //Debug.LogError("Собрали весь урожай. Поворотов " + turns);
             if (minTurns > turns)
             {
                 minTurns = turns;
@@ -261,7 +262,7 @@ public class LevelHandler : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Собрали не весь урожай. ");
+            //Debug.LogError("Собрали не весь урожай. ");
         }
     }
 }
@@ -288,14 +289,8 @@ public struct Chain
     public Chain(int id, HashSet<int> usedCellsHashSet, List<int> usedCellsList, Cell[] cells, int turns = 0) : this()
     {
         numberOfTurns = turns;
-        UsedCellsHashSet = new HashSet<int>();
-        foreach (var i in usedCellsHashSet)
-        {
-            UsedCellsHashSet.Add(i);
-        }
-
-        UsedCellsList = new List<int>();
-        UsedCellsList.AddRange(usedCellsList);
+        UsedCellsHashSet = new HashSet<int>(usedCellsList);
+        UsedCellsList = new List<int>(usedCellsList);
 
         if (usedCellsList.Count >= 3)
         {
