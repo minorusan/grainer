@@ -22,6 +22,7 @@
             <e p="ToggleWalkableStatusCellEvent.cs" t="Include" />
           </e>
           <e p="Components" t="Include">
+            <e p="ApplicationQuit.cs" t="Include" />
             <e p="CellComponentType.cs" t="Include" />
             <e p="CombinedPropComponent.cs" t="Include" />
             <e p="GameplayObjectivesBehaviour.cs" t="Include" />
@@ -55,6 +56,7 @@
             <e p="InputListenerBehaviour.cs" t="Include" />
             <e p="InputProviderBase.cs" t="Include" />
             <e p="SwipeInputProviderBehaviour.cs" t="Include" />
+            <e p="ZeroingTimescaleOnEnableBehaviour.cs" t="Include" />
           </e>
           <e p="Misc" t="Include">
             <e p="PropsCombineBehaviour.cs" t="Include" />
@@ -63,6 +65,14 @@
           <e p="Movement" t="Include">
             <e p="MovementBehaviour.cs" t="Include" />
             <e p="RotationBehaviour.cs" t="Include" />
+          </e>
+          <e p="Networking" t="Include">
+            <e p="GetItemsBehaviour.cs" t="Include" />
+            <e p="Networking.cs" t="Include" />
+            <e p="NetworkingMethods.cs" t="Include" />
+            <e p="NetworkingRoute.cs" t="Include" />
+            <e p="NetworkingTypes.cs" t="Include" />
+            <e p="UpdateItemBehaviour.cs" t="Include" />
           </e>
           <e p="Resources" t="Include">
             <e p="ResourceHelper.cs" t="Include" />
@@ -77,7 +87,13 @@
             <e p="MovementSettings.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
+            <e p="LevelButtonBehavior.cs" t="Include" />
             <e p="ObjectiveFillBehaviour.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Content" t="Include">
+          <e p="Shaders" t="Include">
+            <e p="Toon.shader" t="Include" />
           </e>
         </e>
         <e p="Libs" t="Include">
@@ -205,6 +221,6 @@
       <e p="Temp/bin" t="ExcludeRecursive" />
     </e>
     <e p="$USER_HOME$/Library/Caches/Rider2019.2/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/Rider2019.2/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_grainer.-1164671730.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.2/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_Grainer.154656429.00" t="ExcludeRecursive" />
   </component>
 </project>
