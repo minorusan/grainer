@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using DG.Tweening;
+using UnityEngine;
 
 public class RotationBehaviour : MonoBehaviour
 {
@@ -11,6 +12,6 @@ public class RotationBehaviour : MonoBehaviour
 
     private void OnDirectionChanged(GameObject sender, DirectionChangedEventArgs changedEventArgs)
     {
-        transform.LookAt(transform.position + changedEventArgs.Current.ToVector3());
+        transform.DOLookAt(transform.position + changedEventArgs.Current.ToVector3(), 0.3f);
     }
 }

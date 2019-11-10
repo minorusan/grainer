@@ -60,6 +60,7 @@
           </e>
           <e p="Misc" t="Include">
             <e p="PropsCombineBehaviour.cs" t="Include" />
+            <e p="TrailsBehaviour.cs" t="Include" />
             <e p="WatchPlayerBehaviour.cs" t="Include" />
           </e>
           <e p="Movement" t="Include">
@@ -207,6 +208,12 @@
             </e>
             <e p="Sprites" t="Include">
               <e p="EmojiOne Attribution.txt" t="Include" />
+            </e>
+          </e>
+          <e p="TSF" t="Include">
+            <e p="Shaders" t="Include">
+              <e p="TSF.shader" t="Include" />
+              <e p="tsfoutline.shader" t="Include" />
             </e>
           </e>
         </e>
