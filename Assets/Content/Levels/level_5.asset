@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67d65cd9ccda99f4d94c99f54950a031, type: 3}
-  m_Name: level_1
+  m_Name: level_5
   m_EditorClassIdentifier: 
   isUsed: 0
   levelTexture: {fileID: 0}
-  levelTexturePath: Assets/Content/Textures/Maps/1.png
+  levelTexturePath: Assets/Content/Textures/Maps/5.png
   maxTurnsCount: 0
   minTurnsCount: 0
   readyToUse: 1
