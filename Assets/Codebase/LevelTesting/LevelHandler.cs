@@ -23,6 +23,7 @@ public class LevelHandler : MonoBehaviour
     private bool start;
     private DateTime startTime;
     [SerializeField] private Texture2D texture2D;
+    [SerializeField] private Texture2D[] texture2DArray;
 
     public void DisableTest()
     {
@@ -263,6 +264,25 @@ public class LevelHandler : MonoBehaviour
         else
         {
             //Debug.LogError("Собрали не весь урожай. ");
+        }
+    }
+
+    public void CreateLevelAssets()
+    {
+        foreach (var texture in texture2DArray)
+        {
+                            Level asset = ScriptableObject.CreateInstance<Level>();
+                asset.minTurnsCount = 0;
+                asset.readyToUse = true;
+                asset.levelTexturePath =AssetDatabase.GetAssetPath(texture);
+               var str = asset.levelTexturePath.Replace("Assets/Content/Textures/Maps/","");
+                 str = str.Replace(".png","");
+                 AssetDatabase.CreateAsset(asset, "Assets/Content/Levels/Level_"+str+".asset");
+                AssetDatabase.SaveAssets();
+
+                EditorUtility.FocusProjectWindow();
+
+                Selection.activeObject = asset;
         }
     }
 }
