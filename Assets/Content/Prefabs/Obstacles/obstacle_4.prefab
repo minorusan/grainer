@@ -137,6 +137,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: sm_generic_ground_02
       objectReference: {fileID: 0}
+    - target: {fileID: 1817452693827694, guid: f6d5cab8b70f0af4d8609bea8143e6f2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4456285922090328, guid: f6d5cab8b70f0af4d8609bea8143e6f2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

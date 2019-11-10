@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class MovementBehaviour : DebuggableBehaviour
 {
@@ -15,6 +16,7 @@ public class MovementBehaviour : DebuggableBehaviour
     public static event CellCalbackHandler LeftCell = delegate (GameObject obj, Vector3 pos) { };
     public static event CellCalbackHandler WillEnterCell = delegate (GameObject obj, Vector3 pos) { };
     public static event CellCalbackHandler EnteredCell = delegate (GameObject obj, Vector3 pos) { };
+    public UnityEvent OnRotate;
 
     private Vector3 nextPosition;
 
@@ -30,6 +32,7 @@ public class MovementBehaviour : DebuggableBehaviour
         pendingDirection = direction;
         if (currentDirection == MovementDirection.None)
         {
+            
             currentDirection = pendingDirection;
             MovementBegan(gameObject);
         }
@@ -53,11 +56,13 @@ public class MovementBehaviour : DebuggableBehaviour
 
                 if (currentDirection != pendingDirection)
                 {
+                    OnRotate.Invoke();
                     DirectionChanged(gameObject, new DirectionChangedEventArgs(currentDirection, pendingDirection));   
                 }
                 currentDirection = pendingDirection;
                 previousPosition = currentPosition;
                 nextPosition = currentPosition + currentDirection.ToVector3();
+                
                 OwnerDirectionChanged(gameObject, new DirectionChangedEventArgs(currentDirection, pendingDirection));
                 if (!nextPosition.IsWalkable())
                 {

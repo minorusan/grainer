@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colors:
   - {fileID: 11400000, guid: 20ef63333a096451a92631f87227f239, type: 2}
-  - {fileID: 11400000, guid: 1ddbeb80afc864ced990b3681519f9b4, type: 2}
-  - {fileID: 11400000, guid: a810a47ac9dfb425fa3580ae1e1fd766, type: 2}
   - {fileID: 11400000, guid: 384d61915747e9640b02eefc77f35ec7, type: 2}
   - {fileID: 11400000, guid: 9506bd233d4e7af489b610a13dbdabdf, type: 2}
+  - {fileID: 11400000, guid: 1ddbeb80afc864ced990b3681519f9b4, type: 2}
+  - {fileID: 11400000, guid: a810a47ac9dfb425fa3580ae1e1fd766, type: 2}
+  - {fileID: 11400000, guid: 35a79d21465544337a7d442a22212b44, type: 2}
