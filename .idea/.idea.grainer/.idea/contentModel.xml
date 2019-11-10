@@ -28,6 +28,7 @@
             <e p="GameplayObjectivesBehaviour.cs" t="Include" />
             <e p="LoadSceneComponent.cs" t="Include" />
             <e p="LocalizedTextComponent.cs" t="Include" />
+            <e p="ReferencingGizmoComponent.cs" t="Include" />
           </e>
           <e p="Entities" t="Include">
             <e p="CellComponentHolderBehaviour.cs" t="Include" />
@@ -74,6 +75,13 @@
             <e p="NetworkingRoute.cs" t="Include" />
             <e p="NetworkingTypes.cs" t="Include" />
             <e p="UpdateItemBehaviour.cs" t="Include" />
+          </e>
+          <e p="Optimization" t="Include">
+            <e p="AntializingBehaviour.cs" t="Include" />
+            <e p="DynamicTextureResolutionBehaviour.cs" t="Include" />
+            <e p="FrameDataBehaviour.cs" t="Include" />
+            <e p="OptimizatonBehaviour.cs" t="Include" />
+            <e p="ShadowsBehaviour.cs" t="Include" />
           </e>
           <e p="Resources" t="Include">
             <e p="ResourceHelper.cs" t="Include" />

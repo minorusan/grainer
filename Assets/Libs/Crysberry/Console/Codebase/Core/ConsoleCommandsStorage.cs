@@ -54,5 +54,21 @@ namespace Crysberry.Console
             var position = new Vector3(Convert.ToSingle(args[0]),Convert.ToSingle(args[1]), Convert.ToSingle(args[2]));
             return $"Walkable status of position ({position}) is '{position.IsWalkable()})'";
         }
+        
+        [CrysberryConsoleMember("optinfo", "Get optimization level information")]
+        private static string OptInfo(string[] args)
+        {
+            var reached = OptimizatonBehaviour.OptimizationLevelGoalReached ? "" : "not";
+            var level = OptimizatonBehaviour.OptimizationLevel;
+            var averageFps = Mathf.RoundToInt(FrameDataBehaviour.FreshFrameData);
+            return $"Optimization goal {reached} reached.\n::Optimisation level is {level}.\n::Average frame rate:{averageFps}.\n::Device model:{SystemInfo.deviceModel}";
+        }
+        
+        [CrysberryConsoleMember("optrst", "Reset optimizer")]
+        private static string OptRst(string[] args)
+        {
+            OptimizatonBehaviour.ResetOptimizationSettings();
+            return $"Optimizer reset";
+        }
     }
 }

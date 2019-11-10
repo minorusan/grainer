@@ -4,45 +4,65 @@
     <list default="true" id="5b32f112-e81b-4f7c-ab13-a4d426382cbc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.grainer/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.grainer/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.grainer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.grainer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Codebase/Movement/MovementBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Codebase/Movement/MovementBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Codebase/Movement/RotationBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Codebase/Movement/RotationBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_2.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_3.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_3.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Collectibles/collectible_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Prefabs/Collectibles/collectible_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Collectibles/collectible_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Prefabs/Collectibles/collectible_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Collectibles/collectible_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Prefabs/Collectibles/collectible_3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Entrances/entrance_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Prefabs/Entrances/entrance_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Exit/exit_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Prefabs/Exit/exit_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Obstacles/obstacle_4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Prefabs/Obstacles/obstacle_4.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Particles.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Particles/collectible_particles_template.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Particles/collectible_particles_template.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Particles/ground_particles_template 1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Particles/ground_particles_template 1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Particles/ground_particles_template.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Particles/ground_particles_template.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Props/wheat_dirt/wheat_dirt_default.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Prefabs/Props/wheat_dirt/wheat_dirt_default.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Props/wheat_dirt/wheat_dirt_horizontal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Prefabs/Props/wheat_dirt/wheat_dirt_horizontal.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Props/wheat_dirt/wheat_dirt_vertical.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Prefabs/Props/wheat_dirt/wheat_dirt_vertical.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Props/wooden_fense/wooden_fence_horizontal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Prefabs/Props/wooden_fense/wooden_fence_horizontal.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Props/wooden_fense/wooden_fence_vertical.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Prefabs/Props/wooden_fense/wooden_fence_vertical.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Prefabs/Entities/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Prefabs/Entities/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Codebase/Input/SwipeInputProviderBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Codebase/Input/SwipeInputProviderBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_41.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_41.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_42.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_42.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_43.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_43.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_44.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_44.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_45.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_45.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_46.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_46.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_47.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_47.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_48.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_48.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_49.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_49.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_50.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_50.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_51.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_51.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_52.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_52.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_53.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_53.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_54.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_54.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_6.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_6.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Props/waterfill.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Props/waterfill.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Content/Scenes/Gameplay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Scenes/Gameplay.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Scenes/gameplay_Profiles/main camera profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Scenes/gameplay_Profiles/main camera profile.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libs/PolygonFarm/Demo/demo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/PolygonFarm/Demo/demo.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Scenes/main_menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Scenes/main_menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Textures/Maps/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Textures/Maps/7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Libs/Crysberry/Console/Codebase/Core/ConsoleCommandsStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/Crysberry/Console/Codebase/Core/ConsoleCommandsStorage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Libs/Crysberry/Console/Resources/Prefabs/Views/ResultOutput.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/Crysberry/Console/Resources/Prefabs/Views/ResultOutput.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Libs/PolygonFarm/Materials/Alts/polygonfarm_04_b.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/PolygonFarm/Materials/Alts/polygonfarm_04_b.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Libs/PolygonFarm/Materials/Misc/polygonfarm_clouds.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/PolygonFarm/Materials/Misc/polygonfarm_clouds.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Libs/PolygonFarm/Materials/Misc/polygonfarm_glass.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/PolygonFarm/Materials/Misc/polygonfarm_glass.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Libs/PolygonFarm/Materials/polygonfarm_01_a.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/PolygonFarm/Materials/polygonfarm_01_a.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Libs/PolygonFarm/Materials/polygonfarm_02_a.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/PolygonFarm/Materials/polygonfarm_02_a.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Libs/PolygonFarm/Materials/polygonfarm_03_a.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/PolygonFarm/Materials/polygonfarm_03_a.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Libs/PolygonFarm/Materials/polygonfarm_04_a.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/PolygonFarm/Materials/polygonfarm_04_a.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libs/PolygonFarm/Textures/circle_texture.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/PolygonFarm/Textures/circle_texture.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Settings/Colors/Color Map.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Settings/Colors/Color Map.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Settings/Colors/Colors/collectible_color.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Settings/Colors/Colors/collectible_color.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Libs/PolygonFarm/Textures/polygonfarm_texture_01_a.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/PolygonFarm/Textures/polygonfarm_texture_01_a.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Libs/PolygonFarm/Textures/polygonfarm_texture_02_a.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/PolygonFarm/Textures/polygonfarm_texture_02_a.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Libs/PolygonFarm/Textures/polygonfarm_texture_03_a.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/PolygonFarm/Textures/polygonfarm_texture_03_a.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Libs/skyb1/back.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/skyb1/back.psd.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Libs/skyb1/bot.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/skyb1/bot.psd.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Libs/skyb1/front.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/skyb1/front.psd.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Libs/skyb1/l.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/skyb1/l.psd.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Libs/skyb1/r.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/skyb1/r.psd.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Libs/skyb1/up.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/skyb1/up.psd.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Settings/Colors/Colors/default_walkable_color.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Settings/Colors/Colors/default_walkable_color.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Settings/Colors/Colors/waterfill_color.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Settings/Colors/Colors/waterfill_color.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,52 +76,59 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Networking/Networking.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Networking/NetworkingMethods.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Components/ReferencingGizmoComponent.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Helpers/AreaHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Networking/NetworkingTypes.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Helpers/CellCallbackBroadcastBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Networking/GetItemsBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Helpers/Extentions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/AreaInitialisation/AreaInitializeBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Helpers/GameFinishedBroadcastBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/AssetsImport/MapsPostprocessor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Misc/TrailsBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/AssetsImport/AssetsNameToLowerPostProcessor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Libs/Crysberry/Console/Codebase/Core/ConsoleCommandsStorage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Networking/UpdateItemBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Settings/EventDefinition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Misc/WatchPlayerBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Content/Shaders/Toon.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/UI/ObjectiveFillBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Input/SwipeInputProviderBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Libs/Crysberry/Routines/Codebase/Routiner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Input/InputProviderBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Libs/TSF/Shaders/tsfoutline.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Input/DesktopInputProvisionBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Libs/Crysberry/Routines/Codebase/Routiner_Enumerators.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Input/DisabeInputOnEnableBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Input/InputInitializeBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Components/ReferencingGizmoComponent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/24E3AFC4-DB90-466D-B033-228D345463EA/84/f00e0642/ShadowQuality.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Helpers/AreaHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Helpers/CellCallbackBroadcastBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Networking/GetItemsBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Helpers/Extentions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Helpers/GameFinishedBroadcastBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Optimization/OptimizatonBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Helpers/SmallTypes.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Content/Fonts/17899 sdf.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Optimization/ShadowsBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Optimization/AntializingBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Entities/LocalizableString.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Entities/LocalizableStringBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Movement/MovementBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Content/Scenes/gameplay.unity" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Networking/UpdateItemBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@1.1.0/Rider/Editor/RiderInitializer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Settings/ColorMap.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Settings/EventDefinition.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Movement/RotationBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Settings/ColorDefinition.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Misc/WatchPlayerBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Optimization/FrameDataBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/CellEvents/LogCellEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Resources/ResourceHelper.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Content/Shaders/Toon.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/UI/ObjectiveFillBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/CellEvents/SpawnGameObjectCellEvent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Input/SwipeInputProviderBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Libs/Crysberry/Routines/Codebase/Routiner.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Input/InputProviderBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/CellEvents/IncreamentObjectiveEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Libs/Crysberry/Audio/Codebase/Core/AudioEffectDefinition.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Libs/TSF/Shaders/tsfoutline.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Input/DesktopInputProvisionBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/CellEvents/LevelFinishedEvent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Libs/Crysberry/Routines/Codebase/Routiner_Enumerators.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Input/DisabeInputOnEnableBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Libs/Crysberry/Audio/Codebase/Core/Editor/AudioEffectDefinitionEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Components/LocalizedTextComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Libs/Crysberry/Audio/Codebase/Core/Editor/AudioGroupDefinitionEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Components/GameplayObjectivesBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Components/LoadSceneComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Helpers/GameOutcomeBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Input/InputInitializeBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -144,7 +171,14 @@
         <option value="$PROJECT_DIR$/Assets/Codebase/Misc/SpawnOnRotateBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Codebase/Misc/TrailsBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Codebase/Components/ReferencingGizmoComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Codebase/Helpers/OptimizatonBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Codebase/Misc/DynamicTextureResolutionBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Codebase/Optimization/AntializingBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Codebase/Movement/MovementBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Codebase/Optimization/ShadowsBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Codebase/Optimization/OptimizatonBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Codebase/Optimization/FrameDataBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Libs/Crysberry/Console/Codebase/Core/ConsoleCommandsStorage.cs" />
       </list>
     </option>
   </component>
@@ -223,7 +257,12 @@
       <workItem from="1573289661202" duration="1882000" />
       <workItem from="1573291930788" duration="2265000" />
       <workItem from="1573295311139" duration="1742000" />
-      <workItem from="1573376088793" duration="1706000" />
+      <workItem from="1573376088793" duration="1875000" />
+      <workItem from="1573385623556" duration="319000" />
+      <workItem from="1573386230385" duration="2003000" />
+      <workItem from="1573389266733" duration="282000" />
+      <workItem from="1573389704056" duration="4399000" />
+      <workItem from="1573402451488" duration="1161000" />
     </task>
     <servers />
   </component>
@@ -255,6 +294,19 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Codebase/Optimization/FrameDataBehaviour.cs</url>
+          <line>36</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Codebase/Optimization/FrameDataBehaviour.cs" initialLine="36">
+            <startOffsets>
+              <option value="1038" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1069" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
