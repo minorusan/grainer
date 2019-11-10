@@ -17,5 +17,9 @@ public class LevelHandlerEditor : Editor
         {
             myScript.DisableTest();
         }
+        if(GUILayout.Button("Create level assets"))
+        {
+            myScript.CreateLevelAssets();
+        }
     }
 }
