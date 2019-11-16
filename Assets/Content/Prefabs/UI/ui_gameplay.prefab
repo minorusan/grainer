@@ -290,6 +290,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textMesh: {fileID: 984613943}
+  Container: {fileID: 1998901641}
+  ShakeTime: 0.5
+  ShakeMultiplier: 5
 --- !u!114 &1998901643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4653,12 +4656,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2472f7d971d2743adaac5e1641811338, type: 3}
---- !u!224 &2142801090985299756 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 1564236494410105817, guid: 2472f7d971d2743adaac5e1641811338,
-    type: 3}
-  m_PrefabInstance: {fileID: 579146794491694325}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1712124624100266450 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2290989392309378343, guid: 2472f7d971d2743adaac5e1641811338,
@@ -4671,3 +4668,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06b1a9125e9da4c86807754e0cf4182c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!224 &2142801090985299756 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1564236494410105817, guid: 2472f7d971d2743adaac5e1641811338,
+    type: 3}
+  m_PrefabInstance: {fileID: 579146794491694325}
+  m_PrefabAsset: {fileID: 0}
