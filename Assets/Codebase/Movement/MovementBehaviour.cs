@@ -60,7 +60,14 @@ public class MovementBehaviour : DebuggableBehaviour
             if (distance < Constants.MOVEMENT_STOP_TRESHOLD)
             {
                 LeftCell(gameObject, previousPosition);
-                EnteredCell(gameObject, currentPosition);
+                if (previousPosition != nextPosition)
+                {
+                    EnteredCell(gameObject, currentPosition);
+                }
+                else
+                {
+                    print("Stumbling");
+                }
 
                 if (currentDirection != pendingDirection)
                 {
