@@ -41,6 +41,11 @@ public class ResponseBaseStructure
 public class GetItemsResponseStructure : ResponseBaseStructure
 {
     public DatabaseItem[] content;
+
+    public GetItemsResponseStructure()
+    {
+        content = new []{new DatabaseItem()};
+    }
 }
 
 [Serializable]
@@ -49,6 +54,12 @@ public class DatabaseItem
     public string _id;
     public int levelID;
     public int minTurnsCount;
+
+    public DatabaseItem()
+    {
+        levelID = 0;
+        minTurnsCount = 100;
+    }
 
     public override string ToString()
     {

@@ -10,6 +10,7 @@ public class GameOutcomeBehaviour : MonoBehaviour
     {
         if (GameplayObjectivesBehaviour.IsCompleted)
         {
+            LevelsHistory.PassLevel(LevelsHistory.GamePlayLevelID);
             OnWin.Invoke();
         }
         else

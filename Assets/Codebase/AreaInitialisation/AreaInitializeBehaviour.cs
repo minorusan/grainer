@@ -16,6 +16,11 @@ public class AreaInitializeBehaviour : MonoBehaviour
         {
             InitializeArea(DebugMap);
         }
+        else
+        {
+            InitializeArea(LevelsHistory.GetLevelMap());
+            DebugMap = LevelsHistory.GetLevelMap();
+        }
     }
 
     public void InitializeArea(Texture2D texture)

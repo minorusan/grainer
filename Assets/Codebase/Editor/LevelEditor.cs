@@ -19,9 +19,16 @@ public class LevelEditor : Editor
 //        {
 //            EditorGUILayout.Toggle("Ready to use", level.readyToUse );
 //        }
-     
-        EditorGUILayout.ObjectField("Texture", (Texture2D)AssetDatabase.LoadAssetAtPath(level.levelTexturePath, typeof(Texture2D)), typeof(Texture2D), false);
-
+        var texture = (Texture2D) AssetDatabase.LoadAssetAtPath(level.levelTexturePath, typeof(Texture2D));
+        if (level.levelTexture == null)
+        {
+            level.levelTexture = texture;
+            EditorUtility.SetDirty(level);
+        }
+        
+        level.levelTexture = texture;
+        EditorGUILayout.ObjectField("Texture", texture , typeof(Texture2D), false);
+        
         EditorGUI.EndDisabledGroup();
         
     }

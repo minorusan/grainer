@@ -70,5 +70,19 @@ namespace Crysberry.Console
             OptimizatonBehaviour.ResetOptimizationSettings();
             return $"Optimizer reset";
         }
+        
+        [CrysberryConsoleMember("passall", "Pass all levels")]
+        private static string PassAll(string[] args)
+        {
+            LevelsHistory.CurrentLevelID = 999;
+            return $"All levels opened";
+        }
+        
+        [CrysberryConsoleMember("rstlvl", "Reset level progress")]
+        private static string RstLVL(string[] args)
+        {
+            LevelsHistory.CurrentLevelID = 0;
+            return $"All levels closed";
+        }
     }
 }

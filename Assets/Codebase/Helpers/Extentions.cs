@@ -6,6 +6,12 @@ public static class Extentions
 {
     private static Vector3[] directions = {Vector3.zero, Vector3.left, Vector3.right, Vector3.forward, Vector3.back};
 
+    public static void ClearChildren(this Transform tr)
+    {
+        foreach (Transform child in tr) {
+            GameObject.Destroy(child.gameObject);
+        }
+    }
     public static string ToHexString(this Color color)
     {
         return ColorUtility.ToHtmlStringRGB(color);

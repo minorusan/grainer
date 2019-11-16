@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\olehk\.Rider2018.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\olehk\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_grainer.1151843177.00" t="ExcludeRecursive" />
-    <e p="C:\Users\olehk\Documents\_MyProjects\grainer" t="IncludeRecursive">
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -31,6 +29,9 @@
             <e p="LoadSceneComponent.cs" t="Include" />
             <e p="LocalizedTextComponent.cs" t="Include" />
             <e p="ReferencingGizmoComponent.cs" t="Include" />
+          </e>
+          <e p="Editor" t="Include">
+            <e p="LevelEditor.cs" t="Include" />
           </e>
           <e p="Entities" t="Include">
             <e p="CellComponentHolderBehaviour.cs" t="Include" />
@@ -60,6 +61,10 @@
             <e p="InputProviderBase.cs" t="Include" />
             <e p="SwipeInputProviderBehaviour.cs" t="Include" />
             <e p="ZeroingTimescaleOnEnableBehaviour.cs" t="Include" />
+          </e>
+          <e p="Levels" t="Include">
+            <e p="LevelsHistory.cs" t="Include" />
+            <e p="NextLevelBehaviour.cs" t="Include" />
           </e>
           <e p="Misc" t="Include">
             <e p="PropsCombineBehaviour.cs" t="Include" />
@@ -100,6 +105,8 @@
           </e>
           <e p="UI" t="Include">
             <e p="LevelButtonBehavior.cs" t="Include" />
+            <e p="LevelPreviewBehaviour.cs" t="Include" />
+            <e p="LevelsViewBehaviour.cs" t="Include" />
             <e p="ObjectiveFillBehaviour.cs" t="Include" />
           </e>
         </e>
@@ -107,9 +114,6 @@
           <e p="Shaders" t="Include">
             <e p="Toon.shader" t="Include" />
           </e>
-        </e>
-        <e p="Editor" t="Include">
-          <e p="LevelEditor.cs" t="Include" />
         </e>
         <e p="Libs" t="Include">
           <e p="Crysberry" t="Include">
@@ -235,14 +239,13 @@
       <e p="AudioTests.csproj" t="IncludeRecursive" />
       <e p="CrysberryAudio.csproj" t="IncludeRecursive" />
       <e p="grainer.sln" t="IncludeFlat" />
-      <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="Routines.csproj" t="IncludeRecursive" />
       <e p="RoutineTests.csproj" t="IncludeRecursive" />
-      <e p="Temp" t="ExcludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
-      </e>
+      <e p="Temp/bin" t="ExcludeRecursive" />
     </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2019.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.2/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_Grainer.154656429.00" t="ExcludeRecursive" />
   </component>
 </project>

@@ -37,6 +37,11 @@ public class OptimizatonBehaviour : MonoBehaviour
 
     private void OnEnable()
     {
+        Routiner.InvokeDelayed(InitializeCheck, 1f);
+    }
+
+    private void InitializeCheck()
+    {
         if (!OptimizationLevelGoalReached)
         {
             currentTime = 0f;
@@ -97,7 +102,7 @@ public class OptimizatonBehaviour : MonoBehaviour
                 {
                     Resources.UnloadUnusedAssets();
                 }, 1f);
-                Routiner.InvokeDelayed(OnEnable, 2f);
+                Routiner.InvokeDelayed(OnEnable, 4f);
             }
         }
         else
