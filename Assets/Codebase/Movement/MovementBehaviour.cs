@@ -5,20 +5,25 @@ using UnityEngine.Events;
 public class MovementBehaviour : DebuggableBehaviour
 {
     private Vector3 previousPosition;
+    private Vector3 nextPosition;
     private MovementDirection pendingDirection = MovementDirection.None;
     private MovementDirection currentDirection = MovementDirection.None;
 
     public static event DirectionChangedHandler DirectionChanged = delegate(GameObject sender, DirectionChangedEventArgs changedEventArgs) { };
     public event DirectionChangedHandler OwnerDirectionChanged = delegate (GameObject sender, DirectionChangedEventArgs changedEventArgs) { };
+    public event DirectionChangedHandler OwnerWillChangeDirection = delegate (GameObject sender, DirectionChangedEventArgs changedEventArgs) { };
     public static event Action<GameObject> MovementBegan = delegate (GameObject obj) { };
     public static event Action<GameObject> MovementEnded = delegate (GameObject obj) { };
     public static event CellCalbackHandler WillLeaveCell = delegate (GameObject obj, Vector3 pos) { };
     public static event CellCalbackHandler LeftCell = delegate (GameObject obj, Vector3 pos) { };
     public static event CellCalbackHandler WillEnterCell = delegate (GameObject obj, Vector3 pos) { };
     public static event CellCalbackHandler EnteredCell = delegate (GameObject obj, Vector3 pos) { };
-    public UnityEvent OnRotate;
 
-    private Vector3 nextPosition;
+    public float PercentageTillNextPosition =>
+        Extentions.InverseLerp(previousPosition, nextPosition, transform.position);
+
+    public UnityEvent OnRotate;
+    
 
     public MovementSettings MovementSettings;
 
@@ -30,9 +35,12 @@ public class MovementBehaviour : DebuggableBehaviour
     public void SetDirection(MovementDirection direction)
     {
         pendingDirection = direction;
+        if (currentDirection != direction)
+        {
+            OwnerWillChangeDirection(gameObject, new DirectionChangedEventArgs(currentDirection, direction));
+        }
         if (currentDirection == MovementDirection.None)
         {
-            
             currentDirection = pendingDirection;
             MovementBegan(gameObject);
         }

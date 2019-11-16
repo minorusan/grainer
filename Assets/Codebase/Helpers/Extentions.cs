@@ -6,6 +6,12 @@ public static class Extentions
 {
     private static Vector3[] directions = {Vector3.zero, Vector3.left, Vector3.right, Vector3.forward, Vector3.back};
 
+    public static float InverseLerp(Vector3 a, Vector3 b, Vector3 value)
+    {
+        Vector3 AB = b - a;
+        Vector3 AV = value - a;
+        return Vector3.Dot(AV, AB) / Vector3.Dot(AB, AB);
+    }
     public static void ClearChildren(this Transform tr)
     {
         foreach (Transform child in tr) {
