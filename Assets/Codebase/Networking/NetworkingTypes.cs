@@ -38,11 +38,11 @@ public class ResponseBaseStructure
 }
 
 [Serializable]
-public class GetItemsResponseStructure : ResponseBaseStructure
+public class LevelsDatabaseStructure : ResponseBaseStructure
 {
     public DatabaseItem[] content;
 
-    public GetItemsResponseStructure()
+    public LevelsDatabaseStructure()
     {
         content = new []{new DatabaseItem()};
     }
