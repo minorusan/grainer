@@ -15,7 +15,7 @@ public class TurnRemainingTimeBehaviour : MonoBehaviour
         Movement.OwnerWillChangeDirection += (sender, args) =>
         {
             var percantage = Movement.PercentageTillNextPosition;
-            if (percantage < 0.3f)
+            if (percantage < 0.7f)
             {
                 TimerGroup.gameObject.SetActive(true);
                 isWorking = true;

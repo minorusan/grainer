@@ -68,11 +68,15 @@ public class LevelsHistory
 
     public static Texture2D GetLevelMap()
     {
+        if (GamePlayLevelID <= 0)
+        {
+            return null;
+        }
         if (levels == null)
         {
             levels = Resources.LoadAll<Level>("Levels");
         }
-
+        
         return levels[GamePlayLevelID - 1].levelTexture;
     }
 

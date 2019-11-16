@@ -18,8 +18,17 @@ public class AreaInitializeBehaviour : MonoBehaviour
         }
         else
         {
-            InitializeArea(LevelsHistory.GetLevelMap());
-            DebugMap = LevelsHistory.GetLevelMap();
+            var map = LevelsHistory.GetLevelMap();
+            if (map == null)
+            {
+                DebugMode = true;
+                Start();
+            }
+            else
+            {
+                InitializeArea(LevelsHistory.GetLevelMap());
+                DebugMap = LevelsHistory.GetLevelMap();
+            }
         }
     }
 
