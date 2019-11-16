@@ -19,7 +19,6 @@ public class LevelsHistory
         }
     }
 
-
     public static int GamePlayLevelID;
 
     public static void RefreshLevelsDatabase(Action success, Action failure)
@@ -64,7 +63,7 @@ public class LevelsHistory
     public static int TurnsCountForLevel(int levelID)
     {
         var data = LevelsDatabaseStructure();
-        return data.content[levelID].minTurnsCount;
+        return data.content.First(x=>x.levelID == levelID).minTurnsCount;
     }
 
     public static Texture2D GetLevelMap()
@@ -100,11 +99,27 @@ public class LevelsHistory
         else
         {
             levelItem.minTurnsCount = turnsCount;
+            databaseItems[databaseItems.IndexOf(levelItem)] = levelItem;
         }
 
         data.content = databaseItems.ToArray();
         File.WriteAllText(PLAYER_DATA_PATH, JsonUtility.ToJson(data));
         Debug.Log($"LevelHistory::Progress saved to {PLAYER_DATA_PATH}");
+        UpdateRemoteLevelResultIfNeeded(levelID, turnsCount);
+    }
+
+    public static void UpdateRemoteLevelResultIfNeeded(int levelID, int turnsCount)
+    {
+        if (ComparePlayerLevelDataWithServer(levelID, out var compareResult) && compareResult > 1f)
+        {
+            RefreshLevelsDatabase(() =>
+            {
+                Networking.UpdateItem(levelID, turnsCount, null, null);
+            }, () =>
+            {
+               //TODO::Save player success for future 
+            });
+        }
     }
 
     private static LevelsDatabaseStructure LevelsDatabaseStructure()

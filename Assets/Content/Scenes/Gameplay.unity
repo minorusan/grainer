@@ -20952,6 +20952,7 @@ GameObject:
   - component: {fileID: 1688940328}
   - component: {fileID: 1688940329}
   - component: {fileID: 1688940330}
+  - component: {fileID: 1688940331}
   m_Layer: 0
   m_Name: ====Logic================================
   m_TagString: Untagged
@@ -21065,6 +21066,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 004a446b27bd54710aeae1d07a6ed538, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TurnsCounter: {fileID: 1688940331}
   OnWin:
     m_PersistentCalls:
       m_Calls:
@@ -21103,6 +21105,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 495ba5890c8324fa7912f15780d2f031, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1688940331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688940322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29ecf8096dded4204b6acc9593560b91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1690654432 stripped

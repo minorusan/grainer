@@ -17,5 +17,6 @@ MonoBehaviour:
   events: []
   prefabs:
   - ChanceTreshold: 1
-    Prefab: {fileID: 0}
+    Prefab: {fileID: 4529043368669277823, guid: 7be0cc16fde93414eacccf7ff5bf5372,
+      type: 3}
   IsObjective: 0
