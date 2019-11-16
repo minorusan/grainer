@@ -16,7 +16,16 @@ MonoBehaviour:
   speedCoefitient: 0
   events: []
   prefabs:
-  - {fileID: 4529043368669277823, guid: 327e80d498d54402186ac3893f33aaf8, type: 3}
-  - {fileID: 4529043368669277823, guid: b93f1721f21de405196578c2b4197144, type: 3}
-  - {fileID: 4529043368669277823, guid: 4a5826c2694964a2c9e207920a6cad4c, type: 3}
+  - ChanceTreshold: 0.602
+    Prefab: {fileID: 4529043368669277823, guid: 327e80d498d54402186ac3893f33aaf8,
+      type: 3}
+  - ChanceTreshold: 0.196
+    Prefab: {fileID: 4529043368669277823, guid: b93f1721f21de405196578c2b4197144,
+      type: 3}
+  - ChanceTreshold: 0.422
+    Prefab: {fileID: 4529043368669277823, guid: 4a5826c2694964a2c9e207920a6cad4c,
+      type: 3}
+  - ChanceTreshold: 1
+    Prefab: {fileID: 4529043368669277823, guid: 707f6ccbe96394825b438f8814f461e6,
+      type: 3}
   IsObjective: 0

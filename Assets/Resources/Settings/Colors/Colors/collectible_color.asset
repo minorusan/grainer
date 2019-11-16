@@ -21,6 +21,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b5e7c8474d2c242d6b7037821166b8df, type: 2}
   - {fileID: 11400000, guid: db5e2282b411548eaa6ba9f57b025c71, type: 2}
   prefabs:
-  - {fileID: 8866978538582802673, guid: b9cf0c6af73c04ee7a15ffbe0d4df327, type: 3}
-  - {fileID: 8866978538582802673, guid: da760216448334fa29a68b1e2668ba4f, type: 3}
+  - ChanceTreshold: 1
+    Prefab: {fileID: 8866978538582802673, guid: b9cf0c6af73c04ee7a15ffbe0d4df327,
+      type: 3}
+  - ChanceTreshold: 1
+    Prefab: {fileID: 8866978538582802673, guid: da760216448334fa29a68b1e2668ba4f,
+      type: 3}
   IsObjective: 1

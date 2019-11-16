@@ -18,7 +18,7 @@ public class LevelsHistory
             PlayerPrefs.SetInt(CURRENT_LEVEL_KEY, value);
         }
     }
-    
+
 
     public static int GamePlayLevelID;
 
@@ -55,7 +55,7 @@ public class LevelsHistory
         }
 
         var playerTurnsCount = TurnsCountForLevel(levelID);
-        compareResult = (float)playerTurnsCount / serversideLevelsData.content[levelID].minTurnsCount;
+        compareResult = (float)serversideLevelsData.content[levelID].minTurnsCount / playerTurnsCount;
         Debug.Log($"LevelsHistory::Comparing player level <{levelID}>(turns count <{playerTurnsCount}>) " +
                   $"with server level <{levelID}>(turns count <{serversideLevelsData.content[levelID].minTurnsCount}>). Result::{compareResult}");
         return true;
