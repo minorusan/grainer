@@ -11,7 +11,8 @@ public class ButtonShakeBehaviour : MonoBehaviour
         GetComponent<Button>().onClick.AddListener(() =>
         {
             transform.rotation = Quaternion.identity;
-            transform.DOShakeRotation(0.2f, Vector3.one * 7f);
+            var tweener = transform.DOShakeRotation(0.2f, Vector3.one * 7f);
+            tweener.timeScale = 1f;
         });
     }
 }
