@@ -12,7 +12,7 @@ public delegate void CellCalbackHandler(GameObject sender, Vector3 cellPosition)
 
 public enum CombinedPropDirection
 {
-    Default, Horizontal, Vertical, CornerUpLeft, CornerUpRight, CornerDownLeft, CornerDownRight, ExShaped
+    Default, Horizontal, Vertical, CornerUpLeft, CornerUpRight, CornerDownLeft, CornerDownRight, EndingDown, EndingUp, EndingLeft, EndingRight
 }
 
 public enum CellEventType

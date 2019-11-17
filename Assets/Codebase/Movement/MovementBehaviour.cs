@@ -93,7 +93,8 @@ public class MovementBehaviour : DebuggableBehaviour
             }
             else
             {
-                transform.position = Vector3.MoveTowards(currentPosition, nextPosition, MovementSettings.Speed);
+                var tile = AreaHelper.GetDefinition(currentPosition);
+                transform.position = Vector3.MoveTowards(currentPosition, nextPosition, MovementSettings.Speed * tile.SpeedCoefitient);
             }
         }
     }
