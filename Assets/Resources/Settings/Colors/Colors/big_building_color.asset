@@ -31,4 +31,7 @@ MonoBehaviour:
   - ChanceTreshold: 0.296
     Prefab: {fileID: 4529043368669277823, guid: 0ec3c5a108aec4cb79047a50902b3cb5,
       type: 3}
+  - ChanceTreshold: 0.824
+    Prefab: {fileID: 4529043368669277823, guid: ef72403344fdc4a08a28bbebe353989f,
+      type: 3}
   IsObjective: 0

@@ -22,6 +22,8 @@ public class MovementBehaviour : DebuggableBehaviour
     public float PercentageTillNextPosition =>
         Extentions.InverseLerp(previousPosition, nextPosition, transform.position);
 
+    public bool InvokesEvents;
+
     public UnityEvent OnRotate;
     
 
@@ -59,8 +61,12 @@ public class MovementBehaviour : DebuggableBehaviour
             var distance = Vector3.Distance(currentPosition, nextPosition);
             if (distance < Constants.MOVEMENT_STOP_TRESHOLD)
             {
-                LeftCell(gameObject, previousPosition);
-                if (previousPosition != nextPosition)
+                if (InvokesEvents)
+                {
+                    LeftCell(gameObject, previousPosition);
+                }
+                
+                if (InvokesEvents && previousPosition != nextPosition)
                 {
                     EnteredCell(gameObject, currentPosition);
                 }
@@ -69,7 +75,7 @@ public class MovementBehaviour : DebuggableBehaviour
                     print("Stumbling");
                 }
 
-                if (currentDirection != pendingDirection)
+                if (InvokesEvents && currentDirection != pendingDirection)
                 {
                     OnRotate.Invoke();
                     DirectionChanged(gameObject, new DirectionChangedEventArgs(currentDirection, pendingDirection));   
@@ -87,8 +93,11 @@ public class MovementBehaviour : DebuggableBehaviour
                 }
                 else
                 {
-                    WillLeaveCell(gameObject, currentPosition);
-                    WillEnterCell(gameObject, nextPosition);
+                    if (InvokesEvents)
+                    {
+                        WillLeaveCell(gameObject, currentPosition);
+                        WillEnterCell(gameObject, nextPosition);
+                    }
                 }
             }
             else

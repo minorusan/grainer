@@ -8188,7 +8188,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4899062601650160, guid: 2e992b7db39a4f542a0e1ad222200c67, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.48
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 4899062601650160, guid: 2e992b7db39a4f542a0e1ad222200c67, type: 3}
       propertyPath: m_LocalPosition.z
@@ -20899,7 +20899,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DebugMode: 0
-  DebugMap: {fileID: 2800000, guid: 60cd3029e6cd0451b86166adc71eef22, type: 3}
+  DebugMap: {fileID: 2800000, guid: 267c1000c84e8284ea7cf577045c64ca, type: 3}
   TilesHub: {fileID: 267378640}
 --- !u!114 &1688940325
 MonoBehaviour:

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c21380bf25ca4f7182c6042685a544e, type: 3}
   m_Name: collectible_enable_grain_gfx
   m_EditorClassIdentifier: 
-  Type: 1
+  Type: 0
   Delay: 0
   ComponentType: {fileID: 11400000, guid: 6af9c4fbc6f1441a89b458c115ba8168, type: 2}

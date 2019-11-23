@@ -19,4 +19,9 @@ public class GameOutcomeBehaviour : MonoBehaviour
             OnLose.Invoke();
         }
     }
+
+    public void ForceLoose()
+    {
+        OnLose.Invoke();
+    }
 }
