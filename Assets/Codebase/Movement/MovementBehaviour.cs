@@ -70,10 +70,6 @@ public class MovementBehaviour : DebuggableBehaviour
                 {
                     EnteredCell(gameObject, currentPosition);
                 }
-                else
-                {
-                    print("Stumbling");
-                }
 
                 if (InvokesEvents && currentDirection != pendingDirection)
                 {
@@ -103,7 +99,10 @@ public class MovementBehaviour : DebuggableBehaviour
             else
             {
                 var tile = AreaHelper.GetDefinition(currentPosition);
-                transform.position = Vector3.MoveTowards(currentPosition, nextPosition, MovementSettings.Speed * tile.SpeedCoefitient);
+                if (tile != null)
+                {
+                    transform.position = Vector3.MoveTowards(currentPosition, nextPosition, MovementSettings.Speed * tile.SpeedCoefitient);
+                }
             }
         }
     }

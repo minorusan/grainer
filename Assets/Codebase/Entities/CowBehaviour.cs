@@ -4,6 +4,7 @@ using Random = UnityEngine.Random;
 
 public class CowBehaviour : MonoBehaviour
 {
+    private bool invalidated;
     private MovementDirection[] directions = new[]
         {MovementDirection.Down, MovementDirection.Left, MovementDirection.Right, MovementDirection.Left};
     public MovementBehaviour MovementBehaviour;
@@ -13,17 +14,25 @@ public class CowBehaviour : MonoBehaviour
 
     public void Start()
     {
-        Move();
+        MoveIfPossible();
     }
 
-    private void Move()
+    private void OnDisable()
+    {
+        invalidated = true;
+    }
+
+    private void MoveIfPossible()
     {
         var movementDirection = Random.value > WalkChance ? MovementDirection.None : directions[Random.Range(0, directions.Length - 1)];
         var delay = Random.Range(0, MaxDelay);
         Routiner.InvokeDelayed(() =>
         {
-            MovementBehaviour.SetDirection(movementDirection);
-            Move();
+            if (!invalidated)
+            {
+                MovementBehaviour.SetDirection(movementDirection);
+                MoveIfPossible();
+            }
         }, delay);
     }
 }

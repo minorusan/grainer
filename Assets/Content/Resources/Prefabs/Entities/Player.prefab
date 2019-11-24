@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 3369373558842790361}
   - component: {fileID: 7542332038924043607}
   m_Layer: 10
-  m_Name: GameObject
+  m_Name: Rotor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
