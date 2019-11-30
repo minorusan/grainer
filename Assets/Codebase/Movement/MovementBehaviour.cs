@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Profiling;
 
 public class MovementBehaviour : DebuggableBehaviour
 {
@@ -50,7 +51,9 @@ public class MovementBehaviour : DebuggableBehaviour
 
     private void FixedUpdate()
     {
+        Profiler.BeginSample("Movement");
         MoveIfNeeded();
+        Profiler.EndSample();
     }
 
     private void MoveIfNeeded()

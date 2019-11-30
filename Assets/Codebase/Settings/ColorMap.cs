@@ -9,14 +9,37 @@ using UnityEditor;
 [CreateAssetMenu(fileName = "New color map", menuName = "Grainer/Colors/ColorMap")]
 public class ColorMap : ScriptableObject
 {
-    public static ColorMap Instance => Resources.LoadAll<ColorMap>("Settings").FirstOrDefault();
+    private static Dictionary<Color, ColorDefinition> colorToDefinitionMap = new Dictionary<Color, ColorDefinition>();
+    private static ColorMap instance;
+
+    public static ColorMap Instance
+    {
+        get
+        {
+            if (instance != null)
+            {
+                return instance;
+            }
+            else
+            {
+                instance = Resources.LoadAll<ColorMap>("Settings").FirstOrDefault();
+                return instance;
+            }
+        }
+    }
 
     [SerializeField] private ColorDefinition[] colors;
     public ColorDefinition[] Colors => colors;
 
     public bool GetDefinition(Color color, out ColorDefinition definition)
     {
+        if (colorToDefinitionMap.ContainsKey(color))
+        {
+            definition = colorToDefinitionMap[color];
+            return true;
+        }
         definition = colors.FirstOrDefault(col => col.Color.ToHexString() == color.ToHexString());
+        colorToDefinitionMap.Add(color, definition);
         return definition != null;
     }
 
