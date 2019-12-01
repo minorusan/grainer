@@ -20,7 +20,7 @@ public static class Networking
 
     public static void GetItems(Action<DatabaseItem[]> documentsCallback, Action<string> failure)
     {
-        var method = NetworkingMethods.Put<GetItemsResponseStructure>($"{NetworkingConstants.ROOT_URL}{NetworkingConstants.GET_ITEMS_ROUTE}",
+        var method = NetworkingMethods.Put<LevelsDatabaseStructure>($"{NetworkingConstants.ROOT_URL}{NetworkingConstants.GET_ITEMS_ROUTE}",
             JsonUtility.ToJson(new ResetDBRequest(100)), null, failure,
             o => documentsCallback(o.content));
         Routiner.StartCouroutine(method);
@@ -28,7 +28,7 @@ public static class Networking
 
     public static void UpdateItem(int levelID, int newMinTurns, Action<string> succes, Action<string> failure)
     {
-        var method = NetworkingMethods.Put<GetItemsResponseStructure>($"{NetworkingConstants.ROOT_URL}{NetworkingConstants.UPDATE_ITEM_ROUTE}",
+        var method = NetworkingMethods.Put<LevelsDatabaseStructure>($"{NetworkingConstants.ROOT_URL}{NetworkingConstants.UPDATE_ITEM_ROUTE}",
             JsonUtility.ToJson(new ModifyLevelRequest(levelID, newMinTurns)), succes, failure,
             null);
         Routiner.StartCouroutine(method);

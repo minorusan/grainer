@@ -30,8 +30,11 @@ public class TrailsBehaviour : MonoBehaviour
         instance.material = new Material(instance.material);
         Routiner.InvokeDelayed(() =>
         {
-            instance.transform.parent = null;
-            instance.material.DOFade(0f, FadeDuration).OnComplete(() => { Destroy(instance.gameObject); });
+            if (instance != null)//In case callback finished after object died
+            {
+                instance.transform.parent = null;
+                instance.material.DOFade(0f, FadeDuration).OnComplete(() => { Destroy(instance.gameObject); });
+            }
         }, DetachDelay);
     }
 }

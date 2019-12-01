@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1156b16a81ebd461a959747ff22c2f44, type: 3}
+  m_Name: grass_cut
+  m_EditorClassIdentifier: 
+  Group: {fileID: 0}
+  AudioClip: {fileID: 0}
+  MixerGroup: {fileID: 0}
+  UseRandom: 1
+  RandomClips:
+  - {fileID: 8300000, guid: ada218437b1c94c77bf661b68ad13eb6, type: 3}
+  - {fileID: 8300000, guid: 895ec7dd23aca4b9d94de449e22d392d, type: 3}
+  - {fileID: 8300000, guid: 03d753788f6df4048bd8e54356b4c9e5, type: 3}
+  - {fileID: 8300000, guid: c8ddd9d1022494c07877a8d8a8097727, type: 3}
+  UsesRandomPitch: 1
+  PitchVarietyMin: 0.89388776
+  PitchVarietyMax: 1.1522657
+  AutokillOnEnd: 0
+  Loops: 0
+  Volume: 0.341
+  FadesIn: 0
+  FadeInEndPercentage: 0.3
+  FadesOut: 0
+  FadeOutBeginPercentage: 0.7
+  Is3DSound: 0

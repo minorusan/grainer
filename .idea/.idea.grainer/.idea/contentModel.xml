@@ -28,6 +28,10 @@
             <e p="GameplayObjectivesBehaviour.cs" t="Include" />
             <e p="LoadSceneComponent.cs" t="Include" />
             <e p="LocalizedTextComponent.cs" t="Include" />
+            <e p="ReferencingGizmoComponent.cs" t="Include" />
+          </e>
+          <e p="Editor" t="Include">
+            <e p="LevelEditor.cs" t="Include" />
           </e>
           <e p="Entities" t="Include">
             <e p="CellComponentHolderBehaviour.cs" t="Include" />
@@ -58,6 +62,10 @@
             <e p="SwipeInputProviderBehaviour.cs" t="Include" />
             <e p="ZeroingTimescaleOnEnableBehaviour.cs" t="Include" />
           </e>
+          <e p="Levels" t="Include">
+            <e p="LevelsHistory.cs" t="Include" />
+            <e p="NextLevelBehaviour.cs" t="Include" />
+          </e>
           <e p="Misc" t="Include">
             <e p="PropsCombineBehaviour.cs" t="Include" />
             <e p="TrailsBehaviour.cs" t="Include" />
@@ -75,6 +83,13 @@
             <e p="NetworkingTypes.cs" t="Include" />
             <e p="UpdateItemBehaviour.cs" t="Include" />
           </e>
+          <e p="Optimization" t="Include">
+            <e p="AntializingBehaviour.cs" t="Include" />
+            <e p="DynamicTextureResolutionBehaviour.cs" t="Include" />
+            <e p="FrameDataBehaviour.cs" t="Include" />
+            <e p="OptimizatonBehaviour.cs" t="Include" />
+            <e p="ShadowsBehaviour.cs" t="Include" />
+          </e>
           <e p="Resources" t="Include">
             <e p="ResourceHelper.cs" t="Include" />
           </e>
@@ -85,10 +100,13 @@
             <e p="ColorDefinition.cs" t="Include" />
             <e p="ColorMap.cs" t="Include" />
             <e p="EventDefinition.cs" t="Include" />
+            <e p="Level.cs" t="Include" />
             <e p="MovementSettings.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
             <e p="LevelButtonBehavior.cs" t="Include" />
+            <e p="LevelPreviewBehaviour.cs" t="Include" />
+            <e p="LevelsViewBehaviour.cs" t="Include" />
             <e p="ObjectiveFillBehaviour.cs" t="Include" />
           </e>
         </e>

@@ -1,9 +1,19 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using System.Linq;
+using Random = UnityEngine.Random;
 #if UNITY_EDITOR
 using UnityEditor;
 
 #endif
+
+[Serializable]
+public struct PrefabCandidate
+{
+    [Range(0f, 1f)]
+    public float ChanceTreshold;
+    public GameObject Prefab;
+}
 
 [CreateAssetMenu(fileName = "New color definition", menuName = "Grainer/Colors/Color")]
 public class ColorDefinition : ScriptableObject
@@ -14,7 +24,7 @@ public class ColorDefinition : ScriptableObject
     private float speedCoefitient;
 
     [SerializeField] private EventDefinition[] events;
-    [SerializeField] private GameObject[] prefabs;
+    [SerializeField] private PrefabCandidate[] prefabs;
 
 
     public Color Color => color;
@@ -26,8 +36,27 @@ public class ColorDefinition : ScriptableObject
 
     public GameObject GetPrefab()
     {
-        return prefabs[Random.Range(0, prefabs.Length)];
+        var value = Random.value;
+        var candidates = prefabs.Where(x => x.ChanceTreshold >= value).ToArray();
+        return candidates[Random.Range(0, candidates.Length)].Prefab;
     }
+
+#if UNITY_EDITOR
+    private void OnValidate()
+    {
+        if (prefabs.Length == 1)
+        {
+            prefabs[0].ChanceTreshold = 1f;
+            EditorUtility.SetDirty(this);
+        }
+        var candidate = prefabs.FirstOrDefault(x => x.ChanceTreshold >= 1f);
+        if (candidate.Prefab == null)
+        {
+            Debug.LogError("Has to be at least one prefab with 100% chance treshold");
+        }
+    }
+#endif
+   
 
     public void InvokeEvents(GameObject cell, CellEventType type)
     {

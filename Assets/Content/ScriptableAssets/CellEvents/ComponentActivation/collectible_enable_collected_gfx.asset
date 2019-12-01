@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: collectible_enable_collected_gfx
   m_EditorClassIdentifier: 
   Type: 3
-  Delay: 0.5
+  Delay: 0.2
   ComponentType: {fileID: 11400000, guid: 6210dada2f7b541a6b36f8c7ebe228c6, type: 2}

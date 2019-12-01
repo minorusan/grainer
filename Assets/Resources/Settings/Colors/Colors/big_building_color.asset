@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e5e05d89d434c2285a98d76b560338, type: 3}
+  m_Name: big_building_color
+  m_EditorClassIdentifier: 
+  color: {r: 0.2830189, g: 0.18556428, b: 0.18556428, a: 1}
+  speedCoefitient: 0
+  events: []
+  prefabs:
+  - ChanceTreshold: 1
+    Prefab: {fileID: 4529043368669277823, guid: 28ef6f9a6c4f44163a75668ae1d0089b,
+      type: 3}
+  - ChanceTreshold: 0.909
+    Prefab: {fileID: 4529043368669277823, guid: dec334b724d2b4375b94365988affb0d,
+      type: 3}
+  - ChanceTreshold: 0.497
+    Prefab: {fileID: 4529043368669277823, guid: 5db457d4471c24721852232153a39ecb,
+      type: 3}
+  - ChanceTreshold: 0.763
+    Prefab: {fileID: 4529043368669277823, guid: 3b976fbd6ee6a474681444e114dc4436,
+      type: 3}
+  - ChanceTreshold: 0.296
+    Prefab: {fileID: 4529043368669277823, guid: 0ec3c5a108aec4cb79047a50902b3cb5,
+      type: 3}
+  - ChanceTreshold: 0.824
+    Prefab: {fileID: 4529043368669277823, guid: ef72403344fdc4a08a28bbebe353989f,
+      type: 3}
+  - ChanceTreshold: 0.709
+    Prefab: {fileID: 4529043368669277823, guid: c8522f02de1044314a4553c24bf0a1c6,
+      type: 3}
+  - ChanceTreshold: 0.574
+    Prefab: {fileID: 4529043368669277823, guid: d18143a6546ee4e4eaed7b04089009f0,
+      type: 3}
+  - ChanceTreshold: 0.756
+    Prefab: {fileID: 4529043368669277823, guid: d25b9a90bb4304564a0085efc05de860,
+      type: 3}
+  - ChanceTreshold: 0.486
+    Prefab: {fileID: 4529043368669277823, guid: e3ed96ebdfcb7408aae24a036887cdb1,
+      type: 3}
+  IsObjective: 0

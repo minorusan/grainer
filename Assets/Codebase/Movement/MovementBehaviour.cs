@@ -1,24 +1,32 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Profiling;
 
 public class MovementBehaviour : DebuggableBehaviour
 {
     private Vector3 previousPosition;
+    private Vector3 nextPosition;
     private MovementDirection pendingDirection = MovementDirection.None;
     private MovementDirection currentDirection = MovementDirection.None;
 
     public static event DirectionChangedHandler DirectionChanged = delegate(GameObject sender, DirectionChangedEventArgs changedEventArgs) { };
     public event DirectionChangedHandler OwnerDirectionChanged = delegate (GameObject sender, DirectionChangedEventArgs changedEventArgs) { };
+    public event DirectionChangedHandler OwnerWillChangeDirection = delegate (GameObject sender, DirectionChangedEventArgs changedEventArgs) { };
     public static event Action<GameObject> MovementBegan = delegate (GameObject obj) { };
     public static event Action<GameObject> MovementEnded = delegate (GameObject obj) { };
     public static event CellCalbackHandler WillLeaveCell = delegate (GameObject obj, Vector3 pos) { };
     public static event CellCalbackHandler LeftCell = delegate (GameObject obj, Vector3 pos) { };
     public static event CellCalbackHandler WillEnterCell = delegate (GameObject obj, Vector3 pos) { };
     public static event CellCalbackHandler EnteredCell = delegate (GameObject obj, Vector3 pos) { };
-    public UnityEvent OnRotate;
 
-    private Vector3 nextPosition;
+    public float PercentageTillNextPosition =>
+        Extentions.InverseLerp(previousPosition, nextPosition, transform.position);
+
+    public bool InvokesEvents;
+
+    public UnityEvent OnRotate;
+    
 
     public MovementSettings MovementSettings;
 
@@ -30,9 +38,12 @@ public class MovementBehaviour : DebuggableBehaviour
     public void SetDirection(MovementDirection direction)
     {
         pendingDirection = direction;
+        if (currentDirection != direction)
+        {
+            OwnerWillChangeDirection(gameObject, new DirectionChangedEventArgs(currentDirection, direction));
+        }
         if (currentDirection == MovementDirection.None)
         {
-            
             currentDirection = pendingDirection;
             MovementBegan(gameObject);
         }
@@ -45,16 +56,28 @@ public class MovementBehaviour : DebuggableBehaviour
 
     private void MoveIfNeeded()
     {
+        if (!GameplayTimescale.GameActive)
+        {
+            return;
+        }
+        
         if (currentDirection != MovementDirection.None)
         {
             var currentPosition = transform.position;
             var distance = Vector3.Distance(currentPosition, nextPosition);
             if (distance < Constants.MOVEMENT_STOP_TRESHOLD)
             {
-                LeftCell(gameObject, previousPosition);
-                EnteredCell(gameObject, currentPosition);
+                if (InvokesEvents)
+                {
+                    LeftCell(gameObject, previousPosition);
+                }
+                
+                if (InvokesEvents && previousPosition != nextPosition)
+                {
+                    EnteredCell(gameObject, currentPosition);
+                }
 
-                if (currentDirection != pendingDirection)
+                if (InvokesEvents && currentDirection != pendingDirection)
                 {
                     OnRotate.Invoke();
                     DirectionChanged(gameObject, new DirectionChangedEventArgs(currentDirection, pendingDirection));   
@@ -72,13 +95,20 @@ public class MovementBehaviour : DebuggableBehaviour
                 }
                 else
                 {
-                    WillLeaveCell(gameObject, currentPosition);
-                    WillEnterCell(gameObject, nextPosition);
+                    if (InvokesEvents)
+                    {
+                        WillLeaveCell(gameObject, currentPosition);
+                        WillEnterCell(gameObject, nextPosition);
+                    }
                 }
             }
             else
             {
-                transform.position = Vector3.MoveTowards(currentPosition, nextPosition, MovementSettings.Speed);
+                var tile = AreaHelper.GetDefinition(currentPosition);
+                if (tile != null)
+                {
+                    transform.position = Vector3.MoveTowards(currentPosition, nextPosition, MovementSettings.Speed * tile.SpeedCoefitient);
+                }
             }
         }
     }

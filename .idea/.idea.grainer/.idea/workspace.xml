@@ -2,47 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b32f112-e81b-4f7c-ab13-a4d426382cbc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Codebase/Levels.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Codebase/Levels/LevelsHistory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Codebase/Levels/LevelsHistory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Codebase/Levels/NextLevelBehaviour.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Codebase/Levels/NextLevelBehaviour.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Codebase/UI/LevelPreviewBehaviour.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Codebase/UI/LevelPreviewBehaviour.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Codebase/UI/LevelsViewBehaviour.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Codebase/UI/LevelsViewBehaviour.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.grainer/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.grainer/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.grainer/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.grainer/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.grainer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.grainer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Codebase/Movement/MovementBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Codebase/Movement/MovementBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Codebase/Movement/RotationBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Codebase/Movement/RotationBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_2.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_3.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Prefabs/Areas/default/default_3.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Collectibles/collectible_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Prefabs/Collectibles/collectible_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Collectibles/collectible_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Prefabs/Collectibles/collectible_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Collectibles/collectible_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Prefabs/Collectibles/collectible_3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Entrances/entrance_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Prefabs/Entrances/entrance_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Exit/exit_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Prefabs/Exit/exit_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Obstacles/obstacle_4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Prefabs/Obstacles/obstacle_4.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Particles.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Particles/collectible_particles_template.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Particles/collectible_particles_template.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Particles/ground_particles_template 1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Particles/ground_particles_template 1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Particles/ground_particles_template.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Particles/ground_particles_template.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Props/wheat_dirt/wheat_dirt_default.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Prefabs/Props/wheat_dirt/wheat_dirt_default.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Props/wheat_dirt/wheat_dirt_horizontal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Prefabs/Props/wheat_dirt/wheat_dirt_horizontal.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Props/wheat_dirt/wheat_dirt_vertical.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Prefabs/Props/wheat_dirt/wheat_dirt_vertical.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Props/wooden_fense/wooden_fence_horizontal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Prefabs/Props/wooden_fense/wooden_fence_horizontal.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/Props/wooden_fense/wooden_fence_vertical.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Prefabs/Props/wooden_fense/wooden_fence_vertical.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Prefabs/Entities/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Prefabs/Entities/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.grainer/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.grainer/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Codebase/AreaInitialisation/AreaInitializeBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Codebase/AreaInitialisation/AreaInitializeBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Codebase/Editor/LevelEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Codebase/Editor/LevelEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Codebase/Helpers/Extentions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Codebase/Helpers/Extentions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Codebase/Helpers/GameOutcomeBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Codebase/Helpers/GameOutcomeBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Codebase/Networking/NetworkingTypes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Codebase/Networking/NetworkingTypes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Codebase/Optimization/AntializingBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Codebase/Optimization/AntializingBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Codebase/Optimization/OptimizatonBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Codebase/Optimization/OptimizatonBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Codebase/Settings/Level.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Codebase/Settings/Level.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Fonts/17899 sdf.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Fonts/17899 sdf.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Levels.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Levels/Level_1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Levels/Level_1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Levels/level_2.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Levels/level_2.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Levels/level_3.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Levels/level_3.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Levels/level_4.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Levels/level_4.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Levels/level_5.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Levels/level_5.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Levels/level_6.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Levels/level_6.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/UI/level_button.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Prefabs/UI/level_button.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/UI/ui_mainmenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Prefabs/UI/ui_mainmenu.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Content/Scenes/Gameplay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Scenes/Gameplay.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Scenes/gameplay_Profiles/main camera profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Scenes/gameplay_Profiles/main camera profile.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libs/PolygonFarm/Demo/demo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/PolygonFarm/Demo/demo.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libs/PolygonFarm/Materials/polygonfarm_01_a.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/PolygonFarm/Materials/polygonfarm_01_a.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libs/PolygonFarm/Materials/polygonfarm_02_a.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/PolygonFarm/Materials/polygonfarm_02_a.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libs/PolygonFarm/Materials/polygonfarm_03_a.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/PolygonFarm/Materials/polygonfarm_03_a.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libs/PolygonFarm/Materials/polygonfarm_04_a.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/PolygonFarm/Materials/polygonfarm_04_a.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libs/PolygonFarm/Textures/circle_texture.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/PolygonFarm/Textures/circle_texture.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Settings/Colors/Color Map.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Settings/Colors/Color Map.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Settings/Colors/Colors/collectible_color.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Settings/Colors/Colors/collectible_color.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Settings/Colors/Colors/default_walkable_color.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Settings/Colors/Colors/default_walkable_color.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Scenes/main_menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Scenes/main_menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Textures/Maps/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Textures/Maps/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Textures/Maps/1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Textures/Maps/1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Textures/Maps/2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Textures/Maps/2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Textures/Maps/3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Textures/Maps/3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Textures/Maps/4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Textures/Maps/4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Textures/Maps/5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Textures/Maps/5.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Textures/Maps/6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Textures/Maps/6.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Libs/Crysberry/Console/Codebase/Core/ConsoleCommandsStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/Crysberry/Console/Codebase/Core/ConsoleCommandsStorage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Libs/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Drop Shadow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Drop Shadow.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Libs/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Libs/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,59 +66,72 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Networking/Networking.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Networking/NetworkingMethods.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Components/ReferencingGizmoComponent.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Helpers/AreaHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Networking/NetworkingTypes.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Helpers/CellCallbackBroadcastBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Networking/GetItemsBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Helpers/Extentions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Levels/NextLevelBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/AreaInitialisation/AreaInitializeBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Helpers/GameFinishedBroadcastBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/AssetsImport/MapsPostprocessor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Libs/skyb1/back.psd.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Misc/TrailsBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/AssetsImport/AssetsNameToLowerPostProcessor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Helpers/SmallTypes.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Content/Fonts/17899 sdf.asset" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Entities/LocalizableString.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Entities/LocalizableStringBase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Movement/MovementBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Content/Scenes/gameplay.unity" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Libs/Crysberry/Console/Codebase/Core/ConsoleCommandsStorage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Editor/LevelEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Networking/UpdateItemBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@1.1.0/Rider/Editor/RiderInitializer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Settings/ColorMap.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Settings/EventDefinition.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Movement/RotationBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Settings/ColorDefinition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/UI/LevelsViewBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Misc/WatchPlayerBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/CellEvents/LogCellEvent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Resources/ResourceHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Settings/Level.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Content/Shaders/Toon.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/UI/ObjectiveFillBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/CellEvents/SpawnGameObjectCellEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/UI/LevelButtonBehavior.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Input/SwipeInputProviderBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Libs/Crysberry/Routines/Codebase/Routiner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Input/InputProviderBase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/CellEvents/IncreamentObjectiveEvent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Libs/Crysberry/Audio/Codebase/Core/AudioEffectDefinition.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Libs/TSF/Shaders/tsfoutline.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Input/DesktopInputProvisionBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/CellEvents/LevelFinishedEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Libs/Crysberry/Routines/Codebase/Routiner_Enumerators.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Input/DisabeInputOnEnableBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Input/InputInitializeBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Components/ReferencingGizmoComponent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/24E3AFC4-DB90-466D-B033-228D345463EA/84/f00e0642/ShadowQuality.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Helpers/AreaHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Helpers/CellCallbackBroadcastBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Networking/GetItemsBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Helpers/Extentions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Helpers/GameFinishedBroadcastBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Optimization/OptimizatonBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Helpers/SmallTypes.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Content/Fonts/17899 sdf.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Optimization/ShadowsBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Optimization/AntializingBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Entities/LocalizableString.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Entities/LocalizableStringBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Levels/LevelsHistory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Movement/MovementBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Content/Scenes/gameplay.unity" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@1.1.0/Rider/Editor/RiderInitializer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Settings/ColorMap.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Movement/RotationBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Settings/ColorDefinition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Optimization/FrameDataBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/CellEvents/LogCellEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Resources/ResourceHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/UI/LevelPreviewBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/CellEvents/SpawnGameObjectCellEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/CellEvents/IncreamentObjectiveEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Libs/Crysberry/Audio/Codebase/Core/AudioEffectDefinition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/CellEvents/LevelFinishedEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Libs/Crysberry/Audio/Codebase/Core/Editor/AudioEffectDefinitionEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Components/LocalizedTextComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Libs/Crysberry/Audio/Codebase/Core/Editor/AudioGroupDefinitionEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Components/GameplayObjectivesBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Components/LoadSceneComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Helpers/GameOutcomeBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Input/InputInitializeBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Codebase/AssetsImport/Rules/AssetImportRule.cs" />
         <option value="$PROJECT_DIR$/Assets/Codebase/AssetsImport/AssetsImporter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Codebase/Helpers/Extentions.cs" />
         <option value="$PROJECT_DIR$/Assets/Codebase/Settings/ColorMap.cs" />
         <option value="$PROJECT_DIR$/Assets/Codebase/Input/SwipeInputProviderBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Codebase/Resources/ResourceHelper.cs" />
@@ -128,8 +151,6 @@
         <option value="$PROJECT_DIR$/Assets/Codebase/Settings/ColorDefinition.cs" />
         <option value="$PROJECT_DIR$/Assets/Codebase/CellEvents/IncreamentObjectiveEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Codebase/UI/ObjectiveFillBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Codebase/Helpers/GameOutcomeBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Codebase/AreaInitialisation/AreaInitializeBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Codebase/Helpers/AreaHelper.cs" />
         <option value="$PROJECT_DIR$/Assets/Codebase/Components/GameplayObjectivesBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Codebase/Networking/Netwoking.cs" />
@@ -137,14 +158,30 @@
         <option value="$PROJECT_DIR$/Assets/Codebase/Networking/NetworkingMethods.cs" />
         <option value="$PROJECT_DIR$/Assets/Codebase/Networking/UpdateItemBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Codebase/Networking/Networking.cs" />
-        <option value="$PROJECT_DIR$/Assets/Codebase/Networking/NetworkingTypes.cs" />
         <option value="$PROJECT_DIR$/Assets/Libs/TSF/Shaders/TSFOutline.shader" />
         <option value="$PROJECT_DIR$/Assets/Libs/TSF/Shaders/tsfoutline.shader" />
         <option value="$PROJECT_DIR$/Assets/Codebase/Movement/RotationBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Codebase/Misc/SpawnOnRotateBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Codebase/Misc/TrailsBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Codebase/Components/ReferencingGizmoComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Codebase/Helpers/OptimizatonBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Codebase/Misc/DynamicTextureResolutionBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Codebase/Movement/MovementBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Codebase/Optimization/ShadowsBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Codebase/Optimization/FrameDataBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Codebase/Optimization/AntializingBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Codebase/Optimization/OptimizatonBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Codebase/Settings/Level.cs" />
+        <option value="$PROJECT_DIR$/Assets/Codebase/Editor/LevelEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Libs/Crysberry/Console/Codebase/Core/ConsoleCommandsStorage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Codebase/UI/LevelsViewBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Codebase/Helpers/Extentions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Codebase/UI/LevelPreviewBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Codebase/AreaInitialisation/AreaInitializeBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Codebase/Helpers/GameOutcomeBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Codebase/Networking/NetworkingTypes.cs" />
+        <option value="$PROJECT_DIR$/Assets/Codebase/Levels/NextLevelBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Codebase/Levels/LevelsHistory.cs" />
       </list>
     </option>
   </component>
@@ -185,10 +222,10 @@
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="99771">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="37992">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="99771" />
+      <option name="pid" value="37992" />
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
@@ -223,7 +260,17 @@
       <workItem from="1573289661202" duration="1882000" />
       <workItem from="1573291930788" duration="2265000" />
       <workItem from="1573295311139" duration="1742000" />
-      <workItem from="1573376088793" duration="1706000" />
+      <workItem from="1573376088793" duration="1875000" />
+      <workItem from="1573385623556" duration="319000" />
+      <workItem from="1573386230385" duration="2003000" />
+      <workItem from="1573389266733" duration="282000" />
+      <workItem from="1573389704056" duration="4399000" />
+      <workItem from="1573402451488" duration="1633000" />
+      <workItem from="1573407299460" duration="607000" />
+      <workItem from="1573408057257" duration="3423000" />
+      <workItem from="1573476644652" duration="1557000" />
+      <workItem from="1573890553800" duration="1149000" />
+      <workItem from="1573891864411" duration="697000" />
     </task>
     <servers />
   </component>
