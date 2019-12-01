@@ -51,13 +51,16 @@ public class MovementBehaviour : DebuggableBehaviour
 
     private void FixedUpdate()
     {
-        Profiler.BeginSample("Movement");
         MoveIfNeeded();
-        Profiler.EndSample();
     }
 
     private void MoveIfNeeded()
     {
+        if (!GameplayTimescale.GameActive)
+        {
+            return;
+        }
+        
         if (currentDirection != MovementDirection.None)
         {
             var currentPosition = transform.position;

@@ -25,7 +25,10 @@ public class GameplayTimerBehaviour : MonoBehaviour
         {
             yield return waitForOneSeconds;
 
-            seconds++;
+            if (GameplayTimescale.GameActive)
+            {
+                seconds++;
+            }
 
             timeSpan = TimeSpan.FromSeconds(seconds);
             timerText.text = $"{timeSpan.Minutes:D2}:{timeSpan.Seconds:D2}";
