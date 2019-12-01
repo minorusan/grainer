@@ -272,8 +272,6 @@ public class LevelHandler : MonoBehaviour
         foreach (var texture in texture2DArray)
         {
                             Level asset = ScriptableObject.CreateInstance<Level>();
-                asset.minTurnsCount = 0;
-                asset.readyToUse = true;
                 asset.levelTexturePath =AssetDatabase.GetAssetPath(texture);
                var str = asset.levelTexturePath.Replace("Assets/Content/Textures/Maps/","");
                  str = str.Replace(".png","");
