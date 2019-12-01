@@ -23,12 +23,15 @@ public class WinWindowBehaviour : MonoBehaviour
         {
             turnCounter = FindObjectOfType<GameplayTurnsCounterBehaviour>();
         }
+        
+        FindObjectOfType<GameFinishedBroadcastBehaviour>().LevelCompleted.AddListener(() =>
+        {
+            var time = timer.GetTime();
+            var timeSpan = TimeSpan.FromSeconds(time);
+            timeTextMesh.text = $"{timeSpan.Minutes:D2}:{timeSpan.Seconds:D2}";
 
-        var time = timer.GetTime();
-        var timeSpan = TimeSpan.FromSeconds(time);
-        timeTextMesh.text = $"{timeSpan.Minutes:D2}:{timeSpan.Seconds:D2}";
-
-        var turnCount = turnCounter.GetCurrentTurnsCount();
-        turnsTextMesh.text = turnCount.ToString();
+            var turnCount = turnCounter.GetCurrentTurnsCount();
+            turnsTextMesh.text = turnCount.ToString();
+        });
     }
 }

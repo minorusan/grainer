@@ -21,6 +21,7 @@ public class GameFinishedBroadcastBehaviour : MonoBehaviour
     {
         if (instance != null)
         {
+            GameplayTimescale.GameActive = false;
             instance.LevelCompleted.Invoke();
         }
     }

@@ -96,6 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 32d3ef72e79064a3f9ef5ad66b727d19,
     type: 2}
   m_UseShadowmask: 1
@@ -3422,12 +3423,12 @@ PrefabInstance:
     - target: {fileID: 224891476077584804, guid: 96624f1b9eeed475481c9836b1aa8f14,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.49999237
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 224916457978575516, guid: 96624f1b9eeed475481c9836b1aa8f14,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.49999237
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 224960065808182060, guid: 96624f1b9eeed475481c9836b1aa8f14,
         type: 3}
@@ -11530,8 +11531,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 950589613}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 1
+  m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
@@ -12274,8 +12276,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 965914770}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 1
+  m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
@@ -24310,6 +24313,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1956759359}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2142011659 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1396390140259456243, guid: 7633a32435fbfec48879dcf19f02f7b0,
+    type: 3}
+  m_PrefabInstance: {fileID: 2566030671917499945}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2142011660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142011659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d7523621fb40feb2e98bf37487f76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsActive: 1
 --- !u!4 &2147361116 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4458860477529250, guid: d48088796bfe2d04381a53b0f97f9d95,
