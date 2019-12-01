@@ -23,6 +23,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e9317204788d446db8878e8bea6032aa, type: 2}
   - {fileID: 11400000, guid: 4bfb01b8b94334b8ea770517ba7f84b5, type: 2}
   - {fileID: 11400000, guid: 0e0d93261783f43df89fab713a180c30, type: 2}
+  - {fileID: 11400000, guid: 52352e90841f34056bbb889c29faabff, type: 2}
   prefabs:
   - ChanceTreshold: 1
     Prefab: {fileID: 8866978538582802673, guid: b9cf0c6af73c04ee7a15ffbe0d4df327,

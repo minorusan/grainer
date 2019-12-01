@@ -22,11 +22,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 03d753788f6df4048bd8e54356b4c9e5, type: 3}
   - {fileID: 8300000, guid: c8ddd9d1022494c07877a8d8a8097727, type: 3}
   UsesRandomPitch: 1
-  PitchVarietyMin: 0.8108108
-  PitchVarietyMax: 1.1891887
+  PitchVarietyMin: 0.89388776
+  PitchVarietyMax: 1.1522657
   AutokillOnEnd: 0
   Loops: 0
-  Volume: 0.46
+  Volume: 0.341
   FadesIn: 0
   FadeInEndPercentage: 0.3
   FadesOut: 0
