@@ -14,7 +14,7 @@ public class LevelHandler : MonoBehaviour
 
     private Thread chainCollectorThread;
     private Thread checkFinishedChainsThread;
-    
+
     private int cropCount;
     private int finishCellId;
     private int minTurns = int.MaxValue;
@@ -47,7 +47,7 @@ public class LevelHandler : MonoBehaviour
         var cellsDictionary = new Dictionary<Vector2Int, Cell>();
         Color cellColor;
         var counter = 0;
-        
+
         for (var i = 0; i < levelTexture.width; i++)
         {
             for (var j = levelTexture.height - 1; j >= 0; j--)
@@ -142,23 +142,22 @@ public class LevelHandler : MonoBehaviour
 
     private void ChainCollectorRoutine()
     {
-        
         while (chainList.Count > 0)
         {
             if (!start)
             {
                 print("ABORT. Min turns::" + minTurns);
                 return;
-                
             }
+
             var tmp = chainList.Pop();
-            if (minTurns>tmp.numberOfTurns)
+            if (minTurns > tmp.numberOfTurns)
             {
                 CheckChain(tmp);
             }
         }
-        Debug.LogError("End time: " + DateTime.Now + " MinTurns::"+minTurns);
 
+        Debug.LogError("End time: " + DateTime.Now + " MinTurns::" + minTurns);
     }
 
     private void CheckChain(Chain chain)
@@ -181,7 +180,7 @@ public class LevelHandler : MonoBehaviour
         {
             foreach (var neighborId in cells[chain.currentCellId].NeighborIDs)
             {
-                if (!chain.CheckCellInChain(neighborId)&&minTurns>chain.numberOfTurns)
+                if (!chain.CheckCellInChain(neighborId) && minTurns > chain.numberOfTurns)
                 {
                     chainList.Push(new Chain(neighborId, chain.UsedCellsHashSet, chain.UsedCellsList, cells,
                         chain.numberOfTurns));
@@ -201,8 +200,8 @@ public class LevelHandler : MonoBehaviour
                 {
                     print("ABORT. Min turns::" + minTurns);
                     return;
-                    
                 }
+
                 var chain = assembledChainList.Pop();
                 CheckAssembledChain(chain);
             }
@@ -271,16 +270,16 @@ public class LevelHandler : MonoBehaviour
     {
         foreach (var texture in texture2DArray)
         {
-                            Level asset = ScriptableObject.CreateInstance<Level>();
-                asset.levelTexturePath =AssetDatabase.GetAssetPath(texture);
-               var str = asset.levelTexturePath.Replace("Assets/Content/Textures/Maps/","");
-                 str = str.Replace(".png","");
-                 AssetDatabase.CreateAsset(asset, "Assets/Content/Levels/Level_"+str+".asset");
-                AssetDatabase.SaveAssets();
+            Level asset = ScriptableObject.CreateInstance<Level>();
+            asset.levelTexturePath = AssetDatabase.GetAssetPath(texture);
+            var str = asset.levelTexturePath.Replace("Assets/Content/Textures/Maps/", "");
+            str = str.Replace(".png", "");
+            AssetDatabase.CreateAsset(asset, "Assets/Content/Resources/Levels/Level_" + str + ".asset");
+            AssetDatabase.SaveAssets();
 
-                EditorUtility.FocusProjectWindow();
+            EditorUtility.FocusProjectWindow();
 
-                Selection.activeObject = asset;
+            Selection.activeObject = asset;
         }
     }
 }
