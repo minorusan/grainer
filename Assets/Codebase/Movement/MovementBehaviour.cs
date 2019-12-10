@@ -18,6 +18,7 @@ public class MovementBehaviour : DebuggableBehaviour
     public static event CellCalbackHandler WillLeaveCell = delegate (GameObject obj, Vector3 pos) { };
     public static event CellCalbackHandler LeftCell = delegate (GameObject obj, Vector3 pos) { };
     public static event CellCalbackHandler WillEnterCell = delegate (GameObject obj, Vector3 pos) { };
+    public static event CellCalbackHandler WillEnterObstacleCell = delegate (GameObject obj, Vector3 pos) { };
     public static event CellCalbackHandler EnteredCell = delegate (GameObject obj, Vector3 pos) { };
 
     public float PercentageTillNextPosition =>
@@ -90,6 +91,11 @@ public class MovementBehaviour : DebuggableBehaviour
                 if (!nextPosition.IsWalkable())
                 {
                     currentDirection = MovementDirection.None;
+                    if (InvokesEvents)
+                    {
+                        WillEnterObstacleCell(gameObject, currentPosition);
+                    }
+
                     nextPosition = currentPosition;
                     MovementEnded(gameObject);
                 }
