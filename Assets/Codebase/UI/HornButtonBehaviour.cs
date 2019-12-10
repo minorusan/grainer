@@ -25,6 +25,6 @@ public class HornButtonBehaviour : MonoBehaviour
         HornPlayed(player.transform.position);
         var playerScreenPosition = Camera.main.WorldToScreenPoint(player.transform.position);
         RippleEffect.SetNewRipplePosition(playerScreenPosition);
-        //Button.interactable = false;
+        Button.interactable = false;
     }
 }
