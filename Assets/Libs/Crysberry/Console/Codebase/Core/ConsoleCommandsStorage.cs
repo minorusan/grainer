@@ -1,4 +1,8 @@
 using System;
+#if UNITY_EDITOR
+using UnityEditor; 
+#endif
+
 using UnityEngine;
 
 namespace Crysberry.Console
@@ -81,7 +85,8 @@ namespace Crysberry.Console
         [CrysberryConsoleMember("rstlvl", "Reset level progress")]
         private static string RstLVL(string[] args)
         {
-            LevelsHistory.CurrentLevelID = 0;
+            
+            LevelsHistory.ClearHistory();
             return $"All levels closed";
         }
     }
