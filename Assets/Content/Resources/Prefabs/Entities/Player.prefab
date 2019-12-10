@@ -2948,7 +2948,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DestroyTime: 2
-  TimeBeforeGameOver: 5
+  TimeBeforeGameOver: 3
   FillBar: {fileID: 5077290201999376573}
   OnEndDanger:
     m_PersistentCalls:
