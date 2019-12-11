@@ -149,7 +149,9 @@ public class LevelsHistory
         return data;
     }
 
+#if UNITY_EDITOR
     [MenuItem("Grainer/Clear local data")]
+#endif
     public static void ClearHistory()
     {
         LevelsHistory.CurrentLevelID = 0;
