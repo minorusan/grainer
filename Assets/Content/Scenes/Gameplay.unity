@@ -8726,7 +8726,7 @@ MonoBehaviour:
   animationType: 1
   targetType: 11
   forcedTargetType: 0
-  autoPlay: 1
+  autoPlay: 0
   useTargetAsV3: 1
   endValueFloat: 0
   endValueV3: {x: 7, y: 11.71, z: 4.45}
@@ -20784,7 +20784,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.87000006, y: 0.034}
   m_AnchorMax: {x: 0.97300005, y: 0.20274104}
-  m_AnchoredPosition: {x: -0.049987793, y: 4.5}
+  m_AnchoredPosition: {x: -0.049926758, y: 4.5}
   m_SizeDelta: {x: -0.2999878, y: -8.100006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1168582431
@@ -29032,7 +29032,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DebugMode: 0
-  DebugMap: {fileID: 2800000, guid: 874464fc468f9fc4eb1c6609479d7507, type: 3}
+  Animation: {fileID: 519420030}
+  DebugMap: {fileID: 2800000, guid: 46483240a4f7b754581345a8e5847677, type: 3}
+  CameraOffset: {fileID: 1160003531}
   TilesHub: {fileID: 267378640}
 --- !u!114 &1688940325
 MonoBehaviour:
@@ -30401,7 +30403,7 @@ PrefabInstance:
     - target: {fileID: 224164465342976260, guid: 96624f1b9eeed475481c9836b1aa8f14,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -3.335022
+      value: -3.334961
       objectReference: {fileID: 0}
     - target: {fileID: 224326835824786116, guid: 96624f1b9eeed475481c9836b1aa8f14,
         type: 3}

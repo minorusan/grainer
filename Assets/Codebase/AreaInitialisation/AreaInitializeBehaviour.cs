@@ -1,11 +1,14 @@
 ﻿using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 
 public class AreaInitializeBehaviour : MonoBehaviour
 {
     private Texture2D currentMap;
     public bool DebugMode;
+    public CameraFieldOfViewBehaviour Animation;
     public Texture2D DebugMap;
+    public Transform CameraOffset;
     public Transform TilesHub;
 
     public Texture2D CurrentMap => currentMap;
@@ -40,6 +43,12 @@ public class AreaInitializeBehaviour : MonoBehaviour
         var colorMap = ColorMap.Instance;
         var color = Color.white;
 
+        var cameraPosition = CameraOffset.transform.position;
+        cameraPosition.x = TilesHub.transform.position.x + textureWidth * 0.5f;
+        cameraPosition.z = TilesHub.transform.position.z + textureHeight * 0.5f;
+        CameraOffset.transform.position = cameraPosition;
+        Camera.main.transform.DOMove(cameraPosition, 2f);
+        Animation.DoFieldOfView(new Vector2(textureWidth, textureHeight));
         int objectivesCount = 0;
         for (int i = 0; i < textureWidth; i++)
         {
