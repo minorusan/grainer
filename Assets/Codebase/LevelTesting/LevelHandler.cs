@@ -274,7 +274,14 @@ public class LevelHandler : MonoBehaviour
             asset.levelTexturePath = AssetDatabase.GetAssetPath(texture);
             var str = asset.levelTexturePath.Replace("Assets/Content/Textures/Maps/", "");
             str = str.Replace(".png", "");
+            if (asset.levelTexture == null)
+            {
+                asset.levelTexture = texture;
+            }
+
+            EditorUtility.SetDirty(asset);
             AssetDatabase.CreateAsset(asset, "Assets/Content/Resources/Levels/Level_" + str + ".asset");
+
             AssetDatabase.SaveAssets();
 
             EditorUtility.FocusProjectWindow();

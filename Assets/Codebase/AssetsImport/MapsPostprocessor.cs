@@ -14,6 +14,7 @@ public class MapsPostprocessor : AssetPostprocessor
             textureImporter.textureType = TextureImporterType.Default;
             textureImporter.mipmapEnabled = false;
             textureImporter.isReadable = true;
+            textureImporter.textureCompression = TextureImporterCompression.Uncompressed;
             Debug.Log($"Preprocessed {assetPath}");
         }
     }
@@ -22,23 +23,21 @@ public class MapsPostprocessor : AssetPostprocessor
     {
         if (assetPath.Contains(mapsPath))
         {
-//            var levelHandler = new LevelHandler();
-//            var levelInfo = levelHandler.GetLevelInfo(texture);
-//            if (levelInfo.IsWorker)
+//            Level asset = ScriptableObject.CreateInstance<Level>();
+//            asset.levelTexturePath = AssetDatabase.GetAssetPath(texture);
+//            var str = asset.levelTexturePath.Replace("Assets/Content/Textures/Maps/", "");
+//            str = str.Replace(".png", "");
+//           
+//            if (asset.levelTexture == null)
 //            {
-//                Level asset = ScriptableObject.CreateInstance<Level>();
-//                asset.minTurnsCount = levelInfo.MinimumTurns;
-//                asset.readyToUse = true;
-//                asset.levelTexturePath =assetPath;
-//               var str = assetPath.Replace("Assets/Content/Textures/Maps/","");
-//                 str = str.Replace(".png","");
-//                AssetDatabase.CreateAsset(asset, "Assets/Content/Levels/Level_"+str+".asset");
-//                AssetDatabase.SaveAssets();
-//
-//                EditorUtility.FocusProjectWindow();
-//
-//                Selection.activeObject = asset;
+//                asset.levelTexture = texture;
 //            }
+//
+//            EditorUtility.SetDirty(asset);
+//            AssetDatabase.CreateAsset(asset, "Assets/Content/Resources/Levels/Level_" + str + ".asset");
+//
+//            AssetDatabase.SaveAssets();
+
             //Do your stuff here
         }
     }
