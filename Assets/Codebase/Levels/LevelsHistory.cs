@@ -1,6 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+
 using UnityEngine;
 
 public class LevelsHistory
@@ -74,10 +79,17 @@ public class LevelsHistory
         }
         if (levels == null)
         {
-            levels = Resources.LoadAll<Level>("Levels");
+            levels = GetAndSortLevels();
         }
         
         return levels[GamePlayLevelID - 1].levelTexture;
+    }
+
+    private static Level[] GetAndSortLevels()
+    {
+        var allLevels = Resources.LoadAll<Level>("Levels").ToList();
+
+        return allLevels.OrderBy(x=>Convert.ToInt32(x.levelTexture.name)).ToArray();
     }
 
     public static void PassLevel(int levelID, int turnsCount = 100)
@@ -135,5 +147,14 @@ public class LevelsHistory
         }
 
         return data;
+    }
+
+#if UNITY_EDITOR
+    [MenuItem("Grainer/Clear local data")]
+#endif
+    public static void ClearHistory()
+    {
+        LevelsHistory.CurrentLevelID = 0;
+        File.Delete(PLAYER_DATA_PATH);
     }
 }
