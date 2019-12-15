@@ -280,7 +280,7 @@ public class LevelHandler : MonoBehaviour
             }
 
             EditorUtility.SetDirty(asset);
-            AssetDatabase.CreateAsset(asset, "Assets/Content/Resources/Levels/Level_" + str + ".asset");
+            AssetDatabase.CreateAsset(asset, "Assets/Content/Resources/Levels/level_" + str + ".asset");
 
             AssetDatabase.SaveAssets();
 
