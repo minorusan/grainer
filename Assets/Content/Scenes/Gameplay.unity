@@ -8626,6 +8626,7 @@ GameObject:
   - component: {fileID: 519420035}
   - component: {fileID: 519420036}
   - component: {fileID: 519420037}
+  - component: {fileID: 519420038}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -9050,6 +9051,21 @@ MonoBehaviour:
   waveFrequency: 2.6
   circleXScale: 1
   circleYScale: 1
+--- !u!114 &519420038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e24a2d764e2e4dcc866481ba8e31c56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxFieldOfView: 70
+  MinFieldOfView: 40
+  MaxTextureSize: {x: 0, y: 0}
 --- !u!4 &522444770 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4899062601650160, guid: 2e992b7db39a4f542a0e1ad222200c67,
@@ -29032,7 +29048,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DebugMode: 0
-  Animation: {fileID: 519420030}
+  Animation: {fileID: 519420038}
   DebugMap: {fileID: 2800000, guid: 46483240a4f7b754581345a8e5847677, type: 3}
   CameraOffset: {fileID: 1160003531}
   TilesHub: {fileID: 267378640}
