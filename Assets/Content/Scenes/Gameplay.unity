@@ -9065,7 +9065,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxFieldOfView: 70
   MinFieldOfView: 40
-  MaxTextureSize: {x: 0, y: 0}
+  MaxTextureSize: {x: 32, y: 32}
 --- !u!4 &522444770 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4899062601650160, guid: 2e992b7db39a4f542a0e1ad222200c67,
@@ -29049,7 +29049,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DebugMode: 0
   Animation: {fileID: 519420038}
-  DebugMap: {fileID: 2800000, guid: 46483240a4f7b754581345a8e5847677, type: 3}
+  DebugMap: {fileID: 2800000, guid: 7e8a2af8dac6630499074efcda42c6ba, type: 3}
   CameraOffset: {fileID: 1160003531}
   TilesHub: {fileID: 267378640}
 --- !u!114 &1688940325
