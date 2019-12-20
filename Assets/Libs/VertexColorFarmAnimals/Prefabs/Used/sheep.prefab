@@ -62,6 +62,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -137,7 +138,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MovementBehaviour: {fileID: 4420646983370691132}
   MaxDelay: 2
-  WalkChance: 0.725
+  AlertSign: {fileID: 0}
+  AudioEffectDefinition: {fileID: 0}
 --- !u!114 &7795260084674593566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,3 +299,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a204f7a5202a4b0daf898a36e75ff01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Meat: {fileID: 11400000, guid: b1f06eb4afe6848bebecbaa0a08fb786, type: 2}

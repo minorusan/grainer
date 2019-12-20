@@ -1,13 +1,20 @@
 ﻿using System;
+using System.Collections.Generic;
 using Crysberry.Audio;
 using Crysberry.Routines;
+using DG.Tweening;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class CowBehaviour : MonoBehaviour
 {
     private bool invalidated;
-    private float initialSpeed;
+    private List<Vector3> positions = new List<Vector3>();
+    private int currentPositionIndex = 7;
+    private bool affectedByHorn;
+    private Transform player;
+    private Tween lookAt;
+
     private MovementDirection previousDirection;
     private MovementDirection[] directions = new[]
         {MovementDirection.Down, MovementDirection.Left, MovementDirection.Right, MovementDirection.Left};
@@ -15,53 +22,88 @@ public class CowBehaviour : MonoBehaviour
     public float MaxDelay = 2;
     public GameObject AlertSign;
     public AudioEffectDefinition AudioEffectDefinition;
-    [Range(0, 1)]
-    public float WalkChance;
+  
 
     public void Start()
     {
         HornButtonBehaviour.HornPlayed += HornButtonBehaviourOnHornPlayed;
-        initialSpeed = MovementBehaviour.MovementSettings.Speed;
-        MoveIfPossible();
+        player = GameObject.FindWithTag("Player").transform;
+        var startPosition = transform.position;
+        positions.Add(startPosition + new Vector3(-1, 0f, -1));
+        positions.Add(startPosition + new Vector3(-1, 0f, 0));
+        positions.Add(startPosition + new Vector3(-1, 0f, 1));
+        positions.Add(startPosition + new Vector3(0, 0f, 1));
+        positions.Add(startPosition + new Vector3(1, 0f, 1));
+        positions.Add(startPosition + new Vector3(1, 0f, 0));
+        positions.Add(startPosition + new Vector3(1, 0f, -1));
+        positions.Add(startPosition + new Vector3(0, 0f, -1));
     }
 
     private void HornButtonBehaviourOnHornPlayed(Vector3 obj)
     {
-        if (AlertSign != null && Vector3.Distance(obj, transform.position) <= 3f)
+        if (AlertSign != null && Vector3.Distance(obj, transform.position) <= 5f)
         {
             MaxDelay = 0f;
-            MovementBehaviour.MovementSettings.Speed *= 2f;
             AlertSign.gameObject.SetActive(true);
             Routiner.InvokeDelayed(() => { AudioController.PlayAudio(AudioEffectDefinition); }, Random.Range(0f, 0.5f));
+            Routiner.InvokeDelayed(() =>
+            {
+                affectedByHorn = false; 
+                AlertSign.gameObject.SetActive(false);
+                MovementBehaviour.enabled = true;
+                MoveIfPossible();
+            }, 5f);
+            affectedByHorn = true;
+            lookAt = transform.DOLookAt(player.position, 0.1f);
+            MovementBehaviour.enabled = false;
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (!affectedByHorn)
+        {
             MoveIfPossible();
         }
+        else
+        {
+            if (!lookAt.active)
+            {
+                transform.LookAt(player);
+            }
+        }
+        
     }
 
     private void OnDisable()
     {
-        MovementBehaviour.MovementSettings.Speed = initialSpeed;
         HornButtonBehaviour.HornPlayed -= HornButtonBehaviourOnHornPlayed;
         invalidated = true;
     }
 
     private void MoveIfPossible()
     {
-        var movementDirection = Random.value > WalkChance ? MovementDirection.None : directions[Random.Range(0, directions.Length - 1)];
-        if (movementDirection == previousDirection)
+        var target = positions[currentPositionIndex];
+        if (Vector3.Distance(transform.position, target) > 0.1f)
         {
-            MoveIfPossible();
-            return;
-        }
-
-        previousDirection = movementDirection;
-        var delay = Random.Range(0, MaxDelay);
-        Routiner.InvokeDelayed(() =>
-        {
-            if (!invalidated)
+            var direction = MovementDirection.None;
+            if (Mathf.Abs(target.x - transform.position.x) < 0.1f)
             {
-                MovementBehaviour.SetDirection(movementDirection);
-                MoveIfPossible();
+                direction = target.z > transform.position.z ? MovementDirection.Up : MovementDirection.Down;
             }
-        }, delay);
+            else
+            {
+                direction = target.x > transform.position.x ? MovementDirection.Right : MovementDirection.Left;
+            }
+            MovementBehaviour.SetDirection(direction);
+        }
+        else
+        {
+            currentPositionIndex++;
+            if (currentPositionIndex >= positions.Count)
+            {
+                currentPositionIndex = 0;
+            }
+        }
     }
 }
