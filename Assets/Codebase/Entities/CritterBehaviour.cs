@@ -4,6 +4,7 @@ using Random = UnityEngine.Random;
 
 public class CritterBehaviour : MonoBehaviour
 {
+    private bool invalidated;
     private MovementDirection[] directions = new[]
         {MovementDirection.Down, MovementDirection.Left, MovementDirection.Right, MovementDirection.Left};
     public MovementBehaviour MovementBehaviour;
@@ -16,12 +17,21 @@ public class CritterBehaviour : MonoBehaviour
         Move();
     }
 
+    private void OnDisable()
+    {
+        invalidated = true;
+    }
+
     private void Move()
     {
         var movementDirection = Random.value > WalkChance ? MovementDirection.None : directions[Random.Range(0, directions.Length - 1)];
         var delay = Random.Range(0, MaxDelay);
         Routiner.InvokeDelayed(() =>
         {
+            if (invalidated)
+            {
+                return;
+            }
             MovementBehaviour.SetDirection(movementDirection);
             Move();
         }, delay);

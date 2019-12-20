@@ -12,7 +12,7 @@ public class LevelPreviewBehaviour : MonoBehaviour
     public void Init(int levelIndex)
     {
         var isActive = levelIndex <= LevelsHistory.CurrentLevelID;
-        LevelIndexText.text = isActive ? levelIndex.ToString() : "";
+        LevelIndexText.text = isActive ? (levelIndex + 1).ToString() : "";
         LoadButton.interactable = isActive;
 
         if (isActive)

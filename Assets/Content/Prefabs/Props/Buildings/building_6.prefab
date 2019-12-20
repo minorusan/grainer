@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 306feb152ad3448a59428e4a8602659a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MovementBehaviour: {fileID: 0}
+  MovementBehaviour: {fileID: 3293755932617144915}
   MaxDelay: 1
   WalkChance: 0.443
 --- !u!114 &2753649627223931212
@@ -499,6 +499,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1219506362552985711}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3293755932617144915 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4420646983370691132, guid: 223393661541e4e2c8d467afc48e593c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1219506362552985711}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2292882701151935657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d9c4eb03e58642a5a9fdbee8ee4206e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2050296158169935387
 PrefabInstance:
   m_ObjectHideFlags: 0

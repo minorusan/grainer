@@ -11,7 +11,7 @@ public class LevelsViewBehaviour : MonoBehaviour
         for (int i = 0; i < levelPrefabs.Length; i++)
         {
             var newInstance = Instantiate(Prefab, transform);
-            newInstance.Init(i + 1);
+            newInstance.Init(i);
         }
     }
 

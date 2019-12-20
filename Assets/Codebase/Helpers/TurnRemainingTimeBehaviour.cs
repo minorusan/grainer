@@ -12,16 +12,24 @@ public class TurnRemainingTimeBehaviour : MonoBehaviour
 
     private void OnEnable()
     {
-        Movement.OwnerWillChangeDirection += (sender, args) =>
-        {
-            var percantage = Movement.PercentageTillNextPosition;
-            if (percantage < 0.7f)
-            {
-                TimerGroup.gameObject.SetActive(true);
-                isWorking = true;
-            }
-        };
+        Movement.OwnerWillChangeDirection += MovementOnOwnerWillChangeDirection;
     }
+
+    private void MovementOnOwnerWillChangeDirection(GameObject sender, DirectionChangedEventArgs changedeventargs)
+    {
+        var percantage = Movement.PercentageTillNextPosition;
+        if (percantage < 0.7f)
+        {
+            TimerGroup.gameObject.SetActive(true);
+            isWorking = true;
+        }
+    }
+
+    private void OnDisable()
+    {
+        Movement.OwnerWillChangeDirection -= MovementOnOwnerWillChangeDirection;
+    }
+
     private void Update()
     {
         if (isWorking)
