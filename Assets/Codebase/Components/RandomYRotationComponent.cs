@@ -2,13 +2,11 @@
 
 public class RandomYRotationComponent : MonoBehaviour
 {
-    public float RotationMin = 0f;
-    public float RotationMax = 360f;
-    
     private void OnEnable()
     {
+        var rotations = new[] { 0, 90f, 180f, 270f, 360f};
         var euler = transform.eulerAngles;
-        euler.y = Random.Range(RotationMin, RotationMax);
+        euler.y = rotations[Random.Range(0, rotations.Length)];
         transform.eulerAngles = euler;
     }
 }

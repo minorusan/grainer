@@ -1288,6 +1288,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2045487478542899762}
     m_Modifications:
+    - target: {fileID: 1560599797449217234, guid: 2978a8311f97c44c0911bec1493e2c4d,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560599797449217234, guid: 2978a8311f97c44c0911bec1493e2c4d,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560599797449217234, guid: 2978a8311f97c44c0911bec1493e2c4d,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560599797449217234, guid: 2978a8311f97c44c0911bec1493e2c4d,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 1.04
+      objectReference: {fileID: 0}
     - target: {fileID: 6063098904787136569, guid: 2978a8311f97c44c0911bec1493e2c4d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1370,6 +1390,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 7a8b87181eb274d99bea4282e94596d0,
         type: 2}
+    - target: {fileID: 8574820720013791130, guid: 2978a8311f97c44c0911bec1493e2c4d,
+        type: 3}
+      propertyPath: Jumping
+      value: 
+      objectReference: {fileID: 2933541837463608599}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2978a8311f97c44c0911bec1493e2c4d, type: 3}
 --- !u!4 &2644149727384820034 stripped

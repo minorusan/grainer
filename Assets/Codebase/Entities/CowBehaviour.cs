@@ -21,6 +21,7 @@ public class CowBehaviour : MonoBehaviour
     public MovementBehaviour MovementBehaviour;
     public float MaxDelay = 2;
     public GameObject AlertSign;
+    public DOTweenAnimation Jumping;
     public AudioEffectDefinition AudioEffectDefinition;
   
 
@@ -67,7 +68,7 @@ public class CowBehaviour : MonoBehaviour
         }
         else
         {
-            if (!lookAt.active)
+            if (lookAt == null || !lookAt.active)
             {
                 transform.LookAt(player);
             }
@@ -84,6 +85,18 @@ public class CowBehaviour : MonoBehaviour
     private void MoveIfPossible()
     {
         var target = positions[currentPositionIndex];
+        if (!AreaHelper.IsWalkable(target))
+        {
+            affectedByHorn = true;
+            MovementBehaviour.enabled = false;
+            if (Jumping != null)
+            {
+                lookAt = transform.DOLookAt(player.position, 0.1f);
+                Destroy(Jumping);
+            }
+           
+            return;
+        }
         if (Vector3.Distance(transform.position, target) > 0.1f)
         {
             var direction = MovementDirection.None;
