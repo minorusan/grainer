@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using System.Collections.Generic;
 
 public class PropsCombineBehaviour : DebuggableBehaviour
@@ -28,8 +29,9 @@ public class PropsCombineBehaviour : DebuggableBehaviour
                 if (PropsDirections.Length <= 3)
                 {
                     break;
+                    
                 }
-
+    
                 if (props[0].Y > selfPosition.Y)
                 {
                     return CombinedPropDirection.EndingDown;
@@ -50,6 +52,7 @@ public class PropsCombineBehaviour : DebuggableBehaviour
                     return CombinedPropDirection.EndingRight;
                 }
                 break;
+                
             }
             case 2:
                 {

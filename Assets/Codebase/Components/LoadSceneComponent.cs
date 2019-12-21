@@ -6,10 +6,15 @@ using UnityEngine.SceneManagement;
 
 public class LoadSceneComponent : MonoBehaviour
 {
+    private string[] gameplaySceneNames = new[] {"gameplay", "gameplay_1"};
     public UnityEvent LoadStarted;
 
     public void LoadScene(string sceneName)
     {
+        if (sceneName.Contains("gameplay"))
+        {
+            sceneName = gameplaySceneNames[Random.Range(0, gameplaySceneNames.Length)];
+        }
         LoadStarted.Invoke();
         Routiner.StartCouroutine(LoadYourAsyncScene(sceneName));
     }

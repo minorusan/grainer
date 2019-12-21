@@ -50,6 +50,14 @@ MonoBehaviour:
   - {fileID: 8845526529903040210, guid: 22b2bb867fb83421891f9de6ba40ec56, type: 3}
   - {fileID: 489761453235562078, guid: a906cb2ad6a1c4a079a09abb163c493a, type: 3}
   - {fileID: 1322419152933755559, guid: f4e82dd45456940c4a5c166a6fbef9f9, type: 3}
+  - {fileID: 8845526529903040210, guid: 25e6b1ac9976b42e1bf25c1c635fc5eb, type: 3}
+  - {fileID: 8845526529903040210, guid: 173c5f30ecad34ca8ac9cc7a44d477bc, type: 3}
+  - {fileID: 8845526529903040210, guid: 0fffa27aaea864a8ea3cf4195d3321c3, type: 3}
+  - {fileID: 8845526529903040210, guid: bacc0253ffc2042d9b0ce5f33e6a228a, type: 3}
+  - {fileID: 8845526529903040210, guid: 1925905740b004e5da3beba8448ad98e, type: 3}
+  - {fileID: 8845526529903040210, guid: 76a38ff4e4f124db8800091fdfa99bb1, type: 3}
+  - {fileID: 8845526529903040210, guid: c68883e13ae1548dc909c241f8e9073d, type: 3}
+  - {fileID: 8845526529903040210, guid: 0a8a7189a8fd545f7adac6ddf0feaca3, type: 3}
   PropComponent: {fileID: 3714944245223136013}
 --- !u!1 &7414852562277905042
 GameObject:

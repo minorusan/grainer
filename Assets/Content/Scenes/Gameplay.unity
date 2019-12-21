@@ -29049,7 +29049,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DebugMode: 0
   Animation: {fileID: 519420038}
-  DebugMap: {fileID: 2800000, guid: 874464fc468f9fc4eb1c6609479d7507, type: 3}
+  DebugMap: {fileID: 2800000, guid: fa1569456e53b4a628b8aecf096857be, type: 3}
   CameraOffset: {fileID: 1160003531}
   TilesHub: {fileID: 267378640}
 --- !u!114 &1688940325
