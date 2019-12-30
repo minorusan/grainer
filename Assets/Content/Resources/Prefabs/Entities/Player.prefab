@@ -1662,6 +1662,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6955633867701004167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5503530454913057316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fcf50071be6c4b98a1214d790e85da8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ambient: {fileID: 8962126997919727818}
+  Music: {fileID: 0}
 --- !u!54 &7880973545512713
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1787,6 +1801,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2531891035442809834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5504868661764488680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fcf50071be6c4b98a1214d790e85da8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ambient: {fileID: 6511173858624302699}
+  Music: {fileID: 0}
 --- !u!54 &3422437355590466907
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2104,6 +2132,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &422557427326974903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5505171490085842360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fcf50071be6c4b98a1214d790e85da8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ambient: {fileID: 1915937293585133953}
+  Music: {fileID: 0}
 --- !u!54 &8761918547484908562
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2229,6 +2271,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8263719592621999652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5505245160190649976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fcf50071be6c4b98a1214d790e85da8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ambient: {fileID: 976841135309306857}
+  Music: {fileID: 0}
 --- !u!54 &4105486185787370320
 Rigidbody:
   m_ObjectHideFlags: 0

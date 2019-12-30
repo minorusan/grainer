@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using DG.Tweening;
+﻿using DG.Tweening;
 using UnityEngine;
 
 public class LerpVolumeComponent : MonoBehaviour
@@ -13,6 +10,10 @@ public class LerpVolumeComponent : MonoBehaviour
 
     public void Lerp(bool inverse)
     {
+        if (!AudioSettingsBehaviour.SoundEnabled)
+        {
+            return;
+        }
         if (source == null)
         {
             source = GetComponent<AudioSource>();
