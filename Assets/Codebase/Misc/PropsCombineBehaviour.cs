@@ -29,7 +29,6 @@ public class PropsCombineBehaviour : DebuggableBehaviour
                 if (PropsDirections.Length <= 3)
                 {
                     break;
-                    
                 }
     
                 if (props[0].Y > selfPosition.Y)
