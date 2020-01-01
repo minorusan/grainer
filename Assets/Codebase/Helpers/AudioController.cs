@@ -20,6 +20,11 @@ public class AudioController : MonoBehaviour
     
     public static bool PlayAudio(AudioEffectDefinition audioEffect)
     {
+        if (!AudioSettingsBehaviour.SoundEnabled)
+        {
+            return false;
+        }
+        
         if (instance != null)
         {
             instance.audioService.Play(audioEffect, AudioPriority.High);

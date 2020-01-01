@@ -17,11 +17,8 @@ public class LevelsHistory
 
     public static int CurrentLevelID
     {
-        get => PlayerPrefs.GetInt(CURRENT_LEVEL_KEY) + 1;
-        set
-        {
-            PlayerPrefs.SetInt(CURRENT_LEVEL_KEY, value);
-        }
+        get => PlayerPrefs.GetInt(CURRENT_LEVEL_KEY);
+        set => PlayerPrefs.SetInt(CURRENT_LEVEL_KEY, value);
     }
 
     public static int GamePlayLevelID;
@@ -32,12 +29,17 @@ public class LevelsHistory
         {
             serversideLevelsData = new LevelsDatabaseStructure {content = items};
             success?.Invoke();
+            File.WriteAllText(PLAYER_DATA_PATH, JsonUtility.ToJson(serversideLevelsData));
+#if UNITY_EDITOR
+            File.WriteAllText(AssetDatabase.GetAssetPath(Resources.Load<TextAsset>("defaultlevelsdata")),
+                JsonUtility.ToJson(serversideLevelsData));
+#endif
         }), (string failureFromServer)=> { failure?.Invoke(); });
     }
 
     public static bool ComparePlayerLevelDataWithServer(int levelID, out float compareResult)
     {
-        if (levelID > CurrentLevelID - 1)
+        if (levelID > CurrentLevelID)
         {
             compareResult = 0f;
             Debug.Log("LevelsHistory::Will not compare to level not yet passed or opened");
@@ -73,16 +75,12 @@ public class LevelsHistory
 
     public static Texture2D GetLevelMap()
     {
-        if (GamePlayLevelID <= 0)
-        {
-            return null;
-        }
         if (levels == null)
         {
             levels = GetAndSortLevels();
         }
         
-        return levels[GamePlayLevelID - 1].levelTexture;
+        return levels[GamePlayLevelID].levelTexture;
     }
 
     private static Level[] GetAndSortLevels()
@@ -96,7 +94,7 @@ public class LevelsHistory
     {
         if (levelID >= CurrentLevelID)
         {
-            CurrentLevelID = levelID;
+            CurrentLevelID = levelID + 1;
         }
         
         UpdatePlayerData(levelID, turnsCount);
@@ -144,6 +142,11 @@ public class LevelsHistory
         if (File.Exists(PLAYER_DATA_PATH))
         {
             data = JsonUtility.FromJson<LevelsDatabaseStructure>(File.ReadAllText(PLAYER_DATA_PATH));
+        }
+        else
+        {
+            data = JsonUtility.FromJson<LevelsDatabaseStructure>(Resources.Load<TextAsset>("defaultlevelsdata")
+                .text);
         }
 
         return data;

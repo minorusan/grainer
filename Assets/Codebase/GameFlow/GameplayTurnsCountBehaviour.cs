@@ -7,10 +7,15 @@ public class GameplayTurnsCountBehaviour : MonoBehaviour
     private MovementDirection previous = MovementDirection.None;
 
     public static event Action<int> PlayerTurnsCountChanged = delegate(int i) {  }; 
+    public int CurrentTurnsLeftCount { get; private set; }
     public int CurrentTurnsCount { get; private set; }
 
     private void OnEnable()
     {
+        var min = LevelsHistory.TurnsCountForLevel(LevelsHistory.GamePlayLevelID);
+
+        CurrentTurnsLeftCount = Mathf.RoundToInt(min * 1.2f);
+        PlayerTurnsCountChanged(CurrentTurnsLeftCount);
         Routiner.InvokeNextFrame(() =>
         {
             GameObject.FindWithTag("Player").GetComponent<MovementBehaviour>().OwnerDirectionChanged +=
@@ -18,10 +23,15 @@ public class GameplayTurnsCountBehaviour : MonoBehaviour
                 {
                     if (previous != args.Current)
                     {
+                        CurrentTurnsLeftCount--;
                         CurrentTurnsCount++;
-                        PlayerTurnsCountChanged(CurrentTurnsCount);
-                        Debug.Log($"GameplayTurnsCountBehaviour::Current turns count is {CurrentTurnsCount}. Previous {previous}, current {args.Current}");
+                        PlayerTurnsCountChanged(CurrentTurnsLeftCount);
+                        Debug.Log($"GameplayTurnsCountBehaviour::Current turns count is {CurrentTurnsLeftCount}. Previous {previous}, current {args.Current}");
                         previous = args.Current;
+                        if (CurrentTurnsLeftCount < 0)
+                        {
+                            FindObjectOfType<DestroyTimerBehaviour>().ForceDestroy();
+                        }
                     }
                 };
         });

@@ -10,7 +10,7 @@ public class WinWindowBehaviour : MonoBehaviour
     [SerializeField] private TextMeshProUGUI turnsTextMesh;
     [SerializeField] private GameObject[] stars;
     private GameplayTimerBehaviour timer;
-    private GameplayTurnsCounterBehaviour turnCounter;
+    private GameplayTurnsCountBehaviour turnCounter;
 
     private void OnEnable()
     {
@@ -21,7 +21,7 @@ public class WinWindowBehaviour : MonoBehaviour
 
         if (turnCounter == null)
         {
-            turnCounter = FindObjectOfType<GameplayTurnsCounterBehaviour>();
+            turnCounter = FindObjectOfType<GameplayTurnsCountBehaviour>();
         }
         
         FindObjectOfType<GameFinishedBroadcastBehaviour>().LevelCompleted.AddListener(() =>
@@ -30,7 +30,7 @@ public class WinWindowBehaviour : MonoBehaviour
             var timeSpan = TimeSpan.FromSeconds(time);
             timeTextMesh.text = $"{timeSpan.Minutes:D2}:{timeSpan.Seconds:D2}";
 
-            var turnCount = turnCounter.GetCurrentTurnsCount();
+            var turnCount = turnCounter.CurrentTurnsCount;
             turnsTextMesh.text = turnCount.ToString();
         });
     }

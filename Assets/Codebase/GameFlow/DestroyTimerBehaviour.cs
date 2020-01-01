@@ -8,7 +8,8 @@ public class DestroyTimerBehaviour : MonoBehaviour
 {
     private bool isTriggered;
     private float triggeredTimer;
-    
+
+    private bool invalidated;
     public float DestroyTime = 2f;
     public float TimeBeforeGameOver = 1f;
     public Image FillBar;
@@ -20,6 +21,13 @@ public class DestroyTimerBehaviour : MonoBehaviour
     {
         MovementBehaviour.WillEnterObstacleCell += OnWillEnterObstacle;
         MovementBehaviour.WillLeaveCell += MovementBehaviourOnWillLeaveCell;
+        GameOutcomeBehaviour.OnLoose += GameOutcomeBehaviourOnOnLoose;
+    }
+
+    private void GameOutcomeBehaviourOnOnLoose()
+    {
+        GameplayTimescale.GameActive = false;
+        OnDestroyed.Invoke();
     }
 
     private void Update()
@@ -35,7 +43,11 @@ public class DestroyTimerBehaviour : MonoBehaviour
                 OnDestroyed.Invoke();
                 Routiner.InvokeDelayed(() =>
                 {
-                    FindObjectOfType<GameOutcomeBehaviour>().ForceLoose();
+                    if (!invalidated)
+                    {
+                        FindObjectOfType<GameOutcomeBehaviour>().ForceLoose();
+                    }
+                   
                 }, TimeBeforeGameOver);
             }
         }
@@ -43,6 +55,8 @@ public class DestroyTimerBehaviour : MonoBehaviour
 
     private void OnDisable()
     {
+        invalidated = true;
+        GameOutcomeBehaviour.OnLoose -= GameOutcomeBehaviourOnOnLoose;
         MovementBehaviour.WillEnterObstacleCell -= OnWillEnterObstacle;
         MovementBehaviour.WillLeaveCell -= MovementBehaviourOnWillLeaveCell;
     }
@@ -62,5 +76,15 @@ public class DestroyTimerBehaviour : MonoBehaviour
         isTriggered = true;
         OnDanger.Invoke();
         Debug.Log("Triggered");
+    }
+
+    public void ForceDestroy()
+    {
+        GameplayTimescale.GameActive = false;
+        OnDestroyed.Invoke();
+        Routiner.InvokeDelayed(() =>
+        {
+            FindObjectOfType<GameOutcomeBehaviour>().ForceLoose();
+        }, TimeBeforeGameOver);
     }
 }

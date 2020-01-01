@@ -12,9 +12,15 @@ public class EngineAudioBehaviour : MonoBehaviour
     public AudioSource ActiveEngineSource;
     public AudioSource IdleEngineSource;
     public AudioEffectDefinition AccelerateSoundEffect;
-    
+
     void Start()
     {
+        if (!AudioSettingsBehaviour.SoundEnabled)
+        {
+            ActiveEngineSource.enabled = false;
+            IdleEngineSource.enabled = false;
+            return;
+        }
         MovementBehaviour.MovementBegan += MovementBehaviourOnMovementBegan;
         MovementBehaviour.MovementEnded += MovementBehaviourOnMovementEnded;
     }

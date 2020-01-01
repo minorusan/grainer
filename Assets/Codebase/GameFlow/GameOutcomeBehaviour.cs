@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.Events;
 
 public class GameOutcomeBehaviour : MonoBehaviour
@@ -6,6 +7,7 @@ public class GameOutcomeBehaviour : MonoBehaviour
     public GameplayTurnsCountBehaviour TurnsCounter;
     public UnityEvent OnWin;
     public UnityEvent OnLose;
+    public static event Action OnLoose = delegate {  };
 
     public void Check()
     {
