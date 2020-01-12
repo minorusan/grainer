@@ -8,12 +8,18 @@ public class GameOutcomeBehaviour : MonoBehaviour
     public UnityEvent OnWin;
     public UnityEvent OnLose;
     public static event Action OnLoose = delegate {  };
+    public static bool IsChampion;
+
+    private void OnEnable()
+    {
+        IsChampion = false;
+    }
 
     public void Check()
     {
         if (GameplayObjectivesBehaviour.IsCompleted)
         {
-            LevelsHistory.PassLevel(LevelsHistory.GamePlayLevelID, TurnsCounter.CurrentTurnsCount);
+            IsChampion = LevelsHistory.PassLevel(LevelsHistory.GamePlayLevelID, TurnsCounter.CurrentTurnsCount);
             OnWin.Invoke();
         }
         else
@@ -25,5 +31,10 @@ public class GameOutcomeBehaviour : MonoBehaviour
     public void ForceLoose()
     {
         OnLose.Invoke();
+    }
+    
+    public void ForceWin()
+    {
+        OnWin.Invoke();
     }
 }

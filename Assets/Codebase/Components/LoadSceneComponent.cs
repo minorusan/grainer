@@ -13,6 +13,11 @@ public class LoadSceneComponent : MonoBehaviour
     {
         if (sceneName.Contains("gameplay"))
         {
+            if (LevelsHistory.GamePlayLevelID >= 50)
+            {
+                LoadScene("main_menu");
+                return;
+            }
             sceneName = gameplaySceneNames[Random.Range(0, gameplaySceneNames.Length)];
         }
         LoadStarted.Invoke();

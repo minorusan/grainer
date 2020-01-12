@@ -8,7 +8,10 @@ public class WatchPlayerBehaviour : MonoBehaviour
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        transform.LookAt(player.transform.position);
+        if (player != null)
+        {
+            transform.LookAt(player.transform.position);
+        }
     }
 
     private void Update()

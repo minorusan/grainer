@@ -62,7 +62,15 @@ public class AreaInitializeBehaviour : MonoBehaviour
                         objectivesCount++;
                     }
                     var prefab = definition.GetPrefab();
+                    
                     var tile = Instantiate(prefab, TilesHub);
+
+                    var setMaterialAsChessboardBehaviour = tile.GetComponent<SetMaterialAsChessboardBehaviour>();
+                    if (setMaterialAsChessboardBehaviour != null)
+                    {
+                        setMaterialAsChessboardBehaviour.SetMaterial(i, j);
+                    }
+                    
                     tile.transform.localPosition = new Vector3(i, 0f, j);
                 }
                 else

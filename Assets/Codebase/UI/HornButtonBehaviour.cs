@@ -13,6 +13,8 @@ public class HornButtonBehaviour : MonoBehaviour
     
     private void Start()
     {
+        gameObject.SetActive(false);
+        return;
         Button = GetComponent<Button>();
         RippleEffect = FindObjectOfType<RippleEffect>();
         Button.onClick.AddListener(PlayHorn);

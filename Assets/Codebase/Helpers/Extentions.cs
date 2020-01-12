@@ -47,4 +47,28 @@ public static class Extentions
     {
         return AreaHelper.GetDefinition(position);
     }
+
+    public static MovementDirection ToDirection(this Vector3 moveDirection)
+    {
+        var direction = moveDirection.normalized;
+        if (direction == Vector3.back)
+        {
+            return MovementDirection.Down;
+        }
+        if (direction == Vector3.forward)
+        {
+            return MovementDirection.Up;
+        }
+        if (direction == Vector3.left)
+        {
+            return MovementDirection.Left;
+        }
+        if (direction == Vector3.right)
+        {
+            return MovementDirection.Right;
+        }
+
+        return MovementDirection.None;
+    }
+    
 }

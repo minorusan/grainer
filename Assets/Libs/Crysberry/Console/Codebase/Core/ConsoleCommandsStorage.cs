@@ -89,5 +89,12 @@ namespace Crysberry.Console
             LevelsHistory.ClearHistory();
             return $"All levels closed";
         }
+        
+        [CrysberryConsoleMember("win", "Win current level")]
+        private static string WinLVL(string[] args)
+        {
+            GameObject.FindObjectOfType<GameOutcomeBehaviour>().ForceWin();
+            return $"Win current level";
+        }
     }
 }

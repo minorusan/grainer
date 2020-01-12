@@ -83,6 +83,24 @@ public static class AreaHelper
         return null;
     }
 
+    public static Vector3 NearestWalkablePosition(Vector3 position)
+    {
+        var neighbours = new[]
+        {
+            position + Vector3.back, position + Vector3.forward, position + Vector3.left, position + Vector3.right
+        };
+
+        foreach (var neighbour in neighbours)
+        {
+            if (neighbour.IsWalkable())
+            {
+                return neighbour;
+            }
+        }
+        Debug.LogError("No walkable cell at the start");
+        return Vector3.zero;
+    }
+
     public static bool IsWalkable(Vector3 position)
     {
         if (blockedCells.Contains(position.ToPosition()))

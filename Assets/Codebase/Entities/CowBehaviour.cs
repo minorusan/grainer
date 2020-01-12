@@ -73,7 +73,6 @@ public class CowBehaviour : MonoBehaviour
                 transform.LookAt(player);
             }
         }
-        
     }
 
     private void OnDisable()
