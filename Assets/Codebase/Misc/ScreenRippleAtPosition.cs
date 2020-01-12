@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using WaterRippleForScreens;
 
 public class ScreenRippleAtPosition : MonoBehaviour
 {
@@ -7,6 +6,6 @@ public class ScreenRippleAtPosition : MonoBehaviour
 
     public void Ripple()
     {
-        FindObjectOfType<RippleEffect>().SetNewRipplePosition(RippleLocation.transform.position);
+        //FindObjectOfType<RippleEffect>().SetNewRipplePosition(RippleLocation.transform.position);
     }
 }

@@ -268,6 +268,7 @@ public class LevelHandler : MonoBehaviour
 
     public void CreateLevelAssets()
     {
+#if UNITY_EDITOR
         foreach (var texture in texture2DArray)
         {
             Level asset = ScriptableObject.CreateInstance<Level>();
@@ -287,7 +288,8 @@ public class LevelHandler : MonoBehaviour
             EditorUtility.FocusProjectWindow();
 
             Selection.activeObject = asset;
-        }
+        } 
+#endif
     }
 }
 
