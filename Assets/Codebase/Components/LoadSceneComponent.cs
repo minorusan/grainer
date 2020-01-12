@@ -11,6 +11,17 @@ public class LoadSceneComponent : MonoBehaviour
 
     public void LoadScene(string sceneName)
     {
+#if UNITY_EDITOR
+        var area = FindObjectOfType<AreaInitializeBehaviour>();
+        if (area != null && area.DebugMode)
+        {
+            sceneName = SceneManager.GetActiveScene().name;
+            LoadStarted.Invoke();
+            Routiner.StartCouroutine(LoadYourAsyncScene(sceneName));
+            return;
+        }
+#endif
+       
         if (sceneName.Contains("gameplay"))
         {
             if (LevelsHistory.GamePlayLevelID >= 50)

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: level_32
   m_EditorClassIdentifier: 
   levelTexture: {fileID: 2800000, guid: 6e7f665e062b7784b9a230fc6e2eeb5e, type: 3}
-  levelTexturePath: Assets/Content/Textures/Maps/32.png
+  levelTexturePath: Assets/Content/Resources/Textures/Maps/32.png

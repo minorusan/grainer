@@ -96,6 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -150,6 +151,57 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   texture2D: {fileID: 2800000, guid: 3c69f89cc69e44c8b9b1bb3bebcc4bc7, type: 3}
+  texture2DArray:
+  - {fileID: 2800000, guid: 267c1000c84e8284ea7cf577045c64ca, type: 3}
+  - {fileID: 2800000, guid: 56d7e16cd9d3fed498db38ff7145e927, type: 3}
+  - {fileID: 2800000, guid: 0f184ef08eac16941953b481d095f466, type: 3}
+  - {fileID: 2800000, guid: 71306d47177d59241901d5a0dfa67b9d, type: 3}
+  - {fileID: 2800000, guid: 46483240a4f7b754581345a8e5847677, type: 3}
+  - {fileID: 2800000, guid: 9e2c45be4f7aad744aeb551aa38aed2a, type: 3}
+  - {fileID: 2800000, guid: 867cf6b0797ecc24aa92d6ce1275f821, type: 3}
+  - {fileID: 2800000, guid: da133611d8d4ec04090a22598399096b, type: 3}
+  - {fileID: 2800000, guid: 7fe56a68646263d4e9af3a2673e1857b, type: 3}
+  - {fileID: 2800000, guid: 1797963b1feaedc4da4613b76d131949, type: 3}
+  - {fileID: 2800000, guid: bcb1ea77df1a01c43896a9989125b310, type: 3}
+  - {fileID: 2800000, guid: 984021dd63d83dd47b0bb85801a7bf12, type: 3}
+  - {fileID: 2800000, guid: 36aee0ef86b10214bbf16cdcf0c69b53, type: 3}
+  - {fileID: 2800000, guid: d7fdd38fbe9b36744b4e10abd909dc04, type: 3}
+  - {fileID: 2800000, guid: 84c23c9494821434581a496b8fe209e5, type: 3}
+  - {fileID: 2800000, guid: ce4a62ddd643b9a4f99bfe545fe9b6fe, type: 3}
+  - {fileID: 2800000, guid: 75f1f33a308bd214da7d50b9c2fdc550, type: 3}
+  - {fileID: 2800000, guid: 7549a39abf0fdac408ecdbc8dc7bac71, type: 3}
+  - {fileID: 2800000, guid: d81f2c4d5ddff434181f7e4601f8a7e5, type: 3}
+  - {fileID: 2800000, guid: 654accbef6a94e449b742204760204b9, type: 3}
+  - {fileID: 2800000, guid: 2e5375c54582eee4cb683197abc54416, type: 3}
+  - {fileID: 2800000, guid: 60ce325833495fe4eb61da702f75da78, type: 3}
+  - {fileID: 2800000, guid: abe9be6a146ce8a4f844e59b93bb554d, type: 3}
+  - {fileID: 2800000, guid: 347aa584418aa284885a0bf917b2be0a, type: 3}
+  - {fileID: 2800000, guid: 7e8a2af8dac6630499074efcda42c6ba, type: 3}
+  - {fileID: 2800000, guid: 6e7f665e062b7784b9a230fc6e2eeb5e, type: 3}
+  - {fileID: 2800000, guid: 5308b48130905694c8d30279350d44b5, type: 3}
+  - {fileID: 2800000, guid: 7421842658dd9c640ad9458a91490b27, type: 3}
+  - {fileID: 2800000, guid: 3965490c302cf0641bd40fc5f8ab7015, type: 3}
+  - {fileID: 2800000, guid: e5e1046d53cf9754ba22f9220c5dd3cc, type: 3}
+  - {fileID: 2800000, guid: 9b4e7b7b336e8164488ea733d6888ff0, type: 3}
+  - {fileID: 2800000, guid: d9c11424e37b7924e9f2a7715343e014, type: 3}
+  - {fileID: 2800000, guid: cb29b8b8f58a83040905e53d3802e453, type: 3}
+  - {fileID: 2800000, guid: 874464fc468f9fc4eb1c6609479d7507, type: 3}
+  - {fileID: 2800000, guid: ccdf2d9b43cddfe46a70e81d2b0532cf, type: 3}
+  - {fileID: 2800000, guid: 33af99298b36a7747b8dd66ff87d2dd1, type: 3}
+  - {fileID: 2800000, guid: 7eb1e926392ab6340b36e6d4b5c7f13b, type: 3}
+  - {fileID: 2800000, guid: 5a4264c38c5701f4a9bf777a794ddd6b, type: 3}
+  - {fileID: 2800000, guid: 8f637158dffebb943ae34491a0dfac3e, type: 3}
+  - {fileID: 2800000, guid: 8343f98923a6948469d409a9c206ead2, type: 3}
+  - {fileID: 2800000, guid: a5a9b52be5b85dc4489d918dee7c4356, type: 3}
+  - {fileID: 2800000, guid: e68d085d02c47a6418f11261f651e7cb, type: 3}
+  - {fileID: 2800000, guid: 7aefdd9603a4d0a419df0ab1fd3a9479, type: 3}
+  - {fileID: 2800000, guid: c0e65630f9af346439a7ce8929ff13c1, type: 3}
+  - {fileID: 2800000, guid: 7169449045749df4a82120a114a99fe4, type: 3}
+  - {fileID: 2800000, guid: 4cfa09041ff22dc429e40780a6435cd5, type: 3}
+  - {fileID: 2800000, guid: 19120afcf02e1ec4da231db47ccdabe5, type: 3}
+  - {fileID: 2800000, guid: 5d74cfc8a44ae5345a24b9b901a39166, type: 3}
+  - {fileID: 2800000, guid: 3d9c9c9f81982ee4b83d74685ccb65db, type: 3}
+  - {fileID: 2800000, guid: 88bf52ac562c8e145bc2e1a078e6f9e4, type: 3}
 --- !u!4 &393640839
 Transform:
   m_ObjectHideFlags: 0

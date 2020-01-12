@@ -16,12 +16,13 @@ public class GameplayTurnsCountBehaviour : MonoBehaviour
 
         CurrentTurnsLeftCount = Mathf.RoundToInt(min * 1.2f);
         PlayerTurnsCountChanged(CurrentTurnsLeftCount);
+        var area = FindObjectOfType<AreaInitializeBehaviour>();
         Routiner.InvokeNextFrame(() =>
         {
             GameObject.FindWithTag("Player").GetComponent<MovementBehaviour>().OwnerDirectionChanged +=
                 (sender, args) =>
                 {
-                    if (previous != args.Current)
+                    if (previous != args.Current && !area.DebugMode)
                     {
                         CurrentTurnsLeftCount--;
                         CurrentTurnsCount++;

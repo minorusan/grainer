@@ -21,5 +21,11 @@ public class LevelHandlerEditor : Editor
         {
             myScript.CreateLevelAssets();
         }
+        
+        if(GUILayout.Button("Populate array from Maps"))
+        {
+            myScript.texture2DArray = Resources.LoadAll<Texture2D>("Textures/Maps");
+            EditorUtility.SetDirty(target);
+        }
     }
 }

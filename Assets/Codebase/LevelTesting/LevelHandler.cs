@@ -22,8 +22,8 @@ public class LevelHandler : MonoBehaviour
 
     private bool start;
     private DateTime startTime;
-    [SerializeField] private Texture2D texture2D;
-    [SerializeField] private Texture2D[] texture2DArray;
+    [SerializeField] private Texture2D texture2D; 
+    public Texture2D[] texture2DArray;
 
     public void DisableTest()
     {
@@ -272,7 +272,7 @@ public class LevelHandler : MonoBehaviour
         {
             Level asset = ScriptableObject.CreateInstance<Level>();
             asset.levelTexturePath = AssetDatabase.GetAssetPath(texture);
-            var str = asset.levelTexturePath.Replace("Assets/Content/Textures/Maps/", "");
+            var str = asset.levelTexturePath.Replace("Assets/Content/Resources/Textures/Maps/", "");
             str = str.Replace(".png", "");
             if (asset.levelTexture == null)
             {
