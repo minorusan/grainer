@@ -90,17 +90,17 @@ public class LevelsHistory
         return allLevels.OrderBy(x=>Convert.ToInt32(x.levelTexture.name)).ToArray();
     }
 
-    public static void PassLevel(int levelID, int turnsCount = 100)
+    public static bool PassLevel(int levelID, int turnsCount = 100)
     {
         if (levelID >= CurrentLevelID)
         {
             CurrentLevelID = levelID + 1;
         }
         
-        UpdatePlayerData(levelID, turnsCount);
+        return UpdatePlayerData(levelID, turnsCount);
     }
 
-    private static void UpdatePlayerData(int levelID, int turnsCount = 100)
+    private static bool UpdatePlayerData(int levelID, int turnsCount = 100)
     {
         var data = LevelsDatabaseStructure();
 
@@ -119,10 +119,10 @@ public class LevelsHistory
         data.content = databaseItems.ToArray();
         File.WriteAllText(PLAYER_DATA_PATH, JsonUtility.ToJson(data));
         Debug.Log($"LevelHistory::Progress saved to {PLAYER_DATA_PATH}");
-        UpdateRemoteLevelResultIfNeeded(levelID, turnsCount);
+        return UpdateRemoteLevelResultIfNeeded(levelID, turnsCount);
     }
 
-    public static void UpdateRemoteLevelResultIfNeeded(int levelID, int turnsCount)
+    public static bool UpdateRemoteLevelResultIfNeeded(int levelID, int turnsCount)
     {
         if (ComparePlayerLevelDataWithServer(levelID, out var compareResult) && compareResult > 1f)
         {
@@ -133,7 +133,10 @@ public class LevelsHistory
             {
                //TODO::Save player success for future 
             });
+            return true;
         }
+
+        return false;
     }
 
     private static LevelsDatabaseStructure LevelsDatabaseStructure()

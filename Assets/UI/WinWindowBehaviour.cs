@@ -9,6 +9,7 @@ public class WinWindowBehaviour : MonoBehaviour
     [SerializeField] private TextMeshProUGUI timeTextMesh;
     [SerializeField] private TextMeshProUGUI turnsTextMesh;
     [SerializeField] private GameObject[] stars;
+    public GameObject[] ChampionGroup;
     private GameplayTimerBehaviour timer;
     private GameplayTurnsCountBehaviour turnCounter;
 
@@ -23,6 +24,11 @@ public class WinWindowBehaviour : MonoBehaviour
         {
             turnCounter = FindObjectOfType<GameplayTurnsCountBehaviour>();
         }
+
+        foreach (var obj in ChampionGroup)
+        {
+            obj.SetActive(GameOutcomeBehaviour.IsChampion);
+        }
         
         FindObjectOfType<GameFinishedBroadcastBehaviour>().LevelCompleted.AddListener(() =>
         {
@@ -32,6 +38,10 @@ public class WinWindowBehaviour : MonoBehaviour
 
             var turnCount = turnCounter.CurrentTurnsCount;
             turnsTextMesh.text = turnCount.ToString();
+            foreach (var obj in ChampionGroup)
+            {
+                obj.SetActive(GameOutcomeBehaviour.IsChampion);
+            }
         });
     }
 }

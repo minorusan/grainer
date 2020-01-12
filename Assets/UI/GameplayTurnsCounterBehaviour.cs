@@ -24,7 +24,7 @@ public class GameplayTurnsCounterBehaviour : MonoBehaviour
         Container.transform.rotation = Quaternion.identity;
         Container.transform.DOShakeRotation(ShakeTime, Vector3.one * ShakeMultiplier);
         currentTurnsCount = count;
-        textMesh.text = currentTurnsCount.ToString();
+        textMesh.text = currentTurnsCount >= 0 ? currentTurnsCount.ToString() : "x_x";
     }
 
     private void OnDisable()

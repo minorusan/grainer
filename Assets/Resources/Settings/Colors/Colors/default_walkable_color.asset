@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: default_walkable_color
   m_EditorClassIdentifier: 
   color: {r: 1, g: 1, b: 1, a: 1}
-  speedCoefitient: 1
+  speedCoefitient: 2
   events:
   - {fileID: 11400000, guid: 22763f3f819db40068dc6d87d8b23fea, type: 2}
   - {fileID: 11400000, guid: 22763f3f819db40068dc6d87d8b23fea, type: 2}
