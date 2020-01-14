@@ -24,6 +24,8 @@ public class MovementBehaviour : DebuggableBehaviour
     public float PercentageTillNextPosition =>
         Extentions.InverseLerp(previousPosition, nextPosition, transform.position);
 
+    public MovementDirection CurrentDirection => currentDirection;
+
     public bool InvokesEvents;
 
     public UnityEvent OnRotate;

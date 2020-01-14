@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class SwipeInputProviderBehaviour : InputProviderBase
 {
-
     private Vector3 fp;   //First touch position
     private Vector3 lp;   //Last touch position
     private float dragDistance;  //minimum distance for a swipe to be registered

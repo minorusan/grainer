@@ -8,10 +8,10 @@ public static class ResourceHelper
     public static InputProviderBase GetProvider()
     {
         var inputProviders = Resources.LoadAll<InputProviderBase>(Strings.INPUT_PROVIDERS_PATH);
-        InputProviderBase required = inputProviders.FirstOrDefault(x=>x is DesktopInputProvisionBehaviour);
+        InputProviderBase required = inputProviders.FirstOrDefault(x=>x is TouchInputProviderBehaviour);
         
 #if !UNITY_EDITOR
-        required = inputProviders.FirstOrDefault(x=>x is SwipeInputProviderBehaviour);
+        required = inputProviders.FirstOrDefault(x=>x is TouchInputProviderBehaviour);
 #endif
         return required;
     }
