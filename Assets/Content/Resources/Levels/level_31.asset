@@ -12,5 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67d65cd9ccda99f4d94c99f54950a031, type: 3}
   m_Name: level_31
   m_EditorClassIdentifier: 
+  Id: 31
   levelTexture: {fileID: 2800000, guid: 7e8a2af8dac6630499074efcda42c6ba, type: 3}
   levelTexturePath: Assets/Content/Resources/Textures/Maps/31.png
+  Number: 31
+  isDirty: 0

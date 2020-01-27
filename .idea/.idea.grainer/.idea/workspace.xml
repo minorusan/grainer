@@ -1,58 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="5b32f112-e81b-4f7c-ab13-a4d426382cbc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Codebase/Levels.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Codebase/Levels/LevelsHistory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Codebase/Levels/LevelsHistory.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Codebase/Levels/NextLevelBehaviour.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Codebase/Levels/NextLevelBehaviour.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Codebase/UI/LevelPreviewBehaviour.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Codebase/UI/LevelPreviewBehaviour.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Codebase/UI/LevelsViewBehaviour.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Codebase/UI/LevelsViewBehaviour.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.grainer/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.grainer/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.grainer/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.grainer/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.grainer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.grainer/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.grainer/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.grainer/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Codebase/AreaInitialisation/AreaInitializeBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Codebase/AreaInitialisation/AreaInitializeBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Codebase/Editor/LevelEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Codebase/Editor/LevelEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Codebase/Helpers/Extentions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Codebase/Helpers/Extentions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Codebase/Helpers/GameOutcomeBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Codebase/Helpers/GameOutcomeBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Codebase/Networking/NetworkingTypes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Codebase/Networking/NetworkingTypes.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Codebase/Optimization/AntializingBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Codebase/Optimization/AntializingBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Codebase/Optimization/OptimizatonBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Codebase/Optimization/OptimizatonBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Codebase/LevelTesting/LevelHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Codebase/LevelTesting/LevelHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Codebase/Settings/Level.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Codebase/Settings/Level.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Fonts/17899 sdf.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Fonts/17899 sdf.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Levels.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Levels/Level_1.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Levels/Level_1.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Levels/level_2.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Levels/level_2.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Levels/level_3.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Levels/level_3.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Levels/level_4.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Levels/level_4.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Levels/level_5.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Levels/level_5.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Levels/level_6.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Levels/level_6.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/UI/level_button.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Prefabs/UI/level_button.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Prefabs/UI/ui_mainmenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Prefabs/UI/ui_mainmenu.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Scenes/Gameplay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Scenes/Gameplay.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Scenes/main_menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Scenes/main_menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Textures/Maps/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Textures/Maps/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Textures/Maps/1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Textures/Maps/1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Textures/Maps/2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Textures/Maps/2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Textures/Maps/3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Textures/Maps/3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Textures/Maps/4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Textures/Maps/4.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Textures/Maps/5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Textures/Maps/5.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Content/Textures/Maps/6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Textures/Maps/6.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libs/Crysberry/Console/Codebase/Core/ConsoleCommandsStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/Crysberry/Console/Codebase/Core/ConsoleCommandsStorage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libs/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Drop Shadow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Drop Shadow.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Libs/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Outline.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_10.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_10.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_11.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_11.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_12.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_12.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_13.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_13.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_14.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_14.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_15.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_15.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_16.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_16.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_17.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_17.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_18.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_18.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_19.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_19.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_20.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_20.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_21.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_21.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_22.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_22.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_23.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_23.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_24.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_24.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_25.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_25.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_26.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_26.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_27.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_27.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_28.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_28.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_29.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_29.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_3.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_30.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_30.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_31.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_31.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_32.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_32.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_33.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_33.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_34.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_34.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_35.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_35.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_36.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_36.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_37.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_37.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_38.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_38.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_39.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_39.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_4.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_40.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_40.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_41.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_41.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_42.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_42.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_43.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_43.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_44.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_44.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_45.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_45.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_46.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_46.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_47.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_47.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_48.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_48.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_49.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_49.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_5.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_5.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_50.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_50.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_6.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_6.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_7.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_7.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_8.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_8.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_9.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Resources/Levels/level_9.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Content/Scenes/level_testing.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Content/Scenes/level_testing.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Libs/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Libs/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,80 +70,194 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/LevelsSortingWindow.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="79">
+              <caret line="72" column="55" selection-start-line="72" selection-start-column="55" selection-end-line="72" selection-end-column="55" />
+              <folding>
+                <marker date="1579990488269" expanded="false" signature="6:146" ph="..." />
+                <marker date="1579990488269" expanded="true" signature="210:3541" ph="{...}" />
+                <marker date="1579990488269" expanded="true" signature="289:362" ph="{...}" />
+                <marker date="1579990488269" expanded="true" signature="1077:2844" ph="{...}" />
+                <marker date="1579990488269" expanded="true" signature="1340:1506" ph="{...}" />
+                <marker date="1579990488269" expanded="true" signature="1737:2838" ph="{...}" />
+                <marker date="1579990488269" expanded="true" signature="2160:2827" ph="{...}" />
+                <marker date="1579990488269" expanded="true" signature="2862:3539" ph="{...}" />
+                <marker date="1579990488269" expanded="true" signature="3158:3354" ph="{...}" />
+                <marker date="1579990488269" expanded="true" signature="3367:3462" ph="{...}" />
+                <marker date="1579990488269" expanded="true" signature="3588:3814" ph="{...}" />
+                <marker date="1579990488269" expanded="true" signature="3723:3812" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Codebase/Settings/Level.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+              <folding>
+                <marker date="1579982654754" expanded="false" signature="6:32" ph="..." />
+                <marker date="1579982654754" expanded="true" signature="163:334" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Codebase/LevelTesting/LevelHandler.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4065">
+              <caret line="285" column="16" selection-start-line="285" selection-start-column="16" selection-end-line="285" selection-end-column="16" />
+              <folding>
+                <marker date="1579979870842" expanded="false" signature="6:165" ph="..." />
+                <marker date="1579979870842" expanded="true" signature="208:8942" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="742:777" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="806:856" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="916:4638" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="1373:3150" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="1446:3140" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="1639:3098" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="3188:4224" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="3228:4214" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="3408:3507" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="3624:3723" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="3839:3938" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="4054:4153" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="4681:5109" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="4723:5022" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="4757:4865" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="4951:5012" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="5151:6150" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="5244:5721" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="5418:5697" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="5734:6144" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="5823:6134" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="5928:6120" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="6191:6585" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="6290:6569" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="6332:6456" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="6636:8027" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="6840:7428" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="6894:6978" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="6995:7181" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="7059:7167" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="7278:7364" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="7481:7594" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="7529:7584" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="7629:7930" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="7746:7808" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="7810:7920" ph="/* var workTime = DateTime.Now - startTime; ... */" />
+                <marker date="1579979870842" expanded="true" signature="7943:8021" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="8064:8940" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="8135:8926" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="8475:8549" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="8963:10055" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="9145:9203" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="9237:9342" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="9462:10053" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="9652:10025" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="9954:10015" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="10074:10339" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="10240:10337" ph="{...}" />
+                <marker date="1579979870842" expanded="true" signature="10363:10424" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Levels.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="21" />
+              <folding>
+                <marker date="1579988275993" expanded="false" signature="7:53" ph="..." />
+                <marker date="1579988275993" expanded="true" signature="190:248" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>serializedObject</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Networking/Networking.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Networking/NetworkingMethods.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Networking/NetworkingTypes.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Levels/NextLevelBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Libs/Crysberry/Audio/Codebase/Core/AudioEffectDefinition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Settings/EventDefinition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Movement/MovementBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Settings/ColorDefinition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Resources/ResourceHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/CellEvents/SpawnGameObjectCellEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Libs/Crysberry/Audio/Codebase/Core/Editor/AudioGroupDefinitionEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Settings/ColorMap.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Libs/Crysberry/Audio/Codebase/Core/Editor/AudioEffectDefinitionEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Levels.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Misc/TrailsBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@1.1.0/Rider/Editor/RiderInitializer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/CellEvents/LogCellEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/AreaInitialisation/AreaInitializeBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/AssetsImport/MapsPostprocessor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Libs/skyb1/back.psd.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Misc/TrailsBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/AssetsImport/AssetsNameToLowerPostProcessor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Libs/Crysberry/Console/Codebase/Core/ConsoleCommandsStorage.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Editor/LevelEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Networking/UpdateItemBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Settings/EventDefinition.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/UI/LevelsViewBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Misc/WatchPlayerBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Settings/Level.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Content/Shaders/Toon.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/UI/ObjectiveFillBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/UI/LevelButtonBehavior.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Input/SwipeInputProviderBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Libs/Crysberry/Routines/Codebase/Routiner.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Input/InputProviderBase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Libs/TSF/Shaders/tsfoutline.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Input/DesktopInputProvisionBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Libs/Crysberry/Routines/Codebase/Routiner_Enumerators.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Input/DisabeInputOnEnableBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Input/InputInitializeBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Components/ReferencingGizmoComponent.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/24E3AFC4-DB90-466D-B033-228D345463EA/84/f00e0642/ShadowQuality.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Helpers/AreaHelper.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Helpers/CellCallbackBroadcastBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Networking/GetItemsBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Helpers/Extentions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Helpers/GameFinishedBroadcastBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Optimization/OptimizatonBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Helpers/SmallTypes.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Content/Fonts/17899 sdf.asset" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Optimization/ShadowsBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Optimization/AntializingBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Entities/LocalizableString.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Entities/LocalizableStringBase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Levels/LevelsHistory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Movement/MovementBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Content/Scenes/gameplay.unity" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@1.1.0/Rider/Editor/RiderInitializer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Settings/ColorMap.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Movement/RotationBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Settings/ColorDefinition.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Optimization/FrameDataBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/CellEvents/LogCellEvent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Resources/ResourceHelper.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/UI/LevelPreviewBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/CellEvents/SpawnGameObjectCellEvent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/CellEvents/IncreamentObjectiveEvent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Libs/Crysberry/Audio/Codebase/Core/AudioEffectDefinition.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/CellEvents/LevelFinishedEvent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Libs/Crysberry/Audio/Codebase/Core/Editor/AudioEffectDefinitionEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Content/Fonts/17899 sdf.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/CellEvents/IncreamentObjectiveEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Libs/Crysberry/Console/Codebase/Core/ConsoleCommandsStorage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Input/DisabeInputOnEnableBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Input/SwipeInputProviderBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Levels/LevelsHistory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/LevelTesting/LevelHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/AssetsImport/AssetsNameToLowerPostProcessor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Optimization/AntializingBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Editor/LevelEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Optimization/OptimizatonBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Components/LocalizedTextComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Libs/Crysberry/Audio/Codebase/Core/Editor/AudioGroupDefinitionEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Components/GameplayObjectivesBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Helpers/CellCallbackBroadcastBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Entities/LocalizableString.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Levels/NextLevelBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Codebase/Components/LoadSceneComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Helpers/GameOutcomeBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Optimization/ShadowsBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Libs/Crysberry/Routines/Codebase/Routiner_Enumerators.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/LevelsSortingWindow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Movement/RotationBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Libs/TSF/Shaders/tsfoutline.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Entities/LocalizableStringBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Optimization/FrameDataBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Components/ReferencingGizmoComponent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Networking/Networking.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Networking/NetworkingMethods.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Networking/NetworkingTypes.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Libs/Crysberry/Routines/Codebase/Routiner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Networking/UpdateItemBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Networking/GetItemsBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7559BF97-67E7-4FF5-906F-18401F66CD57/00/3b37e602/ScriptableObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Input/InputInitializeBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Input/InputProviderBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Misc/WatchPlayerBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Libs/TextMesh Pro/Resources/Fonts &amp; Materials/liberationsans sdf.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Content/Shaders/Toon.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Input/DesktopInputProvisionBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Helpers/SmallTypes.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Helpers/AreaHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Codebase/Helpers/Extentions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Content/Scenes/gameplay.unity" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Codebase/AssetsImport/AssetsImporter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Codebase/Settings/ColorMap.cs" />
-        <option value="$PROJECT_DIR$/Assets/Codebase/Input/SwipeInputProviderBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Codebase/Resources/ResourceHelper.cs" />
         <option value="$PROJECT_DIR$/Assets/Libs/Crysberry/Audio/Codebase/Core/Editor/AudioEffectDefinitionEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Libs/Crysberry/Audio/Codebase/Core/Editor/AudioGroupDefinitionEditor.cs" />
@@ -171,7 +295,6 @@
         <option value="$PROJECT_DIR$/Assets/Codebase/Optimization/FrameDataBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Codebase/Optimization/AntializingBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Codebase/Optimization/OptimizatonBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Codebase/Settings/Level.cs" />
         <option value="$PROJECT_DIR$/Assets/Codebase/Editor/LevelEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Libs/Crysberry/Console/Codebase/Core/ConsoleCommandsStorage.cs" />
         <option value="$PROJECT_DIR$/Assets/Codebase/UI/LevelsViewBehaviour.cs" />
@@ -182,18 +305,28 @@
         <option value="$PROJECT_DIR$/Assets/Codebase/Networking/NetworkingTypes.cs" />
         <option value="$PROJECT_DIR$/Assets/Codebase/Levels/NextLevelBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Codebase/Levels/LevelsHistory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Codebase/LevelTesting/LevelHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Codebase/Settings/Level.cs" />
+        <option value="$PROJECT_DIR$/Assets/Levels.cs" />
+        <option value="$PROJECT_DIR$/Assets/LevelsSortingWindow.cs" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="140" />
+    <option name="y" value="-25" />
+    <option name="width" value="1240" />
+    <option name="height" value="680" />
   </component>
   <component name="ProjectId" id="1ShUFK8ChvUZDEX0lt4wF8xuPjc" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="Discover.Launch.Via.Unity" value="true" />
@@ -219,19 +352,17 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
-      <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="37992">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="15584">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="37992" />
-      <option name="userSelectedPid" value="false" />
+      <option name="pid" value="15584" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Attach to Unity Editor.Attach to Unity Editor" />
       <item itemvalue="Attach to Unity Editor.Attach to Unity Editor &amp; Play" />
+      <item itemvalue="Attach to Unity Editor.Attach to Unity Editor" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -271,8 +402,54 @@
       <workItem from="1573476644652" duration="1557000" />
       <workItem from="1573890553800" duration="1149000" />
       <workItem from="1573891864411" duration="697000" />
+      <workItem from="1579968575680" duration="10679000" />
+      <workItem from="1579987896383" duration="2646000" />
     </task>
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="13325000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991881" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Unity" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Errors In Solution" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -285,8 +462,28 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
               <option name="COLUMN_ORDER" />
             </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
           </value>
         </entry>
       </map>
@@ -304,5 +501,117 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7559BF97-67E7-4FF5-906F-18401F66CD57/00/3b37e602/ScriptableObject.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="57" column="6" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Codebase/Settings/Level.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding>
+            <marker date="1579982654754" expanded="false" signature="6:32" ph="..." />
+            <marker date="1579982654754" expanded="true" signature="163:334" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Codebase/LevelTesting/LevelHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4065">
+          <caret line="285" column="16" selection-start-line="285" selection-start-column="16" selection-end-line="285" selection-end-column="16" />
+          <folding>
+            <marker date="1579979870842" expanded="false" signature="6:165" ph="..." />
+            <marker date="1579979870842" expanded="true" signature="208:8942" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="742:777" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="806:856" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="916:4638" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="1373:3150" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="1446:3140" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="1639:3098" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="3188:4224" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="3228:4214" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="3408:3507" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="3624:3723" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="3839:3938" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="4054:4153" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="4681:5109" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="4723:5022" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="4757:4865" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="4951:5012" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="5151:6150" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="5244:5721" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="5418:5697" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="5734:6144" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="5823:6134" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="5928:6120" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="6191:6585" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="6290:6569" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="6332:6456" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="6636:8027" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="6840:7428" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="6894:6978" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="6995:7181" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="7059:7167" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="7278:7364" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="7481:7594" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="7529:7584" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="7629:7930" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="7746:7808" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="7810:7920" ph="/* var workTime = DateTime.Now - startTime; ... */" />
+            <marker date="1579979870842" expanded="true" signature="7943:8021" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="8064:8940" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="8135:8926" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="8475:8549" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="8963:10055" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="9145:9203" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="9237:9342" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="9462:10053" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="9652:10025" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="9954:10015" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="10074:10339" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="10240:10337" ph="{...}" />
+            <marker date="1579979870842" expanded="true" signature="10363:10424" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Levels.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="21" />
+          <folding>
+            <marker date="1579988275993" expanded="false" signature="7:53" ph="..." />
+            <marker date="1579988275993" expanded="true" signature="190:248" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/LevelsSortingWindow.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="72" column="55" selection-start-line="72" selection-start-column="55" selection-end-line="72" selection-end-column="55" />
+          <folding>
+            <marker date="1579990488269" expanded="false" signature="6:146" ph="..." />
+            <marker date="1579990488269" expanded="true" signature="210:3541" ph="{...}" />
+            <marker date="1579990488269" expanded="true" signature="289:362" ph="{...}" />
+            <marker date="1579990488269" expanded="true" signature="1077:2844" ph="{...}" />
+            <marker date="1579990488269" expanded="true" signature="1340:1506" ph="{...}" />
+            <marker date="1579990488269" expanded="true" signature="1737:2838" ph="{...}" />
+            <marker date="1579990488269" expanded="true" signature="2160:2827" ph="{...}" />
+            <marker date="1579990488269" expanded="true" signature="2862:3539" ph="{...}" />
+            <marker date="1579990488269" expanded="true" signature="3158:3354" ph="{...}" />
+            <marker date="1579990488269" expanded="true" signature="3367:3462" ph="{...}" />
+            <marker date="1579990488269" expanded="true" signature="3588:3814" ph="{...}" />
+            <marker date="1579990488269" expanded="true" signature="3723:3812" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

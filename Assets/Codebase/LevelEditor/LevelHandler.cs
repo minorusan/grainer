@@ -280,6 +280,9 @@ public class LevelHandler : MonoBehaviour
                 asset.levelTexture = texture;
             }
 
+            asset.Id = int.Parse(str);
+            asset.Number = int.Parse(str);
+
             EditorUtility.SetDirty(asset);
             AssetDatabase.CreateAsset(asset, "Assets/Content/Resources/Levels/level_" + str + ".asset");
 

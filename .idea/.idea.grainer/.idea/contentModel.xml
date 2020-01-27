@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+    <e p="C:\Users\olehk\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\olehk\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_grainer.1151843177.00" t="ExcludeRecursive" />
+    <e p="C:\Users\olehk\Documents\_MyProjects\grainer" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Codebase" t="Include">
+          <e p="Ads" t="Include">
+            <e p="AdsManager.cs" t="Include" />
+            <e p="AdvertisementBehaviour.cs" t="Include" />
+          </e>
           <e p="AreaInitialisation" t="Include">
             <e p="AreaInitializeBehaviour.cs" t="Include" />
           </e>
@@ -18,40 +24,62 @@
             <e p="IncreamentObjectiveEvent.cs" t="Include" />
             <e p="LevelFinishedEvent.cs" t="Include" />
             <e p="LogCellEvent.cs" t="Include" />
+            <e p="PlayAudioCellEvent.cs" t="Include" />
             <e p="SpawnGameObjectCellEvent.cs" t="Include" />
             <e p="ToggleWalkableStatusCellEvent.cs" t="Include" />
           </e>
           <e p="Components" t="Include">
+            <e p="ActivateHornButtonBehaviour.cs" t="Include" />
+            <e p="AnimalComponent.cs" t="Include" />
+            <e p="AnimalDeathBehaviour.cs" t="Include" />
             <e p="ApplicationQuit.cs" t="Include" />
             <e p="CellComponentType.cs" t="Include" />
+            <e p="CellGizmosBehaviour.cs" t="Include" />
             <e p="CombinedPropComponent.cs" t="Include" />
-            <e p="GameplayObjectivesBehaviour.cs" t="Include" />
+            <e p="EngineAudioBehaviour.cs" t="Include" />
+            <e p="LerpVolumeComponent.cs" t="Include" />
             <e p="LoadSceneComponent.cs" t="Include" />
             <e p="LocalizedTextComponent.cs" t="Include" />
+            <e p="OnWinBehaviour.cs" t="Include" />
+            <e p="RandomYRotationComponent.cs" t="Include" />
             <e p="ReferencingGizmoComponent.cs" t="Include" />
           </e>
           <e p="Editor" t="Include">
             <e p="LevelEditor.cs" t="Include" />
+            <e p="LevelHandlerEditor.cs" t="Include" />
           </e>
           <e p="Entities" t="Include">
             <e p="CellComponentHolderBehaviour.cs" t="Include" />
+            <e p="CowBehaviour.cs" t="Include" />
+            <e p="CritterBehaviour.cs" t="Include" />
             <e p="GameEntityBase.cs" t="Include" />
             <e p="LocalizableString.cs" t="Include" />
             <e p="LocalizableStringBase.cs" t="Include" />
             <e p="RandomLocalizableString.cs" t="Include" />
           </e>
+          <e p="GameFlow" t="Include">
+            <e p="DestroyTimerBehaviour.cs" t="Include" />
+            <e p="GameFinishedBroadcastBehaviour.cs" t="Include" />
+            <e p="GameOutcomeBehaviour.cs" t="Include" />
+            <e p="GameplayObjectivesBehaviour.cs" t="Include" />
+            <e p="GameplayTurnsCountBehaviour.cs" t="Include" />
+          </e>
           <e p="Helpers" t="Include">
             <e p="AreaHelper.cs" t="Include" />
+            <e p="AudioController.cs" t="Include" />
             <e p="CellCallbackBroadcastBehaviour.cs" t="Include" />
             <e p="Constants.cs" t="Include" />
             <e p="DebuggableBehaviour.cs" t="Include" />
+            <e p="DontDestroyOnLoadComponent.cs" t="Include" />
             <e p="Extentions.cs" t="Include" />
             <e p="GameEntitiesHolder.cs" t="Include" />
-            <e p="GameFinishedBroadcastBehaviour.cs" t="Include" />
-            <e p="GameOutcomeBehaviour.cs" t="Include" />
+            <e p="GameplayTimescale.cs" t="Include" />
+            <e p="SetMaterialAsChessboardBehaviour.cs" t="Include" />
             <e p="SmallTypes.cs" t="Include" />
             <e p="Strings.cs" t="Include" />
             <e p="ToggleActiveStateOnEnableBehavior.cs" t="Include" />
+            <e p="ToggleGameTimeBehaviour.cs" t="Include" />
+            <e p="TurnRemainingTimeBehaviour.cs" t="Include" />
           </e>
           <e p="Input" t="Include">
             <e p="DesktopInputProvisionBehaviour.cs" t="Include" />
@@ -65,10 +93,21 @@
           <e p="Levels" t="Include">
             <e p="LevelsHistory.cs" t="Include" />
             <e p="NextLevelBehaviour.cs" t="Include" />
+            <e p="RefreshLevelsDataBehaviour.cs" t="Include" />
+          </e>
+          <e p="LevelTesting" t="Include">
+            <e p="LevelHandler.cs" t="Include" />
           </e>
           <e p="Misc" t="Include">
+            <e p="CameraFieldOfViewBehaviour.cs" t="Include" />
+            <e p="LookAtWalkableCellBehaviour.cs" t="Include" />
             <e p="PropsCombineBehaviour.cs" t="Include" />
+            <e p="ScreenRippleAtPosition.cs" t="Include" />
+            <e p="SoundtrackBehaviour.cs" t="Include" />
+            <e p="SturtupTimerBehaviour.cs" t="Include" />
+            <e p="SwapMeshBehaviour.cs" t="Include" />
             <e p="TrailsBehaviour.cs" t="Include" />
+            <e p="TutorialBehaviour.cs" t="Include" />
             <e p="WatchPlayerBehaviour.cs" t="Include" />
           </e>
           <e p="Movement" t="Include">
@@ -104,17 +143,22 @@
             <e p="MovementSettings.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
-            <e p="LevelButtonBehavior.cs" t="Include" />
-            <e p="LevelPreviewBehaviour.cs" t="Include" />
-            <e p="LevelsViewBehaviour.cs" t="Include" />
-            <e p="ObjectiveFillBehaviour.cs" t="Include" />
+            <e p="AudioSettingsBehaviour.cs" t="Include" />
+            <e p="CurrentLevelBehaviour.cs" t="Include" />
+            <e p="HornButtonBehaviour.cs" t="Include" />
+            <e p="MoveToTransformBehaviour.cs" t="Include" />
           </e>
         </e>
         <e p="Content" t="Include">
+          <e p="Resources" t="Include">
+            <e p="defaultlevelsdata.txt" t="Include" />
+          </e>
           <e p="Shaders" t="Include">
             <e p="Toon.shader" t="Include" />
           </e>
         </e>
+        <e p="Levels.cs" t="Include" />
+        <e p="LevelsSortingWindow.cs" t="Include" />
         <e p="Libs" t="Include">
           <e p="Crysberry" t="Include">
             <e p="Audio" t="Include">
@@ -234,18 +278,34 @@
               <e p="tsfoutline.shader" t="Include" />
             </e>
           </e>
+          <e p="VertexColorFarmAnimals" t="Include">
+            <e p="Shaders" t="Include">
+              <e p="VertexColorUnlit.shader" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="UI" t="Include">
+          <e p="ButtonShakeBehaviour.cs" t="Include" />
+          <e p="GameplayTimerBehaviour.cs" t="Include" />
+          <e p="GameplayTurnsCounterBehaviour.cs" t="Include" />
+          <e p="LevelButtonBehavior.cs" t="Include" />
+          <e p="LevelPreviewBehaviour.cs" t="Include" />
+          <e p="LevelsViewBehaviour.cs" t="Include" />
+          <e p="ObjectiveFillBehaviour.cs" t="Include" />
+          <e p="WinWindowBehaviour.cs" t="Include" />
         </e>
       </e>
       <e p="AudioTests.csproj" t="IncludeRecursive" />
       <e p="CrysberryAudio.csproj" t="IncludeRecursive" />
       <e p="grainer.sln" t="IncludeFlat" />
+      <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="Routines.csproj" t="IncludeRecursive" />
       <e p="RoutineTests.csproj" t="IncludeRecursive" />
-      <e p="Temp/bin" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
     </e>
-    <e p="$USER_HOME$/Library/Caches/Rider2019.2/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/Rider2019.2/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_Grainer.154656429.00" t="ExcludeRecursive" />
   </component>
 </project>
