@@ -1,6 +1,5 @@
-﻿using UnityEditor;
-using UnityEngine;
-
+﻿#if UNITY_EDITOR
+using UnityEditor;
 public class AssetsNameToLower : AssetPostprocessor
 {
     static void OnPostprocessAllAssets(string[] importedAssets, string[] deletedAssets, string[] movedAssets, string[] movedFromAssetPaths)
@@ -16,3 +15,4 @@ public class AssetsNameToLower : AssetPostprocessor
         }
     }
 }
+#endif

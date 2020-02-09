@@ -16,4 +16,7 @@ MonoBehaviour:
   speedCoefitient: 1
   events: []
   prefabs:
-  - {fileID: 8866978538582802673, guid: 043f5510056567d498f7179a4853eaf0, type: 3}
+  - ChanceTreshold: 1
+    Prefab: {fileID: 8866978538582802673, guid: 043f5510056567d498f7179a4853eaf0,
+      type: 3}
+  IsObjective: 0

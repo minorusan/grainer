@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e5e05d89d434c2285a98d76b560338, type: 3}
+  m_Name: decoration_color
+  m_EditorClassIdentifier: 
+  color: {r: 0.5254902, g: 0.5254902, b: 0.5254902, a: 1}
+  speedCoefitient: 0
+  events: []
+  prefabs:
+  - ChanceTreshold: 1
+    Prefab: {fileID: 4529043368669277823, guid: 327e80d498d54402186ac3893f33aaf8,
+      type: 3}
+  - ChanceTreshold: 1
+    Prefab: {fileID: 4529043368669277823, guid: b93f1721f21de405196578c2b4197144,
+      type: 3}
+  - ChanceTreshold: 1
+    Prefab: {fileID: 4529043368669277823, guid: 4a5826c2694964a2c9e207920a6cad4c,
+      type: 3}
+  - ChanceTreshold: 1
+    Prefab: {fileID: 4529043368669277823, guid: 5baa4b193bb05474684c196b481af6bf,
+      type: 3}
+  - ChanceTreshold: 1
+    Prefab: {fileID: 4529043368669277823, guid: b6cfc23fa1767415486b7053fb857794,
+      type: 3}
+  IsObjective: 0

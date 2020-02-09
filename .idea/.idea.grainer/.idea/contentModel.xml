@@ -10,15 +10,109 @@
             <e p="AreaInitializeBehaviour.cs" t="Include" />
           </e>
           <e p="AssetsImport" t="Include">
+            <e p="AssetsNameToLowerPostProcessor.cs" t="Include" />
             <e p="MapsPostprocessor.cs" t="Include" />
           </e>
+          <e p="CellEvents" t="Include">
+            <e p="ActivateCellComponentCellEvent.cs" t="Include" />
+            <e p="IncreamentObjectiveEvent.cs" t="Include" />
+            <e p="LevelFinishedEvent.cs" t="Include" />
+            <e p="LogCellEvent.cs" t="Include" />
+            <e p="SpawnGameObjectCellEvent.cs" t="Include" />
+            <e p="ToggleWalkableStatusCellEvent.cs" t="Include" />
+          </e>
+          <e p="Components" t="Include">
+            <e p="ApplicationQuit.cs" t="Include" />
+            <e p="CellComponentType.cs" t="Include" />
+            <e p="CombinedPropComponent.cs" t="Include" />
+            <e p="GameplayObjectivesBehaviour.cs" t="Include" />
+            <e p="LoadSceneComponent.cs" t="Include" />
+            <e p="LocalizedTextComponent.cs" t="Include" />
+            <e p="ReferencingGizmoComponent.cs" t="Include" />
+          </e>
+          <e p="Editor" t="Include">
+            <e p="LevelEditor.cs" t="Include" />
+          </e>
+          <e p="Entities" t="Include">
+            <e p="CellComponentHolderBehaviour.cs" t="Include" />
+            <e p="GameEntityBase.cs" t="Include" />
+            <e p="LocalizableString.cs" t="Include" />
+            <e p="LocalizableStringBase.cs" t="Include" />
+            <e p="RandomLocalizableString.cs" t="Include" />
+          </e>
           <e p="Helpers" t="Include">
+            <e p="AreaHelper.cs" t="Include" />
+            <e p="CellCallbackBroadcastBehaviour.cs" t="Include" />
+            <e p="Constants.cs" t="Include" />
+            <e p="DebuggableBehaviour.cs" t="Include" />
             <e p="Extentions.cs" t="Include" />
+            <e p="GameEntitiesHolder.cs" t="Include" />
+            <e p="GameFinishedBroadcastBehaviour.cs" t="Include" />
+            <e p="GameOutcomeBehaviour.cs" t="Include" />
+            <e p="SmallTypes.cs" t="Include" />
+            <e p="Strings.cs" t="Include" />
+            <e p="ToggleActiveStateOnEnableBehavior.cs" t="Include" />
+          </e>
+          <e p="Input" t="Include">
+            <e p="DesktopInputProvisionBehaviour.cs" t="Include" />
+            <e p="DisabeInputOnEnableBehaviour.cs" t="Include" />
+            <e p="InputInitializeBehaviour.cs" t="Include" />
+            <e p="InputListenerBehaviour.cs" t="Include" />
+            <e p="InputProviderBase.cs" t="Include" />
+            <e p="SwipeInputProviderBehaviour.cs" t="Include" />
+            <e p="ZeroingTimescaleOnEnableBehaviour.cs" t="Include" />
+          </e>
+          <e p="Levels" t="Include">
+            <e p="LevelsHistory.cs" t="Include" />
+            <e p="NextLevelBehaviour.cs" t="Include" />
+          </e>
+          <e p="Misc" t="Include">
+            <e p="PropsCombineBehaviour.cs" t="Include" />
+            <e p="TrailsBehaviour.cs" t="Include" />
+            <e p="WatchPlayerBehaviour.cs" t="Include" />
+          </e>
+          <e p="Movement" t="Include">
+            <e p="MovementBehaviour.cs" t="Include" />
+            <e p="RotationBehaviour.cs" t="Include" />
+          </e>
+          <e p="Networking" t="Include">
+            <e p="GetItemsBehaviour.cs" t="Include" />
+            <e p="Networking.cs" t="Include" />
+            <e p="NetworkingMethods.cs" t="Include" />
+            <e p="NetworkingRoute.cs" t="Include" />
+            <e p="NetworkingTypes.cs" t="Include" />
+            <e p="UpdateItemBehaviour.cs" t="Include" />
+          </e>
+          <e p="Optimization" t="Include">
+            <e p="AntializingBehaviour.cs" t="Include" />
+            <e p="DynamicTextureResolutionBehaviour.cs" t="Include" />
+            <e p="FrameDataBehaviour.cs" t="Include" />
+            <e p="OptimizatonBehaviour.cs" t="Include" />
+            <e p="ShadowsBehaviour.cs" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="ResourceHelper.cs" t="Include" />
+          </e>
+          <e p="ScriptableEnums" t="Include">
+            <e p="CombinedPropType.cs" t="Include" />
           </e>
           <e p="Settings" t="Include">
             <e p="ColorDefinition.cs" t="Include" />
             <e p="ColorMap.cs" t="Include" />
             <e p="EventDefinition.cs" t="Include" />
+            <e p="Level.cs" t="Include" />
+            <e p="MovementSettings.cs" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="LevelButtonBehavior.cs" t="Include" />
+            <e p="LevelPreviewBehaviour.cs" t="Include" />
+            <e p="LevelsViewBehaviour.cs" t="Include" />
+            <e p="ObjectiveFillBehaviour.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Content" t="Include">
+          <e p="Shaders" t="Include">
+            <e p="Toon.shader" t="Include" />
           </e>
         </e>
         <e p="Libs" t="Include">
@@ -134,21 +228,24 @@
               <e p="EmojiOne Attribution.txt" t="Include" />
             </e>
           </e>
+          <e p="TSF" t="Include">
+            <e p="Shaders" t="Include">
+              <e p="TSF.shader" t="Include" />
+              <e p="tsfoutline.shader" t="Include" />
+            </e>
+          </e>
         </e>
       </e>
       <e p="AudioTests.csproj" t="IncludeRecursive" />
       <e p="CrysberryAudio.csproj" t="IncludeRecursive" />
       <e p="grainer.sln" t="IncludeFlat" />
-      <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="Routines.csproj" t="IncludeRecursive" />
       <e p="RoutineTests.csproj" t="IncludeRecursive" />
-      <e p="Temp" t="ExcludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
-      </e>
+      <e p="Temp/bin" t="ExcludeRecursive" />
     </e>
-    <e p="$USER_HOME$/Library/Caches/Rider2018.2/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/Rider2018.2/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_grainer.-1164671730.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.2/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_Grainer.154656429.00" t="ExcludeRecursive" />
   </component>
 </project>

@@ -1,7 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿#if UNITY_EDITOR
 using UnityEditor;
-using UnityEngine;
+
 
 namespace Crysberry.Audio.Editor
 {
@@ -119,4 +118,4 @@ namespace Crysberry.Audio.Editor
 		}
 	}
 }
-
+#endif

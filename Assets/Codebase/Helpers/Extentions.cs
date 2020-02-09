@@ -6,6 +6,18 @@ public static class Extentions
 {
     private static Vector3[] directions = {Vector3.zero, Vector3.left, Vector3.right, Vector3.forward, Vector3.back};
 
+    public static float InverseLerp(Vector3 a, Vector3 b, Vector3 value)
+    {
+        Vector3 AB = b - a;
+        Vector3 AV = value - a;
+        return Vector3.Dot(AV, AB) / Vector3.Dot(AB, AB);
+    }
+    public static void ClearChildren(this Transform tr)
+    {
+        foreach (Transform child in tr) {
+            GameObject.Destroy(child.gameObject);
+        }
+    }
     public static string ToHexString(this Color color)
     {
         return ColorUtility.ToHtmlStringRGB(color);
@@ -35,4 +47,28 @@ public static class Extentions
     {
         return AreaHelper.GetDefinition(position);
     }
+
+    public static MovementDirection ToDirection(this Vector3 moveDirection)
+    {
+        var direction = moveDirection.normalized;
+        if (direction == Vector3.back)
+        {
+            return MovementDirection.Down;
+        }
+        if (direction == Vector3.forward)
+        {
+            return MovementDirection.Up;
+        }
+        if (direction == Vector3.left)
+        {
+            return MovementDirection.Left;
+        }
+        if (direction == Vector3.right)
+        {
+            return MovementDirection.Right;
+        }
+
+        return MovementDirection.None;
+    }
+    
 }

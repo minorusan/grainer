@@ -8,7 +8,10 @@ public class ActivateCellComponentCellEvent : EventDefinition
 
     protected override void InvokeEvent(GameObject cell)
     {
-        var components = cell.GetComponentsInChildren<CellComponentHolderBehaviour>();
-        components.Where(x=>x.Type == ComponentType).ToList().ForEach(x=>x.ActivateComponent());
+        if (cell != null && cell.activeInHierarchy)
+        {
+            var components = cell.GetComponentsInChildren<CellComponentHolderBehaviour>();
+            components.Where(x=>x.Type == ComponentType).ToList().ForEach(x=>x.ActivateComponent());
+        }
     }
 }

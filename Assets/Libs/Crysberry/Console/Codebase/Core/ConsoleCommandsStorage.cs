@@ -1,4 +1,8 @@
 using System;
+#if UNITY_EDITOR
+using UnityEditor; 
+#endif
+
 using UnityEngine;
 
 namespace Crysberry.Console
@@ -53,6 +57,44 @@ namespace Crysberry.Console
         {
             var position = new Vector3(Convert.ToSingle(args[0]),Convert.ToSingle(args[1]), Convert.ToSingle(args[2]));
             return $"Walkable status of position ({position}) is '{position.IsWalkable()})'";
+        }
+        
+        [CrysberryConsoleMember("optinfo", "Get optimization level information")]
+        private static string OptInfo(string[] args)
+        {
+            var reached = OptimizatonBehaviour.OptimizationLevelGoalReached ? "" : "not";
+            var level = OptimizatonBehaviour.OptimizationLevel;
+            var averageFps = Mathf.RoundToInt(FrameDataBehaviour.FreshFrameData);
+            return $"Optimization goal {reached} reached.\n::Optimisation level is {level}.\n::Average frame rate:{averageFps}.\n::Device model:{SystemInfo.deviceModel}";
+        }
+        
+        [CrysberryConsoleMember("optrst", "Reset optimizer")]
+        private static string OptRst(string[] args)
+        {
+            OptimizatonBehaviour.ResetOptimizationSettings();
+            return $"Optimizer reset";
+        }
+        
+        [CrysberryConsoleMember("passall", "Pass all levels")]
+        private static string PassAll(string[] args)
+        {
+            LevelsHistory.CurrentLevelID = 999;
+            return $"All levels opened";
+        }
+        
+        [CrysberryConsoleMember("rstlvl", "Reset level progress")]
+        private static string RstLVL(string[] args)
+        {
+            
+            LevelsHistory.ClearHistory();
+            return $"All levels closed";
+        }
+        
+        [CrysberryConsoleMember("win", "Win current level")]
+        private static string WinLVL(string[] args)
+        {
+            GameObject.FindObjectOfType<GameOutcomeBehaviour>().ForceWin();
+            return $"Win current level";
         }
     }
 }

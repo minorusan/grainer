@@ -16,6 +16,10 @@ public class InputListenerBehaviour : MonoBehaviour
 
     private void OnInputChanged(InputChangedEventArgs obj)
     {
+        if (GameplayTimescale.GameActive && !TutorialBehaviour.TutorialCompleted)
+        {
+            TutorialBehaviour.TutorialCompleted = true;
+        }
         MovementBehaviour.SetDirection(obj.Direction);
     }
 }

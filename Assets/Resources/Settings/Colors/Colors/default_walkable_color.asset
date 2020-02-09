@@ -13,12 +13,36 @@ MonoBehaviour:
   m_Name: default_walkable_color
   m_EditorClassIdentifier: 
   color: {r: 1, g: 1, b: 1, a: 1}
-  speedCoefitient: 1
+  speedCoefitient: 2
   events:
   - {fileID: 11400000, guid: 22763f3f819db40068dc6d87d8b23fea, type: 2}
+  - {fileID: 11400000, guid: 22763f3f819db40068dc6d87d8b23fea, type: 2}
+  - {fileID: 11400000, guid: 22763f3f819db40068dc6d87d8b23fea, type: 2}
+  - {fileID: 11400000, guid: 22763f3f819db40068dc6d87d8b23fea, type: 2}
+  - {fileID: 11400000, guid: 22763f3f819db40068dc6d87d8b23fea, type: 2}
   prefabs:
-  - {fileID: 4529043368669277823, guid: 707f6ccbe96394825b438f8814f461e6, type: 3}
-  - {fileID: 4529043368669277823, guid: 707f6ccbe96394825b438f8814f461e6, type: 3}
-  - {fileID: 4529043368669277823, guid: 707f6ccbe96394825b438f8814f461e6, type: 3}
-  - {fileID: 4529043368669277823, guid: e06e9bade282c49b39ed9662cb815f29, type: 3}
-  - {fileID: 4529043368669277823, guid: 8211508dd650c4eb8ab70b4d1fd1c7e5, type: 3}
+  - ChanceTreshold: 1
+    Prefab: {fileID: 4529043368669277823, guid: 707f6ccbe96394825b438f8814f461e6,
+      type: 3}
+  - ChanceTreshold: 0.311
+    Prefab: {fileID: 4529043368669277823, guid: 6a4cb3034d43a401fa19631cb67d62a9,
+      type: 3}
+  - ChanceTreshold: 0.284
+    Prefab: {fileID: 4529043368669277823, guid: 839d7a676571942a48b137bb2e6be342,
+      type: 3}
+  - ChanceTreshold: 0.278
+    Prefab: {fileID: 4529043368669277823, guid: c96c29e9974ce4219a3b486268cb6e7f,
+      type: 3}
+  - ChanceTreshold: 0.456
+    Prefab: {fileID: 4529043368669277823, guid: 2d5a96678ad3345aebb4ded045e3d072,
+      type: 3}
+  - ChanceTreshold: 0.388
+    Prefab: {fileID: 4529043368669277823, guid: 8ad55a592182c46b0b6e29938ae189c3,
+      type: 3}
+  - ChanceTreshold: 0.327
+    Prefab: {fileID: 4529043368669277823, guid: 1f85eb8cbeb9d4354aa5be57d78a1a8b,
+      type: 3}
+  - ChanceTreshold: 0.456
+    Prefab: {fileID: 4529043368669277823, guid: bf3bba67c8b95492aa475e9a25e9a65a,
+      type: 3}
+  IsObjective: 0
