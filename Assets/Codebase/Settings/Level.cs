@@ -5,11 +5,12 @@ using UnityEngine;
 [Serializable]
 public class Level : ScriptableObject
 {
+    public int version = 1;
     [SerializeField] public int Id;
-#if UNITY_EDITOR
-    public bool isDirty;
-#endif
     [HideInInspector] public Texture2D levelTexture;
     public string levelTexturePath;
     [SerializeField] public int Number;
+#if UNITY_EDITOR
+    public bool isDirty;
+#endif
 }

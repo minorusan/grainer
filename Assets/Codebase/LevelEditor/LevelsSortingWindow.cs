@@ -1,176 +1,175 @@
 ﻿using System;
 using System.Collections.Generic;
-using LevelEditor.Sorting;
 using UnityEditor;
 using UnityEditorInternal;
 using UnityEngine;
 
 namespace LevelEditor.Sorting
 {
-internal class LevelsSortingWindow : EditorWindow
-{
-    private const int TOP_PADDING = 2;
-
-    private Dictionary<int, Level> ALLlevels;
-
-    private Levels levelsSO;
-    private SerializedObject m_AnimalsSO;
-    private ReorderableList m_ReorderableList;
-    private ReorderableList reorderList;
-    private Vector2 scrollPosition;
-    private SerializedObject serializedObject;
-    private SerializedProperty serializedPropertyMyInt;
-
-    private ReorderableList supportedLangauageList;
-    public List<LevelData> SupportedLangauageList;
-
-    [MenuItem("Grainer/Levels sorting")]
-    public static void ShowWindow()
+    internal class LevelsSortingWindow : EditorWindow
     {
-        GetWindow(typeof(LevelsSortingWindow));
-    }
+        private const int TOP_PADDING = 2;
 
-    private void OnEnable()
-    {
-        Init();
-    }
+        private Dictionary<int, Level> ALLlevels;
 
-    private void OnFocus()
-    {
-        Init();
-    }
+        private Levels levelsSO;
+        private SerializedObject m_AnimalsSO;
+        private ReorderableList m_ReorderableList;
+        private ReorderableList reorderList;
+        private Vector2 scrollPosition;
+        private SerializedObject serializedObject;
+        private SerializedProperty serializedPropertyMyInt;
 
-    private void Init()
-    {
-        levelsSO = CreateInstance<Levels>();
-        levelsSO.AllLevels = new List<LevelData>();
-        var levelScriptableObjects = Resources.LoadAll<Level>("Levels");
+        private ReorderableList supportedLangauageList;
+        public List<LevelData> SupportedLangauageList;
 
-        ALLlevels = new Dictionary<int, Level>();
-
-        foreach (var levelScriptableObject in levelScriptableObjects)
+        [MenuItem("Grainer/Levels sorting")]
+        public static void ShowWindow()
         {
-            levelsSO.AllLevels.Add(new LevelData(levelScriptableObject.Id, levelScriptableObject.Number,
-                levelScriptableObject));
-            ALLlevels.Add(levelScriptableObject.Id, levelScriptableObject);
+            GetWindow(typeof(LevelsSortingWindow));
         }
 
-        levelsSO.AllLevels.Sort((p1, p2) => p1.Number.CompareTo(p2.Number));
-        //serializedObject = new UnityEditor.SerializedObject(Resources.Load<Levels>("levels"));
-        var animals = levelsSO;
-        if (animals)
+        private void OnEnable()
         {
-            m_AnimalsSO = new SerializedObject(animals);
-            m_ReorderableList = new ReorderableList(m_AnimalsSO, m_AnimalsSO.FindProperty("AllLevels"), true, false,
-                false, false);
-            m_ReorderableList.drawHeaderCallback = rect => EditorGUI.LabelField(rect, "levels");
-
-
-            m_ReorderableList.drawElementCallback = (rect, index, isActive, isFocused) =>
-            {
-                var element = m_ReorderableList.serializedProperty.GetArrayElementAtIndex(index);
-                var number = element.FindPropertyRelative("Number");
-                var id = element.FindPropertyRelative("ID");
-                rect.y += TOP_PADDING;
-                rect.height = EditorGUIUtility.singleLineHeight;
-                var newIndex = index + 1;
-                EditorGUI.LabelField(new Rect(rect.x, rect.y, 200, EditorGUIUtility.singleLineHeight),
-                    "Number: " + /*number.intValue */newIndex + " Id: " + id.intValue);
-            };
-
-            m_ReorderableList.onReorderCallbackWithDetails = (list, index, newIndex) => { reorderList = list; };
+            Init();
         }
-    }
 
-    private void OnGUI()
-    {
-        if (GUILayout.Button("SAVE"))
+        private void OnFocus()
         {
-            if (reorderList == null)
+            Init();
+        }
+
+        private void Init()
+        {
+            levelsSO = CreateInstance<Levels>();
+            levelsSO.AllLevels = new List<LevelData>();
+            var levelScriptableObjects = Resources.LoadAll<Level>("Levels");
+
+            ALLlevels = new Dictionary<int, Level>();
+
+            foreach (var levelScriptableObject in levelScriptableObjects)
             {
-                return;
+                levelsSO.AllLevels.Add(new LevelData(levelScriptableObject.Id, levelScriptableObject.Number,
+                    levelScriptableObject));
+                ALLlevels.Add(levelScriptableObject.Id, levelScriptableObject);
             }
 
-            for (var i = 0; i < reorderList.count; i++)
+            levelsSO.AllLevels.Sort((p1, p2) => p1.Number.CompareTo(p2.Number));
+            //serializedObject = new UnityEditor.SerializedObject(Resources.Load<Levels>("levels"));
+            var animals = levelsSO;
+            if (animals)
             {
-                var sdf = reorderList.serializedProperty.GetArrayElementAtIndex(i);
-                var ind = i + 1;
+                m_AnimalsSO = new SerializedObject(animals);
+                m_ReorderableList = new ReorderableList(m_AnimalsSO, m_AnimalsSO.FindProperty("AllLevels"), true, false,
+                    false, false);
+                m_ReorderableList.drawHeaderCallback = rect => EditorGUI.LabelField(rect, "levels");
 
-                if (ind != sdf.FindPropertyRelative("Number").intValue)
+
+                m_ReorderableList.drawElementCallback = (rect, index, isActive, isFocused) =>
                 {
-                    var id = sdf.FindPropertyRelative("ID");
-                    ALLlevels[id.intValue].Number = ind;
-                    ALLlevels[id.intValue].isDirty = true;
+                    var element = m_ReorderableList.serializedProperty.GetArrayElementAtIndex(index);
+                    var number = element.FindPropertyRelative("Number");
+                    var id = element.FindPropertyRelative("ID");
+                    rect.y += TOP_PADDING;
+                    rect.height = EditorGUIUtility.singleLineHeight;
+                    var newIndex = index + 1;
+                    EditorGUI.LabelField(new Rect(rect.x, rect.y, 200, EditorGUIUtility.singleLineHeight),
+                        "Number: " + /*number.intValue */newIndex + " Id: " + id.intValue);
+                };
 
-                    Debug.LogError("Переместился. Был " + sdf.FindPropertyRelative("Number").intValue + " Стал " +
-                                   ind + " id " + id.intValue);
+                m_ReorderableList.onReorderCallbackWithDetails = (list, index, newIndex) => { reorderList = list; };
+            }
+        }
+
+        private void OnGUI()
+        {
+            if (GUILayout.Button("SAVE"))
+            {
+                if (reorderList == null)
+                {
+                    return;
                 }
-            }
 
-
-            foreach (var llevelsValue in ALLlevels.Values)
-            {
-                if (llevelsValue.isDirty)
+                for (var i = 0; i < reorderList.count; i++)
                 {
-                    var asset = CreateInstance<Level>();
-                    asset.levelTexturePath = AssetDatabase.GetAssetPath(llevelsValue.levelTexture);
-                    var str = asset.levelTexturePath.Replace("Assets/Content/Resources/Textures/Maps/", "");
-                    str = str.Replace(".png", "");
-                    if (asset.levelTexture == null)
+                    var sdf = reorderList.serializedProperty.GetArrayElementAtIndex(i);
+                    var ind = i + 1;
+
+                    if (ind != sdf.FindPropertyRelative("Number").intValue)
                     {
-                        asset.levelTexture = llevelsValue.levelTexture;
+                        var id = sdf.FindPropertyRelative("ID");
+                        ALLlevels[id.intValue].Number = ind;
+                        ALLlevels[id.intValue].isDirty = true;
+
+                        Debug.LogError("Переместился. Был " + sdf.FindPropertyRelative("Number").intValue + " Стал " +
+                                       ind + " id " + id.intValue);
                     }
+                }
 
-                    asset.Id = llevelsValue.Id;
-                    asset.Number = llevelsValue.Number;
 
-                    EditorUtility.SetDirty(asset);
-                    AssetDatabase.CreateAsset(asset,
-                        "Assets/Content/Resources/Levels/level_" + llevelsValue.Number + ".asset");
+                foreach (var llevelsValue in ALLlevels.Values)
+                {
+                    if (llevelsValue.isDirty)
+                    {
+                        var asset = CreateInstance<Level>();
+                        asset.levelTexturePath = AssetDatabase.GetAssetPath(llevelsValue.levelTexture);
+                        var str = asset.levelTexturePath.Replace("Assets/Content/Resources/Textures/Maps/", "");
+                        str = str.Replace(".png", "");
+                        if (asset.levelTexture == null)
+                        {
+                            asset.levelTexture = llevelsValue.levelTexture;
+                        }
 
-                    AssetDatabase.SaveAssets();
+                        asset.Id = llevelsValue.Id;
+                        asset.Number = llevelsValue.Number;
+
+                        EditorUtility.SetDirty(asset);
+                        AssetDatabase.CreateAsset(asset,
+                            "Assets/Content/Resources/Levels/level_" + llevelsValue.Number + ".asset");
+
+                        AssetDatabase.SaveAssets();
+                    }
                 }
             }
+
+            EditorGUILayout.Space();
+            EditorGUILayout.Space();
+            EditorGUILayout.Space();
+            EditorGUILayout.BeginVertical();
+
+            scrollPosition =
+                GUI.BeginScrollView(new Rect(10, 0, 300, m_ReorderableList.elementHeight * m_ReorderableList.count),
+                    scrollPosition,
+                    new Rect(0, 0, 0, m_ReorderableList.elementHeight * (m_ReorderableList.count * 1.5f)));
+
+            if (m_AnimalsSO != null)
+            {
+                m_AnimalsSO.Update();
+                m_AnimalsSO.ApplyModifiedProperties();
+                EditorUtility.SetDirty(levelsSO);
+                m_ReorderableList.DoLayoutList();
+            }
+
+            GUI.EndScrollView();
+
+
+            EditorGUILayout.EndVertical();
         }
-
-        EditorGUILayout.Space();
-        EditorGUILayout.Space();
-        EditorGUILayout.Space();
-        EditorGUILayout.BeginVertical();
-
-        scrollPosition =
-            GUI.BeginScrollView(new Rect(10, 0, 300, m_ReorderableList.elementHeight * m_ReorderableList.count),
-                scrollPosition, new Rect(0, 0, 0, m_ReorderableList.elementHeight * (m_ReorderableList.count * 1.5f)));
-
-        if (m_AnimalsSO != null)
-        {
-            m_AnimalsSO.Update();
-            m_AnimalsSO.ApplyModifiedProperties();
-            EditorUtility.SetDirty(levelsSO);
-            m_ReorderableList.DoLayoutList();
-        }
-
-        GUI.EndScrollView();
-
-
-        EditorGUILayout.EndVertical();
     }
-}
 
 
-[Serializable]
-public class LevelData
-{
-    public int ID;
-    public Level LevelPrefab;
-    public int Number;
-
-    public LevelData(int id, int number, Level levelPrefab)
+    [Serializable]
+    public class LevelData
     {
-        ID = id;
-        Number = number;
-        LevelPrefab = levelPrefab;
-    }
-}
+        public int ID;
+        public Level LevelPrefab;
+        public int Number;
 
+        public LevelData(int id, int number, Level levelPrefab)
+        {
+            ID = id;
+            Number = number;
+            LevelPrefab = levelPrefab;
+        }
+    }
 }
