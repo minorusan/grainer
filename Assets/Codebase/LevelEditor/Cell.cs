@@ -28,6 +28,7 @@ namespace LevelEditor
 
         public void Init(int posX, int posY, Color myColor)
         {
+            image = GetComponent<Image>();
             cellPosX = posX;
             cellPosY = posY;
             cellColor = myColor;

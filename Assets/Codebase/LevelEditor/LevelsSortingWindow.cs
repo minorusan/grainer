@@ -1,4 +1,6 @@
-﻿using System;
+﻿#if UNITY_EDITOR
+
+using System;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEditorInternal;
@@ -173,3 +175,4 @@ namespace LevelEditor.Sorting
         }
     }
 }
+#endif

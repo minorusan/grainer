@@ -1,6 +1,7 @@
 ﻿using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [CustomEditor(typeof(Level))]
 public class LevelEditor : Editor
@@ -28,7 +29,7 @@ public class LevelEditor : Editor
         {
             PlayerPrefs.SetInt("EditLevel", level.Number);
             UnityEditor.EditorApplication.isPlaying = true    ;
-            EditorSceneManager.LoadScene("level_editor");
+            EditorSceneManager.OpenScene("Assets/Content/Scenes/level_editor.unity");
         }
     }
 }

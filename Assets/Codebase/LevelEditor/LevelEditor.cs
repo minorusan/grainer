@@ -1,4 +1,6 @@
-﻿using UnityEditor;
+﻿#if UNITY_EDITOR
+using System.IO;
+using UnityEditor;
 using UnityEngine;
 
 namespace LevelEditor
@@ -13,7 +15,7 @@ namespace LevelEditor
             {
                 var levelNumber = PlayerPrefs.GetInt("EditLevel", 1);
                 PlayerPrefs.DeleteKey("EditLevel");
-                  CurrentLevel = Resources.Load<Level>("Levels/level_" + levelNumber);
+                CurrentLevel = Resources.Load<Level>("Levels/level_" + levelNumber);
                 FindObjectOfType<GridBuilder>().BuildLevel(CurrentLevel.levelTexture);
             }
         }
@@ -31,8 +33,9 @@ namespace LevelEditor
             AssetDatabase.SaveAssets();
             var bytes = CurrentLevel.levelTexture.EncodeToPNG();
             var path = AssetDatabase.GetAssetPath(CurrentLevel.levelTexture);
-            System.IO.File.WriteAllBytes(path , bytes);
+            File.WriteAllBytes(path , bytes);
         }
 
     }
 }
+#endif
