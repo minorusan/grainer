@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67d65cd9ccda99f4d94c99f54950a031, type: 3}
   m_Name: level_48
   m_EditorClassIdentifier: 
+  version: 1
   Id: 48
   levelTexture: {fileID: 2800000, guid: 7aefdd9603a4d0a419df0ab1fd3a9479, type: 3}
   levelTexturePath: Assets/Content/Resources/Textures/Maps/48.png
