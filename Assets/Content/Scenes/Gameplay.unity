@@ -27280,7 +27280,7 @@ PrefabInstance:
     - target: {fileID: 6616096233059851666, guid: 5e4d8c5e5c74b4c17b2155060f5c59d6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.44006348
+      value: -0.4399414
       objectReference: {fileID: 0}
     - target: {fileID: 6616096233059851666, guid: 5e4d8c5e5c74b4c17b2155060f5c59d6,
         type: 3}
@@ -32271,6 +32271,10 @@ PrefabInstance:
     - target: {fileID: 1757995517073872, guid: 96624f1b9eeed475481c9836b1aa8f14, type: 3}
       propertyPath: m_Name
       value: crysberryconsole
+      objectReference: {fileID: 0}
+    - target: {fileID: 1757995517073872, guid: 96624f1b9eeed475481c9836b1aa8f14, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4146919946351178, guid: 96624f1b9eeed475481c9836b1aa8f14, type: 3}
       propertyPath: m_LocalPosition.x
