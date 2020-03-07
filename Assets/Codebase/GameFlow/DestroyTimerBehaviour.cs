@@ -19,9 +19,12 @@ public class DestroyTimerBehaviour : MonoBehaviour
     
     private void Start()
     {
-        MovementBehaviour.WillEnterObstacleCell += OnWillEnterObstacle;
-        MovementBehaviour.WillLeaveCell += MovementBehaviourOnWillLeaveCell;
-        GameOutcomeBehaviour.OnLoose += GameOutcomeBehaviourOnOnLoose;
+        if (!FindObjectOfType<AreaInitializeBehaviour>().DebugMode)
+        {
+            MovementBehaviour.WillEnterObstacleCell += OnWillEnterObstacle;
+            MovementBehaviour.WillLeaveCell += MovementBehaviourOnWillLeaveCell;
+            GameOutcomeBehaviour.OnLoose += GameOutcomeBehaviourOnOnLoose;
+        }
     }
 
     private void GameOutcomeBehaviourOnOnLoose()

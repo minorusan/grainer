@@ -378,6 +378,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3369373558842790361}
   - component: {fileID: 7542332038924043607}
+  - component: {fileID: 1783091170792555561}
   m_Layer: 10
   m_Name: Rotor
   m_TagString: Untagged
@@ -412,6 +413,22 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.27
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1783091170792555561
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040797396988078331}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2767628289740322996
 GameObject:
   m_ObjectHideFlags: 0

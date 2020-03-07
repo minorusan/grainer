@@ -12,6 +12,9 @@ public class RotationBehaviour : MonoBehaviour
 
     private void OnDirectionChanged(GameObject sender, DirectionChangedEventArgs changedEventArgs)
     {
-        transform.DOLookAt(transform.position + changedEventArgs.Current.ToVector3(), 0.3f);
+        if (changedEventArgs.Current != MovementDirection.None)
+        {
+            transform.DOLookAt(transform.position + changedEventArgs.Current.ToVector3(), 0.3f);
+        }
     }
 }

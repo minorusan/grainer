@@ -9,6 +9,8 @@ namespace Crysberry.Console
 {
     public static class ConsoleCommandsStorage
     {
+        
+        
         [CrysberryConsoleMember("clrprfs", "Clears PlayerPrefs. Usage: clrprfs <key1 key2 key3> - removes specified keys; no parameter - removes all ")]
         private static string ConsoleClearPlayerPrefs(string[] args)
         {

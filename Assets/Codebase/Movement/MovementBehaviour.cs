@@ -10,6 +10,8 @@ public class MovementBehaviour : DebuggableBehaviour
     private MovementDirection pendingDirection = MovementDirection.None;
     private MovementDirection currentDirection = MovementDirection.None;
 
+    public MovementDirection CurrentDirection => currentDirection;
+
     public static event DirectionChangedHandler DirectionChanged = delegate(GameObject sender, DirectionChangedEventArgs changedEventArgs) { };
     public event DirectionChangedHandler OwnerDirectionChanged = delegate (GameObject sender, DirectionChangedEventArgs changedEventArgs) { };
     public event DirectionChangedHandler OwnerWillChangeDirection = delegate (GameObject sender, DirectionChangedEventArgs changedEventArgs) { };
@@ -27,7 +29,6 @@ public class MovementBehaviour : DebuggableBehaviour
     public bool InvokesEvents;
 
     public UnityEvent OnRotate;
-    
 
     public MovementSettings MovementSettings;
 
@@ -53,6 +54,12 @@ public class MovementBehaviour : DebuggableBehaviour
     private void FixedUpdate()
     {
         MoveIfNeeded();
+    }
+
+    public bool IsAbleToMoveInDirection(MovementDirection direction)
+    {
+        var nextCellPosition = transform.position + direction.ToVector3();
+        return AreaHelper.IsWalkable(nextCellPosition);
     }
 
     private void MoveIfNeeded()
