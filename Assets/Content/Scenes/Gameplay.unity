@@ -4662,7 +4662,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 00:29
+  m_text: 00:00
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8ef959666c2a40f429da5302a5b62f77, type: 2}
   m_sharedMaterial: {fileID: -5150729334295142879, guid: 8ef959666c2a40f429da5302a5b62f77,
@@ -4691,8 +4691,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 33
-  m_fontSizeBase: 33
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -30634,7 +30634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf01bde8840634efb8545f93d2ff1a80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DebugMode: 1
+  DebugMode: 0
   Animation: {fileID: 519420038}
   DebugMap: {fileID: 2800000, guid: 2c27a100fba9b4eb3a2eb430c5c601f2, type: 3}
   CameraOffset: {fileID: 1160003531}
