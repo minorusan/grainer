@@ -102,6 +102,12 @@ public class LevelsHistory
         return allLevels.OrderBy(x=>Convert.ToInt32(x.levelTexture.name)).ToArray();
     }
 
+    public static int GetMaxLevelNumber()
+    {
+        var allLevels = GetAndSortLevels();
+        return allLevels[allLevels.Length-1].Number;
+    }
+
     public static bool PassLevel(int levelID, int turnsCount = 100)
     {
         if (levelID >= CurrentLevelID)
