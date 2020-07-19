@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67d65cd9ccda99f4d94c99f54950a031, type: 3}
   m_Name: level_53
   m_EditorClassIdentifier: 
-  version: 0
-  Id: 53
-  levelTexture: {fileID: 2800000, guid: 261d6f8aa2d164bd1bf6973b0601ed51, type: 3}
-  levelTexturePath: Assets/Content/Resources/Textures/Maps/53.png
+  version: 1
+  Id: 48
+  levelTexture: {fileID: 2800000, guid: 7aefdd9603a4d0a419df0ab1fd3a9479, type: 3}
+  levelTexturePath: Assets/Content/Resources/Textures/Maps/48.png
   Number: 53
   isDirty: 0
