@@ -33,9 +33,6 @@ MonoBehaviour:
   - ChanceTreshold: 0.278
     Prefab: {fileID: 4529043368669277823, guid: c96c29e9974ce4219a3b486268cb6e7f,
       type: 3}
-  - ChanceTreshold: 0.456
-    Prefab: {fileID: 4529043368669277823, guid: 2d5a96678ad3345aebb4ded045e3d072,
-      type: 3}
   - ChanceTreshold: 0.388
     Prefab: {fileID: 4529043368669277823, guid: 8ad55a592182c46b0b6e29938ae189c3,
       type: 3}
