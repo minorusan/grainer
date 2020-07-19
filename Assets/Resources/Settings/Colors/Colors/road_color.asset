@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: road_color
   m_EditorClassIdentifier: 
   color: {r: 0.20572266, g: 0.6320754, b: 0.52460605, a: 1}
-  speedCoefitient: 3
+  speedCoefitient: 2
   events: []
   prefabs:
   - ChanceTreshold: 1

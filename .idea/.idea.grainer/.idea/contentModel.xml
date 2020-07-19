@@ -1,16 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\olehk\.Rider2018.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\olehk\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_grainer.1151843177.00" t="ExcludeRecursive" />
-    <e p="C:\Users\olehk\Documents\_MyProjects\grainer" t="IncludeRecursive">
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="BuildReport" t="Include">
+          <e p="BuildReportToolOptions.xml" t="Include" />
+          <e p="license.txt" t="Include" />
+          <e p="readme.txt" t="Include" />
+          <e p="Scripts" t="Include">
+            <e p="Editor" t="Include">
+              <e p="BRT_VersionInfo.cs" t="Include" />
+              <e p="FuzzyString" t="Include">
+                <e p="ApproximatelyEquals.cs" t="Include" />
+                <e p="FuzzyStringComparisonOptions.cs" t="Include" />
+                <e p="FuzzyStringComparisonTolerance.cs" t="Include" />
+                <e p="HammingDistance.cs" t="Include" />
+                <e p="JaccardDistance.cs" t="Include" />
+                <e p="JaroDistance.cs" t="Include" />
+                <e p="JaroWinklerDistance.cs" t="Include" />
+                <e p="LevenshteinDistance.cs" t="Include" />
+                <e p="license.txt" t="Include" />
+                <e p="LongestCommonSubsequence.cs" t="Include" />
+                <e p="LongestCommonSubstring.cs" t="Include" />
+                <e p="Operations.cs" t="Include" />
+                <e p="OverlapCoefficient.cs" t="Include" />
+                <e p="RatcliffObershelpSimilarity.cs" t="Include" />
+                <e p="SorensenDiceDistance.cs" t="Include" />
+                <e p="TanimotoCoefficient.cs" t="Include" />
+              </e>
+              <e p="Options" t="Include">
+                <e p="BRT_FileFilters.cs" t="Include" />
+                <e p="BRT_FiltersUsed.cs" t="Include" />
+                <e p="BRT_Options.cs" t="Include" />
+              </e>
+              <e p="ReportData" t="Include">
+                <e p="BRT_AssetList.cs" t="Include" />
+                <e p="BRT_BuildInfo.cs" t="Include" />
+                <e p="BRT_BuildPlatformType.cs" t="Include" />
+                <e p="BRT_BuildSettingsCategoryType.cs" t="Include" />
+                <e p="BRT_SizePart.cs" t="Include" />
+                <e p="BRT_UnityBuildSettings.cs" t="Include" />
+              </e>
+              <e p="ReportGeneration" t="Include">
+                <e p="BRT_ReportGenerator.cs" t="Include" />
+                <e p="BRT_UnityBuildSettingsUtility.cs" t="Include" />
+              </e>
+              <e p="Utility" t="Include">
+                <e p="BRT_LibCacheUtil.cs" t="Include" />
+                <e p="BRT_Util.cs" t="Include" />
+                <e p="DldUtil_BackwardFileReader.cs" t="Include" />
+                <e p="DldUtil_BigFileReader.cs" t="Include" />
+                <e p="DldUtil_GetRspDefines.cs" t="Include" />
+                <e p="DldUtil_TraverseDirectory.cs" t="Include" />
+                <e p="DldUtil_UnityVersion.cs" t="Include" />
+              </e>
+              <e p="Window" t="Include">
+                <e p="BRT_BuildReportWindow.cs" t="Include" />
+                <e p="BRT_WindowLabels.cs" t="Include" />
+                <e p="BRT_WindowSettings.cs" t="Include" />
+                <e p="BRT_WindowUtility.cs" t="Include" />
+                <e p="Screen" t="Include">
+                  <e p="BRT_AssetListScreen.cs" t="Include" />
+                  <e p="BRT_BaseScreen.cs" t="Include" />
+                  <e p="BRT_BuildSettingsScreen.cs" t="Include" />
+                  <e p="BRT_HelpScreen.cs" t="Include" />
+                  <e p="BRT_OptionsScreen.cs" t="Include" />
+                  <e p="BRT_OverviewScreen.cs" t="Include" />
+                  <e p="BRT_SizeStatsScreen.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="VERSION.txt" t="Include" />
+        </e>
         <e p="Codebase" t="Include">
           <e p="Ads" t="Include">
             <e p="AdsManager.cs" t="Include" />
             <e p="AdvertisementBehaviour.cs" t="Include" />
+          </e>
+          <e p="AndroidBackButton" t="Include">
+            <e p="AndroidBackButtonOnPressBehaviour.cs" t="Include" />
+            <e p="CloseApplicationBehaviour.cs" t="Include" />
+            <e p="CloseSettingsWindowAction.cs" t="Include" />
+            <e p="GameObjectSetActiveFalseAction.cs" t="Include" />
+            <e p="OnPressButtonActionBase.cs" t="Include" />
           </e>
           <e p="AreaInitialisation" t="Include">
             <e p="AreaInitializeBehaviour.cs" t="Include" />
@@ -74,6 +149,7 @@
             <e p="Extentions.cs" t="Include" />
             <e p="GameEntitiesHolder.cs" t="Include" />
             <e p="GameplayTimescale.cs" t="Include" />
+            <e p="InitializeGABehaviour.cs" t="Include" />
             <e p="SetMaterialAsChessboardBehaviour.cs" t="Include" />
             <e p="SmallTypes.cs" t="Include" />
             <e p="Strings.cs" t="Include" />
@@ -90,16 +166,26 @@
             <e p="SwipeInputProviderBehaviour.cs" t="Include" />
             <e p="ZeroingTimescaleOnEnableBehaviour.cs" t="Include" />
           </e>
+          <e p="LevelEditor" t="Include">
+            <e p="Cell.cs" t="Include" />
+            <e p="ColorPicker.cs" t="Include" />
+            <e p="GridBuilder.cs" t="Include" />
+            <e p="GridScalar.cs" t="Include" />
+            <e p="LevelEditor.cs" t="Include" />
+            <e p="LevelHandler.cs" t="Include" />
+            <e p="Levels.cs" t="Include" />
+            <e p="LevelsSortingWindow.cs" t="Include" />
+            <e p="SelectColorButton.cs" t="Include" />
+          </e>
           <e p="Levels" t="Include">
             <e p="LevelsHistory.cs" t="Include" />
             <e p="NextLevelBehaviour.cs" t="Include" />
             <e p="RefreshLevelsDataBehaviour.cs" t="Include" />
           </e>
-          <e p="LevelTesting" t="Include">
-            <e p="LevelHandler.cs" t="Include" />
-          </e>
           <e p="Misc" t="Include">
             <e p="CameraFieldOfViewBehaviour.cs" t="Include" />
+            <e p="CharacterAnimationBehaviour.cs" t="Include" />
+            <e p="CharacterMessagesBehaviour.cs" t="Include" />
             <e p="LookAtWalkableCellBehaviour.cs" t="Include" />
             <e p="PropsCombineBehaviour.cs" t="Include" />
             <e p="ScreenRippleAtPosition.cs" t="Include" />
@@ -113,6 +199,7 @@
           <e p="Movement" t="Include">
             <e p="MovementBehaviour.cs" t="Include" />
             <e p="RotationBehaviour.cs" t="Include" />
+            <e p="SetMoveDirectionOnTriggerBehaviour.cs" t="Include" />
           </e>
           <e p="Networking" t="Include">
             <e p="GetItemsBehaviour.cs" t="Include" />
@@ -157,8 +244,6 @@
             <e p="Toon.shader" t="Include" />
           </e>
         </e>
-        <e p="Levels.cs" t="Include" />
-        <e p="LevelsSortingWindow.cs" t="Include" />
         <e p="Libs" t="Include">
           <e p="Crysberry" t="Include">
             <e p="Audio" t="Include">
@@ -244,6 +329,74 @@
             </e>
             <e p="readme_DOTweenPro.txt" t="Include" />
           </e>
+          <e p="GameAnalytics" t="Include">
+            <e p="Editor" t="Include">
+              <e p="GA_AssetPostprocessor.cs" t="Include" />
+              <e p="GA_AutoRun.cs" t="Include" />
+              <e p="GA_ContinuationManager.cs" t="Include" />
+              <e p="GA_EditorUtilities.cs" t="Include" />
+              <e p="GA_Menu.cs" t="Include" />
+              <e p="GA_PostprocessBuild.cs" t="Include" />
+              <e p="GA_SettingsInspector.cs" t="Include" />
+              <e p="GA_SignUp.cs" t="Include" />
+              <e p="GA_UpdateWindow.cs" t="Include" />
+              <e p="GameAnalyticsInspector.cs" t="Include" />
+            </e>
+            <e p="Plugins" t="Include">
+              <e p="Playmaker" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="PlayMakerPresenceCheck.cs" t="Include" />
+                  <e p="SendProgressionEventActionEditor.cs" t="Include" />
+                  <e p="SendResourceEventActionEditor.cs" t="Include" />
+                </e>
+                <e p="GAInitialize.cs" t="Include" />
+                <e p="GetRemoteConfigsValueAsString.cs" t="Include" />
+                <e p="IsRemoteConfigsReady.cs" t="Include" />
+                <e p="SendBusinessEvent.cs" t="Include" />
+                <e p="SendDesignEvent.cs" t="Include" />
+                <e p="SendErrorEvent.cs" t="Include" />
+                <e p="SendProgressionEvent.cs" t="Include" />
+                <e p="SendResourceEvent.cs" t="Include" />
+                <e p="SetCustomDimension.cs" t="Include" />
+              </e>
+              <e p="Scripts" t="Include">
+                <e p="Enums.cs" t="Include" />
+                <e p="Events" t="Include">
+                  <e p="GA_Ads.cs" t="Include" />
+                  <e p="GA_Business.cs" t="Include" />
+                  <e p="GA_Debug.cs" t="Include" />
+                  <e p="GA_Design.cs" t="Include" />
+                  <e p="GA_Error.cs" t="Include" />
+                  <e p="GA_Progression.cs" t="Include" />
+                  <e p="GA_Resource.cs" t="Include" />
+                  <e p="GA_Setup.cs" t="Include" />
+                  <e p="GA_SpecialEvents.cs" t="Include" />
+                  <e p="GAValidator.cs" t="Include" />
+                </e>
+                <e p="GameAnalytics.cs" t="Include" />
+                <e p="Setup" t="Include">
+                  <e p="Settings.cs" t="Include" />
+                </e>
+                <e p="State" t="Include">
+                  <e p="GAState.cs" t="Include" />
+                </e>
+                <e p="Utilities" t="Include">
+                  <e p="GA_MiniJson.cs" t="Include" />
+                </e>
+                <e p="Wrapper" t="Include">
+                  <e p="GA_AndroidWrapper.cs" t="Include" />
+                  <e p="GA_iOSWrapper.cs" t="Include" />
+                  <e p="GA_MonoWrapper.cs" t="Include" />
+                  <e p="GA_TizenWrapper.cs" t="Include" />
+                  <e p="GA_tvOSWrapper.cs" t="Include" />
+                  <e p="GA_UWPWrapper.cs" t="Include" />
+                  <e p="GA_WebGLWrapper.cs" t="Include" />
+                  <e p="GA_Wrapper.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="readme.txt" t="Include" />
+          </e>
           <e p="TextMesh Pro" t="Include">
             <e p="Fonts" t="Include">
               <e p="LiberationSans - OFL.txt" t="Include" />
@@ -286,6 +439,7 @@
         </e>
         <e p="UI" t="Include">
           <e p="ButtonShakeBehaviour.cs" t="Include" />
+          <e p="EnableButtonBehaviour.cs" t="Include" />
           <e p="GameplayTimerBehaviour.cs" t="Include" />
           <e p="GameplayTurnsCounterBehaviour.cs" t="Include" />
           <e p="LevelButtonBehavior.cs" t="Include" />
@@ -298,14 +452,14 @@
       <e p="AudioTests.csproj" t="IncludeRecursive" />
       <e p="CrysberryAudio.csproj" t="IncludeRecursive" />
       <e p="grainer.sln" t="IncludeFlat" />
-      <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="Routines.csproj" t="IncludeRecursive" />
       <e p="RoutineTests.csproj" t="IncludeRecursive" />
-      <e p="Temp" t="ExcludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
-      </e>
+      <e p="Temp/bin" t="ExcludeRecursive" />
     </e>
+    <e p="$APPLICATION_CONFIG_DIR$/scratches" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/JetBrains/Rider2020.1/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/JetBrains/Rider2020.1/resharper-host/local/Transient/ReSharperHost/v201/SolutionCaches/_grainer.-1401888764.00" t="ExcludeRecursive" />
   </component>
 </project>
