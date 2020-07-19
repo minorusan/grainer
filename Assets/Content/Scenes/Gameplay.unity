@@ -21672,7 +21672,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.87000006, y: 0.034}
   m_AnchorMax: {x: 0.97300005, y: 0.20274104}
-  m_AnchoredPosition: {x: -0.049804688, y: 4.5042877}
+  m_AnchoredPosition: {x: -0.049804688, y: 4.5043945}
   m_SizeDelta: {x: -0.2999878, y: -8.100006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1168582431
@@ -30527,7 +30527,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DebugMode: 0
   Animation: {fileID: 519420038}
-  DebugMap: {fileID: 2800000, guid: 43b61488bc5504f799298a08d8bf922e, type: 3}
+  DebugMap: {fileID: 2800000, guid: 267c1000c84e8284ea7cf577045c64ca, type: 3}
   CameraOffset: {fileID: 1160003531}
   TilesHub: {fileID: 267378640}
 --- !u!114 &1688940325

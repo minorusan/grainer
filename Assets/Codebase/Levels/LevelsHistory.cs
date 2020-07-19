@@ -77,8 +77,8 @@ public class LevelsHistory
     {
         var data = LevelsDatabaseStructure();
         var levels = GetAndSortLevels();
-        var levelId = levels[levelNumber-1].Id;
-        return data.content.First(x=>x.levelID == levelId && x.version == GetLevelVersion(levelId)).minTurnsCount;
+        var levelId = levels[levelNumber].Id;
+        return data.content.First(x=>x.levelID == levelId && x.version == GetLevelVersion(levelId-1)).minTurnsCount;
     }
 
     public static int GetLevelVersion(int levelID)
