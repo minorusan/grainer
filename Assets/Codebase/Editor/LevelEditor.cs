@@ -4,7 +4,7 @@ using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-[CustomEditor(typeof(Level))]
+[CustomEditor(typeof(Level)),CanEditMultipleObjects]
 public class LevelEditor : Editor
 {
     int height = 13;
@@ -15,7 +15,7 @@ public class LevelEditor : Editor
     {
         var level = (Level) target;
 
-        EditorGUI.BeginDisabledGroup(true);
+        // EditorGUI.BeginDisabledGroup(true);
         DrawDefaultInspector();
 
         var texture = (Texture2D) AssetDatabase.LoadAssetAtPath(level.levelTexturePath, typeof(Texture2D));
@@ -29,7 +29,7 @@ public class LevelEditor : Editor
         level.levelTexture = texture;
         EditorGUILayout.ObjectField("Texture", texture, typeof(Texture2D), false);
 
-        EditorGUI.EndDisabledGroup();
+        // EditorGUI.EndDisabledGroup();
         if (GUILayout.Button("Edit"))
         {
             PlayerPrefs.SetInt("EditLevel", level.Number);
