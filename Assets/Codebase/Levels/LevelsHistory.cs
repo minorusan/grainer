@@ -1,6 +1,8 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
+using GameAnalyticsSDK;
+using GameAnalyticsSDK.Events;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -110,10 +112,12 @@ public class LevelsHistory
 
     public static bool PassLevel(int levelID, int turnsCount = 100)
     {
+        
         if (levelID >= CurrentLevelID)
         {
             CurrentLevelID = levelID + 1;
         }
+        
         return UpdatePlayerData(levelID + 1, turnsCount);
     }
 
