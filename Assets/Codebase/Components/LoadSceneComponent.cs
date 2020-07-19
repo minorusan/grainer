@@ -29,7 +29,8 @@ public class LoadSceneComponent : MonoBehaviour
                 LoadScene("main_menu");
                 return;
             }
-            sceneName = gameplaySceneNames[Random.Range(0, gameplaySceneNames.Length)];
+
+            sceneName = "gameplay";
         }
         LoadStarted.Invoke();
         Routiner.StartCouroutine(LoadYourAsyncScene(sceneName));

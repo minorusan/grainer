@@ -16,7 +16,7 @@ public class ModifyLevelRequest : BaseRequest
     
     public ModifyLevelRequest(int lvlID, int newMinTurns)
     {
-        this.levelID = lvlID+1;
+        this.levelID = lvlID;
         this.version = LevelsHistory.GetLevelVersion(lvlID);
         this.minTurnsCount = newMinTurns;
     }

@@ -10,7 +10,7 @@ public class AdsManager : IUnityAdsListener
 #endif
     private const string PLACEMENT_ID = "LevelComplete";
     public const int MINIMUM_ADS_LEVEL = 5;
-    public const int LEVELS_BEFORE_AD = 5;
+    public const int LEVELS_BEFORE_AD = 10;
     
     
 #if UNITY_EDITOR

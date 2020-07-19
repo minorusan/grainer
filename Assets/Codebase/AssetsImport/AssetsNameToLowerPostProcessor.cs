@@ -11,7 +11,7 @@ public class AssetsNameToLower : AssetPostprocessor
                 continue;
             }
             var asset = AssetDatabase.LoadMainAssetAtPath(item);
-            AssetDatabase.RenameAsset(item, asset.name.ToLower());
+//            AssetDatabase.RenameAsset(item, asset.name.ToLower());
         }
     }
 }

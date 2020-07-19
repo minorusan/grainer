@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using UnityEditor.iOS;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -58,7 +56,7 @@ public class LevelsHistory
             return false;
         }
 
-        var levelOnServer = serversideLevelsData.content.FirstOrDefault(x => x != null && x.levelID == levelID+1 && x.version == version);
+        var levelOnServer = serversideLevelsData.content.FirstOrDefault(x => x != null && x.levelID == levelID && x.version == version);
         if (levelOnServer == null)
         {
             compareResult = 0f;
@@ -73,10 +71,12 @@ public class LevelsHistory
         return true;
     }
 
-    public static int TurnsCountForLevel(int levelID)
+    public static int TurnsCountForLevel(int levelNumber)
     {
         var data = LevelsDatabaseStructure();
-        return data.content.First(x=>x.levelID == levelID+1 && x.version == GetLevelVersion(levelID)).minTurnsCount;
+        var levels = GetAndSortLevels();
+        var levelId = levels[levelNumber-1].Id;
+        return data.content.First(x=>x.levelID == levelId && x.version == GetLevelVersion(levelId)).minTurnsCount;
     }
 
     public static int GetLevelVersion(int levelID)
@@ -99,7 +99,7 @@ public class LevelsHistory
     {
         var allLevels = Resources.LoadAll<Level>("Levels").ToList();
 
-        return allLevels.OrderBy(x=>Convert.ToInt32(x.levelTexture.name)).ToArray();
+        return allLevels.OrderBy(x=>x.Number).ToArray();
     }
 
     public static int GetMaxLevelNumber()
@@ -114,7 +114,7 @@ public class LevelsHistory
         {
             CurrentLevelID = levelID + 1;
         }
-        return UpdatePlayerData(levelID, turnsCount);
+        return UpdatePlayerData(levelID + 1, turnsCount);
     }
 
     private static bool UpdatePlayerData(int levelID, int turnsCount = 100)

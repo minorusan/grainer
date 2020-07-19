@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,7 +10,7 @@ public class LevelPreviewBehaviour : MonoBehaviour
     public void Init(int levelIndex)
     {
         var isActive = levelIndex <= LevelsHistory.CurrentLevelID;
-        LevelIndexText.text = isActive ? (levelIndex + 1).ToString() : "";
+        LevelIndexText.text = isActive ? (levelIndex + 1).ToString() : string.Empty;
         LoadButton.interactable = isActive;
 
         if (isActive)

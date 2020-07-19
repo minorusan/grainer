@@ -35,7 +35,7 @@ public class DestroyTimerBehaviour : MonoBehaviour
 
     private void Update()
     {
-        if (isTriggered)
+        if (isTriggered && GameplayTimescale.GameActive)
         {
             triggeredTimer += Time.deltaTime;
             FillBar.fillAmount = triggeredTimer / DestroyTime;
