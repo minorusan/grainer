@@ -14,7 +14,7 @@ public class GameplayTurnsCountBehaviour : MonoBehaviour
     {
         var min = LevelsHistory.TurnsCountForLevel(LevelsHistory.GamePlayLevelID);
 
-        CurrentTurnsLeftCount = Mathf.RoundToInt(min * 1.2f);
+        CurrentTurnsLeftCount = min;
         PlayerTurnsCountChanged(CurrentTurnsLeftCount);
         var area = FindObjectOfType<AreaInitializeBehaviour>();
         Routiner.InvokeNextFrame(() =>

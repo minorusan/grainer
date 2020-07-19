@@ -12,10 +12,12 @@ public class ModifyLevelRequest : BaseRequest
 {
     public int levelID;
     public int minTurnsCount;
+    public int version;
     
     public ModifyLevelRequest(int lvlID, int newMinTurns)
     {
-        this.levelID = lvlID;
+        this.levelID = lvlID+1;
+        this.version = LevelsHistory.GetLevelVersion(lvlID);
         this.minTurnsCount = newMinTurns;
     }
 }
@@ -53,11 +55,13 @@ public class DatabaseItem
 {
     public string _id;
     public int levelID;
+    public int version;
     public int minTurnsCount;
 
     public DatabaseItem()
     {
         levelID = 0;
+        version = 1;
         minTurnsCount = 100;
     }
 

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using UnityEditor.iOS;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -39,6 +40,11 @@ public class LevelsHistory
 
     public static bool ComparePlayerLevelDataWithServer(int levelID, out float compareResult)
     {
+        return ComparePlayerLevelDataWithServer(levelID, GetLevelVersion(levelID), out compareResult);
+    }
+    
+    public static bool ComparePlayerLevelDataWithServer(int levelID, int version, out float compareResult)
+    {
         if (levelID > CurrentLevelID)
         {
             compareResult = 0f;
@@ -52,7 +58,7 @@ public class LevelsHistory
             return false;
         }
 
-        var levelOnServer = serversideLevelsData.content.FirstOrDefault(x => x != null && x.levelID == levelID);
+        var levelOnServer = serversideLevelsData.content.FirstOrDefault(x => x != null && x.levelID == levelID+1 && x.version == version);
         if (levelOnServer == null)
         {
             compareResult = 0f;
@@ -62,15 +68,21 @@ public class LevelsHistory
 
         var playerTurnsCount = TurnsCountForLevel(levelID);
         compareResult = (float)serversideLevelsData.content[levelID].minTurnsCount / playerTurnsCount;
-        Debug.Log($"LevelsHistory::Comparing player level <{levelID}>(turns count <{playerTurnsCount}>) " +
-                  $"with server level <{levelID}>(turns count <{serversideLevelsData.content[levelID].minTurnsCount}>). Result::{compareResult}");
+        Debug.Log($"LevelsHistory::Comparing player level <{levelID}>({version})(turns count <{playerTurnsCount}>) " +
+                  $"with server level <{levelID}>({version})(turns count <{serversideLevelsData.content[levelID].minTurnsCount}>). Result::{compareResult}");
         return true;
     }
 
     public static int TurnsCountForLevel(int levelID)
     {
         var data = LevelsDatabaseStructure();
-        return data.content.First(x=>x.levelID == levelID).minTurnsCount;
+        return data.content.First(x=>x.levelID == levelID+1 && x.version == GetLevelVersion(levelID)).minTurnsCount;
+    }
+
+    public static int GetLevelVersion(int levelID)
+    {
+        var levels = Resources.LoadAll<Level>("Levels");
+        return levels.FirstOrDefault(x => x.Id == levelID+1).version;
     }
 
     public static Texture2D GetLevelMap()
@@ -96,7 +108,6 @@ public class LevelsHistory
         {
             CurrentLevelID = levelID + 1;
         }
-        
         return UpdatePlayerData(levelID, turnsCount);
     }
 
@@ -105,10 +116,11 @@ public class LevelsHistory
         var data = LevelsDatabaseStructure();
 
         var databaseItems = data.content.ToList();
-        var levelItem = databaseItems.FirstOrDefault(x => x!=null && x.levelID == levelID);
+        var version = GetLevelVersion(levelID);
+        var levelItem = databaseItems.FirstOrDefault(x => x!=null && x.levelID == levelID && x.version == version);
         if (levelItem == null)
         {
-            databaseItems.Add(new DatabaseItem(){levelID = levelID, minTurnsCount = turnsCount});
+            databaseItems.Add(new DatabaseItem(){levelID = levelID, minTurnsCount = turnsCount, version = version});
         }
         else
         {
@@ -124,7 +136,8 @@ public class LevelsHistory
 
     public static bool UpdateRemoteLevelResultIfNeeded(int levelID, int turnsCount)
     {
-        if (ComparePlayerLevelDataWithServer(levelID, out var compareResult) && compareResult > 1f)
+        var version = GetLevelVersion(levelID);
+        if (ComparePlayerLevelDataWithServer(levelID,version, out var compareResult) && compareResult > 1f)
         {
             RefreshLevelsDatabase(() =>
             {

@@ -22,11 +22,6 @@ public class LevelPreviewBehaviour : MonoBehaviour
                 LevelsHistory.GamePlayLevelID = levelIndex;
                 FindObjectOfType<LoadSceneComponent>().LoadScene("gameplay");
             });
-
-            if (LevelsHistory.ComparePlayerLevelDataWithServer(levelIndex, out var result))
-            {
-                    
-            }
         }
     }
 }

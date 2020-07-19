@@ -17,11 +17,20 @@ public class NetworkingMethods : MonoBehaviour
             yield return t;
             if (t.webRequest.isDone && !www.isHttpError && www.responseCode == 200)
             {
-                string responseJSON = Encoding.UTF8.GetString(www.downloadHandler.data, 0, www.downloadHandler.data.Length);
-                var convertedJSON = JsonUtility.FromJson<T>(responseJSON);
-                Debug.Log($"<color=blue> Networking::Message <{convertedJSON.message}></color>" );
-                success?.Invoke(convertedJSON.message);
-                responseDataCallback?.Invoke(convertedJSON);
+                try
+                {
+                    string responseJSON = Encoding.UTF8.GetString(www.downloadHandler.data, 0, www.downloadHandler.data.Length);
+                    var convertedJSON = JsonUtility.FromJson<T>(responseJSON);
+                    Debug.Log($"<color=blue> Networking::Message <{convertedJSON.message}></color>" );
+                    success?.Invoke(convertedJSON.message);
+                    responseDataCallback?.Invoke(convertedJSON);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                    throw;
+                }
+                
             }
 
             if (www.isHttpError)
