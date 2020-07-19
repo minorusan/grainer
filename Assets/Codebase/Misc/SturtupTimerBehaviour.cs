@@ -1,11 +1,12 @@
-﻿using TMPro;
+﻿using System;
+using TMPro;
 using UnityEngine;
 
 public class SturtupTimerBehaviour : MonoBehaviour
 {
     public float StartupTime = 3f;
     public TextMeshProUGUI TimeLeft;
-    
+    public static event Action TimerDisabled;
     
     void Update()
     {
@@ -23,6 +24,7 @@ public class SturtupTimerBehaviour : MonoBehaviour
                 var player = GameObject.Find("Player");
                 player.GetComponentInChildren<MovementBehaviour>().SetDirection(player.transform.forward.ToDirection());
             }
+            TimerDisabled?.Invoke();
             enabled = false;
         }
     }
