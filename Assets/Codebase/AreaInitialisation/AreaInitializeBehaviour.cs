@@ -5,7 +5,9 @@ using UnityEngine;
 public class AreaInitializeBehaviour : MonoBehaviour
 {
     private Texture2D currentMap;
+#if UNITY_EDITOR
     public bool DebugMode;
+#endif
     public CameraFieldOfViewBehaviour Animation;
     public Texture2D DebugMap;
     public Transform CameraOffset;
@@ -15,6 +17,7 @@ public class AreaInitializeBehaviour : MonoBehaviour
 
     private void Start()
     {
+#if UNITY_EDITOR
         if (DebugMode)
         {
             InitializeArea(DebugMap);
@@ -29,10 +32,13 @@ public class AreaInitializeBehaviour : MonoBehaviour
             }
             else
             {
+#endif
                 InitializeArea(LevelsHistory.GetLevelMap());
                 DebugMap = LevelsHistory.GetLevelMap();
+#if UNITY_EDITOR
             }
         }
+#endif
     }
 
     public void InitializeArea(Texture2D texture)

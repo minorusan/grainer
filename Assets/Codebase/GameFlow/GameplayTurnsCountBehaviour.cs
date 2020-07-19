@@ -22,7 +22,11 @@ public class GameplayTurnsCountBehaviour : MonoBehaviour
             GameObject.FindWithTag("Player").GetComponent<MovementBehaviour>().OwnerDirectionChanged +=
                 (sender, args) =>
                 {
-                    if (previous != args.Current && !area.DebugMode)
+                    if (previous != args.Current
+#if UNITY_EDITOR
+                        && !area.DebugMode
+#endif
+                        )
                     {
                         CurrentTurnsLeftCount--;
                         CurrentTurnsCount++;
