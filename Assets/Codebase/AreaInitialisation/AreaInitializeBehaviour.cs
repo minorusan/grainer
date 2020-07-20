@@ -24,7 +24,7 @@ public class AreaInitializeBehaviour : MonoBehaviour
         }
         else
         {
-            var map = LevelsHistory.GetLevelMap();
+            var map = LevelsStorage.LevelMapForLevelNumber(AppState.GameplayLevelNumber);
             if (map == null)
             {
                 DebugMode = true;
@@ -33,8 +33,8 @@ public class AreaInitializeBehaviour : MonoBehaviour
             else
             {
 #endif
-                InitializeArea(LevelsHistory.GetLevelMap());
-                DebugMap = LevelsHistory.GetLevelMap();
+                InitializeArea(LevelsStorage.LevelMapForLevelNumber(AppState.GameplayLevelNumber));
+                DebugMap = LevelsStorage.LevelMapForLevelNumber(AppState.GameplayLevelNumber);
 #if UNITY_EDITOR
             }
         }

@@ -5,6 +5,6 @@ public class RefreshLevelsDataBehaviour : MonoBehaviour
 {
     private void OnEnable()
     {
-        LevelsHistory.RefreshLevelsDatabase(null, null);
+        LevelsStorage.Update();
     }
 }

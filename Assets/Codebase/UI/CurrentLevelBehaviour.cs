@@ -7,6 +7,6 @@ public class CurrentLevelBehaviour : MonoBehaviour
 
     private void Start()
     {
-        CurrentLevel.text = (LevelsHistory.GamePlayLevelID + 1).ToString();
+        CurrentLevel.text = (AppState.GameplayLevelNumber).ToString();
     }
 }

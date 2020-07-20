@@ -12,7 +12,7 @@ public class GameplayTurnsCountBehaviour : MonoBehaviour
 
     private void OnEnable()
     {
-        var min = LevelsHistory.TurnsCountForLevel(LevelsHistory.GamePlayLevelID + 1);
+        var min = LevelsStorage.TurnsCountForLevelNumber(AppState.GameplayLevelNumber);
 
         CurrentTurnsLeftCount = min;
         PlayerTurnsCountChanged(CurrentTurnsLeftCount);

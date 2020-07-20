@@ -24,7 +24,7 @@ public class LoadSceneComponent : MonoBehaviour
        
         if (sceneName.Contains("gameplay"))
         {
-            if (LevelsHistory.GamePlayLevelID >= LevelsHistory.GetMaxLevelNumber())
+            if (AppState.GameplayLevelNumber >= LevelsStorage.LastLevelNumber)
             {
                 LoadScene("main_menu");
                 return;

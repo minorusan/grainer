@@ -171,7 +171,7 @@ PlayerSettings:
     Standalone: com.Company.ProductName
     iPhone: com.mothersbestchild.anxiety
   buildNumber: {}
-  AndroidBundleVersionCode: 7
+  AndroidBundleVersionCode: 8
   AndroidMinSdkVersion: 19
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1

@@ -4,6 +4,6 @@ public class NextLevelBehaviour : MonoBehaviour
 {
     public void Continue()
     {
-        LevelsHistory.GamePlayLevelID += 1;
+        AppState.GameplayLevelNumber += 1;
     }
 }

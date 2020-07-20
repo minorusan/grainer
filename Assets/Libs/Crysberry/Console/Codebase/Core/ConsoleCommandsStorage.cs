@@ -80,7 +80,7 @@ namespace Crysberry.Console
         [CrysberryConsoleMember("passall", "Pass all levels")]
         private static string PassAll(string[] args)
         {
-            LevelsHistory.CurrentLevelID = 999;
+            AppState.PassAll();
             return $"All levels opened";
         }
         
@@ -88,7 +88,7 @@ namespace Crysberry.Console
         private static string RstLVL(string[] args)
         {
             
-            LevelsHistory.ClearHistory();
+            AppState.ClearProgress();
             return $"All levels closed";
         }
         

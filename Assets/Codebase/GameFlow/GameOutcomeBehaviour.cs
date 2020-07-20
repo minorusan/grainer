@@ -13,7 +13,7 @@ public class GameOutcomeBehaviour : MonoBehaviour
 
     private void OnEnable()
     {
-        GameAnalytics.NewProgressionEvent (GAProgressionStatus.Start, $"level_{LevelsHistory.GamePlayLevelID}", LevelsHistory.TurnsCountForLevel(LevelsHistory.GamePlayLevelID));
+        GameAnalytics.NewProgressionEvent (GAProgressionStatus.Start, $"level_{AppState.GameplayLevelNumber}", LevelsStorage.TurnsCountForLevelNumber(AppState.GameplayLevelNumber));
         IsChampion = false;
     }
 
@@ -21,13 +21,20 @@ public class GameOutcomeBehaviour : MonoBehaviour
     {
         if (GameplayObjectivesBehaviour.IsCompleted)
         {
-            IsChampion = LevelsHistory.PassLevel(LevelsHistory.GamePlayLevelID, TurnsCounter.CurrentTurnsCount);
-            GameAnalytics.NewProgressionEvent (GAProgressionStatus.Complete, $"level_{LevelsHistory.GamePlayLevelID}", TurnsCounter.CurrentTurnsCount);
+            IsChampion =
+                LevelsStorage.IsPlayerResultBetterThenRemote(AppState.GameplayLevelNumber,
+                    TurnsCounter.CurrentTurnsCount);
+            if (IsChampion)
+            {
+                LevelsStorage.UpdateLevel(AppState.GameplayLevelNumber, TurnsCounter.CurrentTurnsCount);
+            }
+            AppState.PassLevelIfNeeded();
+            GameAnalytics.NewProgressionEvent (GAProgressionStatus.Complete, $"level_{AppState.GameplayLevelNumber}", TurnsCounter.CurrentTurnsCount);
             OnWin.Invoke();
         }
         else
         {
-            GameAnalytics.NewProgressionEvent (GAProgressionStatus.Fail, $"level_{LevelsHistory.GamePlayLevelID}", TurnsCounter.CurrentTurnsCount);
+            GameAnalytics.NewProgressionEvent (GAProgressionStatus.Fail, $"level_{AppState.GameplayLevelNumber}", TurnsCounter.CurrentTurnsCount);
             OnLose.Invoke();
         }
     }

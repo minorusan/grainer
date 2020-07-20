@@ -7,6 +7,6 @@ public class UpdateItemBehaviour : MonoBehaviour
 
     private void OnEnable()
     {
-        Networking.UpdateItem(LevelID, MinTurnsCount, s => Debug.Log(s), s => Debug.LogError(s));
+        //Networking.UpdateItem(LevelID, MinTurnsCount, s => Debug.Log(s), s => Debug.LogError(s));
     }
 }

@@ -9,15 +9,15 @@ public class LevelPreviewBehaviour : MonoBehaviour
 
     public void Init(int levelIndex)
     {
-        var isActive = levelIndex <= LevelsHistory.CurrentLevelID;
-        LevelIndexText.text = isActive ? (levelIndex + 1).ToString() : string.Empty;
+        var isActive = levelIndex <= AppState.LastOpenedLevelNumber;
+        LevelIndexText.text = isActive ? (levelIndex).ToString() : string.Empty;
         LoadButton.interactable = isActive;
 
         if (isActive)
         {
             LoadButton.onClick.AddListener(() =>
             {
-                LevelsHistory.GamePlayLevelID = levelIndex;
+                AppState.GameplayLevelNumber = levelIndex;
                 FindObjectOfType<LoadSceneComponent>().LoadScene("gameplay");
             });
         }

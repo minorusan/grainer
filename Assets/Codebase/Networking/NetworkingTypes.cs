@@ -14,10 +14,10 @@ public class ModifyLevelRequest : BaseRequest
     public int minTurnsCount;
     public int version;
     
-    public ModifyLevelRequest(int lvlID, int newMinTurns)
+    public ModifyLevelRequest(int lvlID, int levelVersion, int newMinTurns)
     {
         this.levelID = lvlID;
-        this.version = LevelsHistory.GetLevelVersion(lvlID);
+        this.version = levelVersion;
         this.minTurnsCount = newMinTurns;
     }
 }

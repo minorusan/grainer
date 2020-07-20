@@ -20,7 +20,7 @@ public class AdvertisementBehaviour : MonoBehaviour
     public void ShowAd()
     {
         var playedLevels = PlayerPrefs.GetInt(PLAYED_LEVELS_KEY);
-        if (playedLevels >= AdsManager.LEVELS_BEFORE_AD && LevelsHistory.CurrentLevelID > AdsManager.MINIMUM_ADS_LEVEL)
+        if (playedLevels >= AdsManager.LEVELS_BEFORE_AD && AppState.LastOpenedLevelNumber > AdsManager.MINIMUM_ADS_LEVEL)
         {
             PlayerPrefs.SetInt(PLAYED_LEVELS_KEY, 0); 
             AdsManager.ShowAd(OnAdCompleted.Invoke);

@@ -7,8 +7,7 @@ public class LevelsViewBehaviour : MonoBehaviour
     private void OnEnable()
     {
         transform.ClearChildren();
-        var levelPrefabs = Resources.LoadAll<Level>("Levels");
-        for (int i = 0; i < levelPrefabs.Length; i++)
+        for (int i = 1; i < LevelsStorage.LastLevelNumber; i++)
         {
             var newInstance = Instantiate(Prefab, transform);
             newInstance.Init(i);

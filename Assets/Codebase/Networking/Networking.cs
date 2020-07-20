@@ -26,10 +26,10 @@ public static class Networking
         Routiner.StartCouroutine(method);
     }
 
-    public static void UpdateItem(int levelID, int newMinTurns, Action<string> succes, Action<string> failure)
+    public static void UpdateItem(int levelID, int levelVersion, int newMinTurns, Action<string> succes, Action<string> failure)
     {
         var method = NetworkingMethods.Put<LevelsDatabaseStructure>($"{NetworkingConstants.ROOT_URL}{NetworkingConstants.UPDATE_ITEM_ROUTE}",
-            JsonUtility.ToJson(new ModifyLevelRequest(levelID, newMinTurns)), succes, failure,
+            JsonUtility.ToJson(new ModifyLevelRequest(levelID, levelVersion, newMinTurns)), succes, failure,
             null);
         Routiner.StartCouroutine(method);
     }
