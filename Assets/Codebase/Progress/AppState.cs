@@ -6,7 +6,16 @@ public static class AppState
 
     public static int LastOpenedLevelNumber
     {
-        get => PlayerPrefs.GetInt(CURRENT_LEVEL_KEY);
+        get
+        {
+            var lastOne = PlayerPrefs.GetInt(CURRENT_LEVEL_KEY);
+            if (lastOne <= 0)
+            {
+                LastOpenedLevelNumber = 1;
+            }
+
+            return lastOne;
+        } 
         private set => PlayerPrefs.SetInt(CURRENT_LEVEL_KEY, value);
     }
 
