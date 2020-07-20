@@ -13,18 +13,18 @@ namespace LevelEditor
         public void BuildLevel(Texture2D levelMap)
         {
             _gridLayoutGroup.constraintCount = levelMap.width;
-
-            for (var j = 0; j < levelMap.height; j++)
+            for (int j = 0; j < levelMap.height; j++)
             {
-                for (var i = 0; i < levelMap.width; i++)
-                {
-                    var pixelColor = levelMap.GetPixel(i, j);
+            for (int i = 0; i < levelMap.width; i++)
+            {
+               
+                    var pixelColor = levelMap.GetPixel(/*Mathf.Abs(levelMap.width-1-*/i/*)*/, Mathf.Abs(levelMap.height-1-j));
                     var cell = Instantiate(cellTemplate, _gridLayoutGroup.transform).GetComponent<Cell>();
-                    cell.Init(i, j, pixelColor);
+                    cell.Init(Mathf.Abs(levelMap.height-1-j), i, pixelColor);
                 }
             }
 
-            gridScalar.CalculateSize(levelMap.width, levelMap.height);
+            gridScalar.CalculateSize(levelMap.height, levelMap.width);
         }
     }
 }

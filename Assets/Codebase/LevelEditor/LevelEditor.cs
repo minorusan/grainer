@@ -25,7 +25,7 @@ namespace LevelEditor
             var cells = FindObjectsOfType<Cell>();
             foreach (var cell in cells)
             {
-                CurrentLevel.levelTexture.SetPixel(cell.cellPosX,cell.cellPosY,cell.cellColor);
+                CurrentLevel.levelTexture.SetPixel(cell.cellPosY,cell.cellPosX,cell.cellColor);
             }
             CurrentLevel.levelTexture.Apply(false);
             CurrentLevel.version++;
