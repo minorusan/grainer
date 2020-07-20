@@ -5,9 +5,7 @@ using UnityEngine;
 public class AreaInitializeBehaviour : MonoBehaviour
 {
     private Texture2D currentMap;
-#if UNITY_EDITOR
     public bool DebugMode;
-#endif
     public CameraFieldOfViewBehaviour Animation;
     public Texture2D DebugMap;
     public Transform CameraOffset;

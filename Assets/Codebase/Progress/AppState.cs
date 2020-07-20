@@ -11,7 +11,8 @@ public static class AppState
             var lastOne = PlayerPrefs.GetInt(CURRENT_LEVEL_KEY);
             if (lastOne <= 0)
             {
-                LastOpenedLevelNumber = 1;
+                PlayerPrefs.SetInt(CURRENT_LEVEL_KEY, 1);
+                return LastOpenedLevelNumber;
             }
 
             return lastOne;
