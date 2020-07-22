@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bf2edee5c58d82540a51f03df9d42094, type: 3}
-  m_Name: grainerrenderer
+  m_Name: mainMenuRenderer
   m_EditorClassIdentifier: 
   k_AssetVersion: 5
   k_AssetPreviousVersion: 5
@@ -36,10 +36,10 @@ MonoBehaviour:
   m_ShadowDistance: 100
   m_ShadowCascades: 2
   m_Cascade2Split: 0.07511207
-  m_Cascade4Split: {x: 0.048735186, y: 0.24566235, z: 0.51722825}
+  m_Cascade4Split: {x: 0.019226998, y: 0.24566235, z: 0.51722825}
   m_ShadowDepthBias: 10
   m_ShadowNormalBias: 0
-  m_SoftShadowsSupported: 0
+  m_SoftShadowsSupported: 1
   m_UseSRPBatcher: 1
   m_SupportsDynamicBatching: 0
   m_MixedLightingSupported: 1
