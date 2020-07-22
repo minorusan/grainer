@@ -9,8 +9,11 @@ public class MovementBehaviour : DebuggableBehaviour
     private Vector3 nextPosition;
     private MovementDirection pendingDirection = MovementDirection.None;
     private MovementDirection currentDirection = MovementDirection.None;
+    private MovementDirection previousDirection = MovementDirection.None;
 
     public MovementDirection CurrentDirection => currentDirection;
+    public MovementDirection PreviousDirection => previousDirection;
+    public MovementDirection PendingDirection => pendingDirection;
 
     public static event DirectionChangedHandler DirectionChanged = delegate(GameObject sender, DirectionChangedEventArgs changedEventArgs) { };
     public event DirectionChangedHandler OwnerDirectionChanged = delegate (GameObject sender, DirectionChangedEventArgs changedEventArgs) { };
@@ -68,7 +71,7 @@ public class MovementBehaviour : DebuggableBehaviour
         {
             return;
         }
-        
+
         if (currentDirection != MovementDirection.None)
         {
             var currentPosition = transform.position;
@@ -90,6 +93,8 @@ public class MovementBehaviour : DebuggableBehaviour
                     OnRotate.Invoke();
                     DirectionChanged(gameObject, new DirectionChangedEventArgs(currentDirection, pendingDirection));   
                 }
+                
+                previousDirection = currentDirection;
                 currentDirection = pendingDirection;
                 previousPosition = currentPosition;
                 nextPosition = currentPosition + currentDirection.ToVector3();

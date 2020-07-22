@@ -1,40 +1,77 @@
-﻿using Crysberry.Routines;
+﻿using System;
+using Crysberry.Routines;
 using UnityEngine;
 
 public class SetMoveDirectionOnTriggerBehaviour : MonoBehaviour
 {
     private MovementBehaviour playerMovement;
+    
     public MovementDirection Direction;
     public MovementBehaviour MovementBehaviour;
     public CharacterAnimationBehaviour Animator;
 
-    private void OnTriggerEnter(Collider other)
+    private void Start()
     {
-        if (playerMovement == null)
-        {
-            playerMovement = GameObject.FindWithTag("Player").GetComponentInChildren<MovementBehaviour>();
-        }
+        playerMovement = GameObject.FindWithTag("Player").GetComponentInChildren<MovementBehaviour>();
+    }
 
-        if (playerMovement.CurrentDirection == Direction)
+    private void Update()
+    {
+        if (Direction == MovementDirection.Right || Direction == MovementDirection.Left)
         {
-            if (MovementBehaviour.IsAbleToMoveInDirection(Direction))
+            if (Mathf.Abs(playerMovement.transform.position.z - transform.position.z) < 0.3f &&
+                (Direction == playerMovement.CurrentDirection || (playerMovement.CurrentDirection == MovementDirection.None && playerMovement.PendingDirection == Direction)))
             {
-                MovementBehaviour.SetDirection(Direction);
-                AreaHelper.SetWalkable(MovementBehaviour.transform.position, true);
-                Animator.TriggerRun(true);
+                if (Mathf.Abs(playerMovement.transform.position.x - transform.position.x) < 1f)
+                {
+                    Move();
+                }
+                else
+                {
+                    Stop();
+                }
             }
-            else
+        }
+        else
+        {
+            if (Mathf.Abs(playerMovement.transform.position.x - transform.position.x) < 0.3f &&
+                (Direction == playerMovement.CurrentDirection || (playerMovement.CurrentDirection == MovementDirection.None && playerMovement.PendingDirection == Direction)))
             {
-                Animator.TriggerRun(false);
-                MovementBehaviour.SetDirection(MovementDirection.None);
-                AreaHelper.SetWalkable(MovementBehaviour.transform.position, false);
+                if (Mathf.Abs(playerMovement.transform.position.z - transform.position.z) < 1f)
+                {
+                    Move();
+                }
+                else
+                {
+                    Stop();
+                }
             }
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void Move()
     {
-       MovementBehaviour.SetDirection(MovementDirection.None);
-       Animator.TriggerRun(false);
+        if (MovementBehaviour.IsAbleToMoveInDirection(Direction))
+        {
+            AreaHelper.SetWalkable(MovementBehaviour.transform.position, true);
+            MovementBehaviour.SetDirection(Direction);
+            Animator.TriggerRun(true);
+            
+            if (playerMovement.CurrentDirection == MovementDirection.None && playerMovement.PendingDirection == Direction)
+            {
+                playerMovement.SetDirection(Direction);
+            }
+        }
+        else
+        {
+            Stop();
+            AreaHelper.SetWalkable(MovementBehaviour.transform.position, false);
+        }
+    }
+
+    private void Stop()
+    {
+        Animator.TriggerRun(false);
+        MovementBehaviour.SetDirection(MovementDirection.None);
     }
 }
