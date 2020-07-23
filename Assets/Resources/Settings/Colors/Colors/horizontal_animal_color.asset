@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e5e05d89d434c2285a98d76b560338, type: 3}
+  m_Name: horizontal_animal_color
+  m_EditorClassIdentifier: 
+  color: {r: 0.754717, g: 0.6355314, b: 0.18155926, a: 1}
+  speedCoefitient: 1
+  events: []
+  prefabs:
+  - ChanceTreshold: 1
+    Prefab: {fileID: 4529043368669277823, guid: 71a150f7d29364b9c96c653f8739b30c,
+      type: 3}
+  - ChanceTreshold: 1
+    Prefab: {fileID: 4529043368669277823, guid: 0cfd7455df8184210b156db5b7c9c101,
+      type: 3}
+  IsObjective: 0

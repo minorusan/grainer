@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,6 +9,9 @@ public static class AreaHelper
     public static int ObjectivesCount { get; private set; }
     private static Dictionary<Position, GameObject> cellCoordinates = new Dictionary<Position, GameObject>();
     private static HashSet<Position> blockedCells = new HashSet<Position>();
+    private static Dictionary<Position, Vector3> blockedCellsList = new Dictionary<Position, Vector3>();
+    public static List<Vector3> BlockedCells => blockedCellsList.Values.ToList();
+    
 
     static AreaHelper()
     {
@@ -48,10 +52,15 @@ public static class AreaHelper
         if (walkable)
         {
             blockedCells.Remove(position.ToPosition());
+            blockedCellsList.Remove(position.ToPosition());
         }
         else
         {
             blockedCells.Add(position.ToPosition());
+            if (!blockedCellsList.ContainsKey(position.ToPosition()))
+            {
+                blockedCellsList.Add(position.ToPosition(), position);
+            }
         }
     }
 
