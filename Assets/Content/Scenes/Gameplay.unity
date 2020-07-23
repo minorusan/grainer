@@ -30526,7 +30526,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf01bde8840634efb8545f93d2ff1a80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DebugMode: 1
+  DebugMode: 0
   Animation: {fileID: 519420038}
   DebugMap: {fileID: 2800000, guid: ef4924ce58aee4d4b979c3992284e718, type: 3}
   CameraOffset: {fileID: 1160003531}
