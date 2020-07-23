@@ -60,6 +60,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 0, b: 0.04943371, a: 0.8352941}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -86,7 +87,7 @@ GameObject:
   - component: {fileID: -1594169136221358615}
   - component: {fileID: 769812994630900763}
   m_Layer: 0
-  m_Name: animal_sheep
+  m_Name: animal_sheep_horizontal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -478,6 +479,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.62352943}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -737,20 +739,40 @@ PrefabInstance:
       propertyPath: Jumping
       value: 
       objectReference: {fileID: 769812994630900763}
+    - target: {fileID: 3309047494795399409, guid: 223393661541e4e2c8d467afc48e593c,
+        type: 3}
+      propertyPath: Movement
+      value: 
+      objectReference: {fileID: 1648084734713914412}
     - target: {fileID: 3579580845165573987, guid: 223393661541e4e2c8d467afc48e593c,
         type: 3}
       propertyPath: m_Size.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3579580845165573987, guid: 223393661541e4e2c8d467afc48e593c,
         type: 3}
       propertyPath: m_Size.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3579580845165573987, guid: 223393661541e4e2c8d467afc48e593c,
         type: 3}
       propertyPath: m_Size.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579580845165573987, guid: 223393661541e4e2c8d467afc48e593c,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579580845165573987, guid: 223393661541e4e2c8d467afc48e593c,
+        type: 3}
+      propertyPath: m_Center.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579580845165573987, guid: 223393661541e4e2c8d467afc48e593c,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 223393661541e4e2c8d467afc48e593c, type: 3}
@@ -760,3 +782,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3136307814229325328}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1648084734713914412 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4420646983370691132, guid: 223393661541e4e2c8d467afc48e593c,
+    type: 3}
+  m_PrefabInstance: {fileID: 3136307814229325328}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d9c4eb03e58642a5a9fdbee8ee4206e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -30526,9 +30526,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf01bde8840634efb8545f93d2ff1a80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DebugMode: 0
+  DebugMode: 1
   Animation: {fileID: 519420038}
-  DebugMap: {fileID: 2800000, guid: 267c1000c84e8284ea7cf577045c64ca, type: 3}
+  DebugMap: {fileID: 2800000, guid: ef4924ce58aee4d4b979c3992284e718, type: 3}
   CameraOffset: {fileID: 1160003531}
   TilesHub: {fileID: 267378640}
 --- !u!114 &1688940325
@@ -30824,7 +30824,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.10300001, y: 0.16864495}
   m_AnchorMax: {x: 0.89500004, y: 0.75851643}
-  m_AnchoredPosition: {x: 1, y: -0.6999817}
+  m_AnchoredPosition: {x: 1, y: -0.6999512}
   m_SizeDelta: {x: -6.600006, y: 0.5310974}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1693120401
