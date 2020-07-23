@@ -17,8 +17,8 @@ GameObject:
   - component: {fileID: 7795260084674593566}
   - component: {fileID: 1097164110125414600}
   - component: {fileID: 7476236171347139508}
-  - component: {fileID: 3579580845165573987}
   - component: {fileID: 1146550396333015458}
+  - component: {fileID: 6488882640366783928}
   m_Layer: 9
   m_Name: sheep
   m_TagString: Untagged
@@ -136,10 +136,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bf581f8761764001941a827be2e0fd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MovementBehaviour: {fileID: 4420646983370691132}
-  MaxDelay: 2
-  AlertSign: {fileID: 0}
-  AudioEffectDefinition: {fileID: 0}
+  Direction: 0
+  Movement: {fileID: 0}
 --- !u!114 &7795260084674593566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -274,19 +272,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &3579580845165573987
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1098168267039585478}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.53202623, y: 0.8927838, z: 1.2689809}
-  m_Center: {x: 0.000000059604638, y: 0.44382146, z: 0.11950253}
 --- !u!114 &1146550396333015458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -300,3 +285,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Meat: {fileID: 11400000, guid: b1f06eb4afe6848bebecbaa0a08fb786, type: 2}
+--- !u!136 &6488882640366783928
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098168267039585478}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.3
+  m_Height: 1.5878396
+  m_Direction: 1
+  m_Center: {x: 0.00367707, y: 0.78792465, z: 0.18635757}

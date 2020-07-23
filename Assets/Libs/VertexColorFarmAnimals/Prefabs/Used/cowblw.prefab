@@ -17,8 +17,8 @@ GameObject:
   - component: {fileID: 3980523014775528565}
   - component: {fileID: 6064681669215709091}
   - component: {fileID: 4274941033169052606}
-  - component: {fileID: 1560599797449217234}
   - component: {fileID: 7858538504467609530}
+  - component: {fileID: 7456732447472116891}
   m_Layer: 9
   m_Name: cowblw
   m_TagString: Untagged
@@ -62,6 +62,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -135,9 +136,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bf581f8761764001941a827be2e0fd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MovementBehaviour: {fileID: 7370897442835762519}
-  MaxDelay: 2
-  WalkChance: 0.182
+  Direction: 0
+  Movement: {fileID: 0}
 --- !u!114 &3980523014775528565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -272,19 +272,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &1560599797449217234
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6065927658560678829}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.92018, y: 1.5878396, z: 2.2048333}
-  m_Center: {x: 0.0036770697, y: 0.78792465, z: 0.18635757}
 --- !u!114 &7858538504467609530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,3 +284,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a204f7a5202a4b0daf898a36e75ff01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Meat: {fileID: 0}
+--- !u!136 &7456732447472116891
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6065927658560678829}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.3
+  m_Height: 1.5878396
+  m_Direction: 1
+  m_Center: {x: 0.00367707, y: 0.78792465, z: 0.18635757}
