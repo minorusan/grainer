@@ -17,6 +17,11 @@ public class SetMoveDirectionOnTriggerBehaviour : MonoBehaviour
 
     private void Update()
     {
+        if (MovementBehaviour.CurrentDirection == MovementDirection.None)
+        {
+            AreaHelper.SetWalkable(MovementBehaviour.transform.position, false);
+        }
+        
         if (Direction == MovementDirection.Right || Direction == MovementDirection.Left)
         {
             if (Mathf.Abs(playerMovement.transform.position.z - transform.position.z) < 0.3f &&
@@ -47,6 +52,7 @@ public class SetMoveDirectionOnTriggerBehaviour : MonoBehaviour
                 }
             }
         }
+        
     }
 
     private void Move()
@@ -65,7 +71,7 @@ public class SetMoveDirectionOnTriggerBehaviour : MonoBehaviour
         else
         {
             Stop();
-            AreaHelper.SetWalkable(MovementBehaviour.transform.position, false);
+            //AreaHelper.SetWalkable(MovementBehaviour.transform.position, false);
         }
     }
 

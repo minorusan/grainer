@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿using System;
 using DG.Tweening;
 using UnityEngine;
 
@@ -12,6 +12,18 @@ public class AreaInitializeBehaviour : MonoBehaviour
     public Transform TilesHub;
 
     public Texture2D CurrentMap => currentMap;
+
+    private void OnDrawGizmos()
+    {
+        if (DebugMode)
+        {
+            foreach (var blockedCell in AreaHelper.BlockedCells)
+            {
+                Gizmos.color = Color.red;
+                Gizmos.DrawCube(blockedCell, Vector3.one);
+            }
+        }
+    }
 
     private void Start()
     {
