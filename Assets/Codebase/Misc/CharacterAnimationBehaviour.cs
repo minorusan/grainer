@@ -18,6 +18,10 @@ public class CharacterAnimationBehaviour : MonoBehaviour
     public void TriggerRun(bool trigger)
     {
         Animator.SetBool("run", trigger);
-        MessagesBehaviour.TriggerAlertMessage();
+        if (trigger)
+        {
+            MessagesBehaviour.TriggerAlertMessage();
+        }
+        
     }
 }
