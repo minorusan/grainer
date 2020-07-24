@@ -1,4 +1,5 @@
 ﻿using System;
+using Codebase.Input;
 using GameAnalyticsSDK;
 using UnityEngine;
 using UnityEngine.Events;
@@ -26,7 +27,7 @@ public class GameOutcomeBehaviour : MonoBehaviour
                     TurnsCounter.CurrentTurnsCount);
             if (IsChampion)
             {
-                LevelsStorage.UpdateLevel(AppState.GameplayLevelNumber, TurnsCounter.CurrentTurnsCount);
+                LevelsStorage.UpdateLevel(AppState.GameplayLevelNumber, TurnsCounter.CurrentTurnsCount, FindObjectOfType<InputProviderBase>().GetLastHistory);
             }
             AppState.PassLevelIfNeeded();
             GameAnalytics.NewProgressionEvent (GAProgressionStatus.Complete, $"level_{AppState.GameplayLevelNumber}", TurnsCounter.CurrentTurnsCount);

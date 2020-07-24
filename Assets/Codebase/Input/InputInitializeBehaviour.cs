@@ -1,9 +1,16 @@
 ﻿using UnityEngine;
 
-public class InputInitializeBehaviour : MonoBehaviour
+namespace Codebase.Input
 {
-    private void Start()
+    public class InputInitializeBehaviour : MonoBehaviour
     {
-        Instantiate(ResourceHelper.GetProvider(), transform);
+        public bool UseRecord;
+        private void Start()
+        {
+#if !UNITY_EDITOR
+            UseRecord = false;
+#endif
+            Instantiate(ResourceHelper.GetProvider(UseRecord), transform);
+        }
     }
 }

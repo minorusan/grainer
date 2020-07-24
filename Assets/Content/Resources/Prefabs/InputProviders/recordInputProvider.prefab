@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4423121899616413623}
-  - component: {fileID: 4423121899616413616}
+  - component: {fileID: 2515791719601956143}
   m_Layer: 0
-  m_Name: desktopinputprovider
+  m_Name: recordInputProvider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4423121899616413616
+--- !u!114 &2515791719601956143
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,12 +40,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 4423121899616413617}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c9b90feaee664e0e9970fa1f22cac87, type: 3}
+  m_Script: {fileID: 11500000, guid: 1a60e58969b3a4d6f8f9bd83444cb556, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   IsEnabled: 1
-  DumpOnDisable: 1
-  Up: 273
-  Down: 274
-  Left: 276
-  Right: 275
+  DumpOnDisable: 0
+  InputRecordPath: Assets/last_path.txt

@@ -86,8 +86,18 @@ public class AreaInitializeBehaviour : MonoBehaviour
                     {
                         setMaterialAsChessboardBehaviour.SetMaterial(i, j);
                     }
-                    
+
                     tile.transform.localPosition = new Vector3(i, 0f, j);
+                    
+                    if (definition.name.ToLower().Contains("entrance"))
+                    {
+                        AreaHelper.SetStartCell(tile.transform.position);
+                    }
+                    
+                    if (definition.name.ToLower().Contains("exit"))
+                    {
+                        AreaHelper.SetEndCell(tile.transform.position);
+                    }
                 }
                 else
                 {

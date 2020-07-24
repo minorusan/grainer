@@ -39,6 +39,10 @@ public class LevelsStorage
     
     public static int TurnsCountForLevelID(int levelID)
     {
+        if (currentData == null)
+        {
+            GetLocalDatabase();
+        }
         var version = LevelVersionForLevelID(levelID);
         var level = currentData.content.FirstOrDefault(x => x.levelID == levelID && x.version == version);
         if (level == null)
@@ -46,6 +50,12 @@ public class LevelsStorage
             return 100;
         }
         return level.minTurnsCount;
+    }
+
+    public static InputHistory GetLevelInputHistory(int levelNumber)
+    {
+        return currentData.content.FirstOrDefault(x => x.levelID == LevelIDForLevelNumber(levelNumber))
+            .bestInputHistory;
     }
 
     public static int LevelIDForLevelNumber(int levelNumber)
@@ -75,7 +85,7 @@ public class LevelsStorage
         return playerResult < turnsCount;
     }
 
-    public static void UpdateLevel(int levelNumber, int playerTurnsCount)
+    public static void UpdateLevel(int levelNumber, int playerTurnsCount, InputHistory history)
     {
         var levelID = LevelIDForLevelNumber(levelNumber);
         var version = LevelVersionForLevelID(levelID);
@@ -91,12 +101,13 @@ public class LevelsStorage
             {
                 levelID = levelID,
                 version = version,
-                minTurnsCount = playerTurnsCount
+                minTurnsCount = playerTurnsCount,
+                bestInputHistory = history
             });
             currentData.content = contentAsList.ToArray();
         }
         
-        Networking.UpdateItem(levelID, version, playerTurnsCount, null, null);
+        Networking.UpdateItem(levelID, version, playerTurnsCount, history,null, null);
     }
     
     private static void GetLocalDatabase()

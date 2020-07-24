@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 076308b1f46cb46a394e5113bd082c27, type: 3}
-  m_Name: color map
+  m_Name: Color Map
   m_EditorClassIdentifier: 
   colors:
   - {fileID: 11400000, guid: b762b436f9d7e42bdaf38ced348cfc7e, type: 2}

@@ -1,4 +1,5 @@
 ﻿using System;
+using Codebase.Input;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Profiling;
@@ -10,7 +11,11 @@ public class MovementBehaviour : DebuggableBehaviour
     private MovementDirection pendingDirection = MovementDirection.None;
     private MovementDirection currentDirection = MovementDirection.None;
     private MovementDirection previousDirection = MovementDirection.None;
+    private InputProviderBase inputProvider;
 
+    public bool IgnoresTimescale;
+    public bool IgnoresObstacles;
+    public bool IsPlayer;
     public MovementDirection CurrentDirection => currentDirection;
     public MovementDirection PreviousDirection => previousDirection;
     public MovementDirection PendingDirection => pendingDirection;
@@ -61,13 +66,17 @@ public class MovementBehaviour : DebuggableBehaviour
 
     public bool IsAbleToMoveInDirection(MovementDirection direction)
     {
+        if (IgnoresObstacles)
+        {
+            return true;
+        }
         var nextCellPosition = transform.position + direction.ToVector3();
         return AreaHelper.IsWalkable(nextCellPosition);
     }
 
     private void MoveIfNeeded()
     {
-        if (!GameplayTimescale.GameActive)
+        if (!GameplayTimescale.GameActive && !IgnoresTimescale)
         {
             return;
         }
@@ -100,19 +109,30 @@ public class MovementBehaviour : DebuggableBehaviour
                 nextPosition = currentPosition + currentDirection.ToVector3();
                 
                 OwnerDirectionChanged(gameObject, new DirectionChangedEventArgs(currentDirection, pendingDirection));
-                if (!nextPosition.IsWalkable())
+                var canMove = IgnoresObstacles || nextPosition.IsWalkable();
+                if (!canMove)
                 {
                     currentDirection = MovementDirection.None;
                     if (InvokesEvents)
                     {
                         WillEnterObstacleCell(gameObject, currentPosition);
                     }
-
+                    
                     nextPosition = currentPosition;
                     MovementEnded(gameObject);
                 }
                 else
                 {
+                    if (inputProvider == null)
+                    {
+                        inputProvider = FindObjectOfType<InputProviderBase>();
+                    }
+
+                    if (IsPlayer && currentDirection != previousDirection)
+                    {
+                        inputProvider.AddInput(currentDirection, currentPosition);
+                    }
+                    
                     if (InvokesEvents)
                     {
                         WillLeaveCell(gameObject, currentPosition);

@@ -7,7 +7,16 @@ public class RotationBehaviour : MonoBehaviour
 
     private void Awake()
     {
-        Movement.OwnerDirectionChanged += OnDirectionChanged;
+        if (Movement != null)
+        {
+            Movement.OwnerDirectionChanged += OnDirectionChanged;
+        }
+    }
+
+    public void SetMover(MovementBehaviour mover)
+    {
+        Movement = mover;
+        Awake();
     }
 
     private void OnDirectionChanged(GameObject sender, DirectionChangedEventArgs changedEventArgs)

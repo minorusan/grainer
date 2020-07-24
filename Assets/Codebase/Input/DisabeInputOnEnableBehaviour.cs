@@ -1,22 +1,25 @@
 ﻿using UnityEngine;
 
-public class DisabeInputOnEnableBehaviour : MonoBehaviour
+namespace Codebase.Input
 {
-    private void OnEnable()
+    public class DisabeInputOnEnableBehaviour : MonoBehaviour
     {
-        var provider = FindObjectOfType<InputProviderBase>();
-        if (provider != null)
+        private void OnEnable()
         {
-            provider.IsEnabled = false;
+            var provider = FindObjectOfType<InputProviderBase>();
+            if (provider != null)
+            {
+                provider.IsEnabled = false;
+            }
         }
-    }
 
-    private void OnDisable()
-    {
-        var provider = FindObjectOfType<InputProviderBase>();
-        if (provider != null)
+        private void OnDisable()
         {
-            provider.IsEnabled = true;
+            var provider = FindObjectOfType<InputProviderBase>();
+            if (provider != null)
+            {
+                provider.IsEnabled = true;
+            }
         }
     }
 }

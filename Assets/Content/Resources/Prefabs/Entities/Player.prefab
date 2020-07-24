@@ -2909,6 +2909,7 @@ GameObject:
   - component: {fileID: 3153068149429548893}
   - component: {fileID: -1974205766505509502}
   - component: {fileID: 4809178424745756370}
+  - component: {fileID: 961010290065099281}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2946,6 +2947,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DebugMode: 0
+  IgnoresTimescale: 0
+  IgnoresObstacles: 0
+  IsPlayer: 1
   InvokesEvents: 1
   OnRotate:
     m_PersistentCalls:
@@ -3147,6 +3151,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fdfcacaf9d4554021810792be1704043, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &961010290065099281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7894643160676136089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bb1b05480a234ef989f596d0c4eb6a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8009763160511811691
@@ -3715,12 +3731,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c30f6ae2f51f28749b062a9278ea6d0d, type: 3}
---- !u!1 &5505245160190649976 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1520490994076228, guid: c30f6ae2f51f28749b062a9278ea6d0d,
-    type: 3}
-  m_PrefabInstance: {fileID: 5504500107322338364}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5505297797992876920 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1502496247195460, guid: c30f6ae2f51f28749b062a9278ea6d0d,
@@ -3739,9 +3749,15 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 5504500107322338364}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &5504929168963688466 stripped
+--- !u!4 &5507145090795557330 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4124160010485230, guid: c30f6ae2f51f28749b062a9278ea6d0d,
+    type: 3}
+  m_PrefabInstance: {fileID: 5504500107322338364}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5505245160190649976 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 1836490817041454, guid: c30f6ae2f51f28749b062a9278ea6d0d,
+  m_CorrespondingSourceObject: {fileID: 1520490994076228, guid: c30f6ae2f51f28749b062a9278ea6d0d,
     type: 3}
   m_PrefabInstance: {fileID: 5504500107322338364}
   m_PrefabAsset: {fileID: 0}
@@ -3787,9 +3803,9 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5504500107322338364}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &5507145090795557330 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4124160010485230, guid: c30f6ae2f51f28749b062a9278ea6d0d,
+--- !u!1 &5504929168963688466 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1836490817041454, guid: c30f6ae2f51f28749b062a9278ea6d0d,
     type: 3}
   m_PrefabInstance: {fileID: 5504500107322338364}
   m_PrefabAsset: {fileID: 0}
@@ -4194,6 +4210,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: combain-steam_rotation (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495435277252692655, guid: e2de5f0051fbf48c19618147827c68c8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2de5f0051fbf48c19618147827c68c8, type: 3}
@@ -4819,7 +4840,7 @@ PrefabInstance:
     - target: {fileID: 5495435277252692642, guid: e2de5f0051fbf48c19618147827c68c8,
         type: 3}
       propertyPath: EmissionModule.m_Bursts.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5495435277252692642, guid: e2de5f0051fbf48c19618147827c68c8,
         type: 3}
@@ -4984,7 +5005,7 @@ PrefabInstance:
     - target: {fileID: 5495435277252692642, guid: e2de5f0051fbf48c19618147827c68c8,
         type: 3}
       propertyPath: EmissionModule.m_BurstCount
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5495435277252692642, guid: e2de5f0051fbf48c19618147827c68c8,
         type: 3}
@@ -5135,6 +5156,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: combain-steam_rotation (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495435277252692655, guid: e2de5f0051fbf48c19618147827c68c8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2de5f0051fbf48c19618147827c68c8, type: 3}

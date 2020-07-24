@@ -1,16 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class ZeroingTimescaleOnEnableBehaviour : MonoBehaviour
+namespace Codebase.Input
 {
-    private void OnEnable()
+    public class ZeroingTimescaleOnEnableBehaviour : MonoBehaviour
     {
-        Time.timeScale = 0;
-    }
+        private void OnEnable()
+        {
+            Time.timeScale = 0;
+        }
 
-    private void OnDisable()
-    {
-        Time.timeScale = 1;
+        private void OnDisable()
+        {
+            Time.timeScale = 1;
+        }
     }
 }

@@ -13,12 +13,14 @@ public class ModifyLevelRequest : BaseRequest
     public int levelID;
     public int minTurnsCount;
     public int version;
+    public InputHistory bestInputHistory;
     
-    public ModifyLevelRequest(int lvlID, int levelVersion, int newMinTurns)
+    public ModifyLevelRequest(int lvlID, int levelVersion, int newMinTurns, InputHistory history)
     {
         this.levelID = lvlID;
         this.version = levelVersion;
         this.minTurnsCount = newMinTurns;
+        this.bestInputHistory = history;
     }
 }
 
@@ -57,12 +59,14 @@ public class DatabaseItem
     public int levelID;
     public int version;
     public int minTurnsCount;
+    public InputHistory bestInputHistory;
 
     public DatabaseItem()
     {
         levelID = 0;
         version = 1;
         minTurnsCount = 100;
+        bestInputHistory = new InputHistory();
     }
 
     public override string ToString()

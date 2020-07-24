@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 #region Delegates
@@ -79,6 +80,20 @@ public class InputChangedEventArgs : EventArgs
 #endregion
 
 #region Structs
+
+[Serializable]
+public class InputHistory
+{
+    public List<InputRecord> Inputs = new List<InputRecord>();
+}
+
+[Serializable]
+public class InputRecord
+{
+    public Vector3 InputPosition;
+    public MovementDirection Direction;
+    public float Timestamp;
+}
 
 public class GameEntityMovement
 {

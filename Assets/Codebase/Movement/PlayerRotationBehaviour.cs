@@ -9,12 +9,25 @@ public class PlayerRotationBehaviour : MonoBehaviour
     [SerializeField] private Collider rotorCollider;
     private void Awake()
     {
-        Movement.OwnerDirectionChanged += OnDirectionChanged;
-        Movement.OwnerWillChangeDirection += OnDirectionWillChange;
+        if (Movement != null)
+        {
+            Movement.OwnerDirectionChanged += OnDirectionChanged;
+            Movement.OwnerWillChangeDirection += OnDirectionWillChange;
+        }
+    }
+    
+    public void SetMover(MovementBehaviour mover)
+    {
+        Movement = mover;
+        Awake();
     }
 
     private void OnDirectionWillChange(GameObject sender, DirectionChangedEventArgs changedeventargs)
     {
+        if (rotorCollider == null)
+        {
+            return;
+        }
         rotorCollider.enabled = false;
     }
 

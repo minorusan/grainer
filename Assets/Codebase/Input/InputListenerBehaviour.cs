@@ -1,25 +1,28 @@
 ﻿using UnityEngine;
 
-public class InputListenerBehaviour : MonoBehaviour
+namespace Codebase.Input
 {
-    public MovementBehaviour MovementBehaviour;
-
-    void Start()
+    public class InputListenerBehaviour : MonoBehaviour
     {
-        InputProviderBase.InputChanged += OnInputChanged;
-    }
+        public MovementBehaviour MovementBehaviour;
 
-    private void OnDisable()
-    {
-        InputProviderBase.InputChanged -= OnInputChanged;
-    }
-
-    private void OnInputChanged(InputChangedEventArgs obj)
-    {
-        if (GameplayTimescale.GameActive && !TutorialBehaviour.TutorialCompleted)
+        void Start()
         {
-            TutorialBehaviour.TutorialCompleted = true;
+            InputProviderBase.InputChanged += OnInputChanged;
         }
-        MovementBehaviour.SetDirection(obj.Direction);
+
+        private void OnDisable()
+        {
+            InputProviderBase.InputChanged -= OnInputChanged;
+        }
+
+        private void OnInputChanged(InputChangedEventArgs obj)
+        {
+            if (GameplayTimescale.GameActive && !TutorialBehaviour.TutorialCompleted)
+            {
+                TutorialBehaviour.TutorialCompleted = true;
+            }
+            MovementBehaviour.SetDirection(obj.Direction);
+        }
     }
 }

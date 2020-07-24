@@ -1,42 +1,45 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class DesktopInputProvisionBehaviour : InputProviderBase
+namespace Codebase.Input
 {
-    private List<MovementDirection> codesLastFrame = new List<MovementDirection>(4);
-    public KeyCode Up, Down, Left, Right;
-
-    private void Update()
+    public class DesktopInputProvisionBehaviour : InputProviderBase
     {
-        var direction = GetMovementDirection();
-        if (direction != MovementDirection.None)
-        {
-            InvokeEvent(direction);
-        }
-    }
+        private List<MovementDirection> codesLastFrame = new List<MovementDirection>(4);
+        public KeyCode Up, Down, Left, Right;
 
-    private MovementDirection GetMovementDirection()
-    {
-        if (Input.GetKeyDown(Up))
+        private void Update()
         {
-            return MovementDirection.Up;
+            var direction = GetMovementDirection();
+            if (direction != MovementDirection.None)
+            {
+                InvokeEvent(direction);
+            }
         }
 
-        if (Input.GetKeyDown(Down))
+        private MovementDirection GetMovementDirection()
         {
-            return MovementDirection.Down;
-        }
+            if (UnityEngine.Input.GetKeyDown(Up))
+            {
+                return MovementDirection.Up;
+            }
 
-        if (Input.GetKeyDown(Left))
-        {
-            return MovementDirection.Left;
-        }
+            if (UnityEngine.Input.GetKeyDown(Down))
+            {
+                return MovementDirection.Down;
+            }
 
-        if (Input.GetKeyDown(Right))
-        {
-            return MovementDirection.Right;
-        }
+            if (UnityEngine.Input.GetKeyDown(Left))
+            {
+                return MovementDirection.Left;
+            }
 
-        return MovementDirection.None;
+            if (UnityEngine.Input.GetKeyDown(Right))
+            {
+                return MovementDirection.Right;
+            }
+
+            return MovementDirection.None;
+        }
     }
 }

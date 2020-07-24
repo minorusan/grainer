@@ -10,6 +10,8 @@ public static class AreaHelper
     private static Dictionary<Position, GameObject> cellCoordinates = new Dictionary<Position, GameObject>();
     private static HashSet<Position> blockedCells = new HashSet<Position>();
     private static Dictionary<Position, Vector3> blockedCellsList = new Dictionary<Position, Vector3>();
+    public static Vector3 StartPosition { get; private set; }
+    public static Vector3 EndPosition { get; private set; }
     public static List<Vector3> BlockedCells => blockedCellsList.Values.ToList();
     
 
@@ -23,6 +25,16 @@ public static class AreaHelper
         blockedCells.Clear();
         ObjectivesCount = 0;
         currentMap = null;
+    }
+
+    public static void SetStartCell(Vector3 position)
+    {
+        StartPosition = position;
+    }
+    
+    public static void SetEndCell(Vector3 position)
+    {
+        EndPosition = position;
     }
 
     private static void GetTextureIfNeeded()
