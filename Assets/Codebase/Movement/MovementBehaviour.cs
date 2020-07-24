@@ -8,6 +8,7 @@ public class MovementBehaviour : DebuggableBehaviour
 {
     private Vector3 previousPosition;
     private Vector3 nextPosition;
+    private bool silentChange;
     private MovementDirection pendingDirection = MovementDirection.None;
     private MovementDirection currentDirection = MovementDirection.None;
     private MovementDirection previousDirection = MovementDirection.None;
@@ -45,9 +46,10 @@ public class MovementBehaviour : DebuggableBehaviour
         nextPosition = transform.position;
     }
 
-    public void SetDirection(MovementDirection direction)
+    public void SetDirection(MovementDirection direction, bool silent = false)
     {
         pendingDirection = direction;
+        silentChange = silent;
         if (currentDirection != direction)
         {
             OwnerWillChangeDirection(gameObject, new DirectionChangedEventArgs(currentDirection, direction));
@@ -107,8 +109,13 @@ public class MovementBehaviour : DebuggableBehaviour
                 currentDirection = pendingDirection;
                 previousPosition = currentPosition;
                 nextPosition = currentPosition + currentDirection.ToVector3();
+
+                if (!silentChange)
+                {
+                    OwnerDirectionChanged(gameObject, new DirectionChangedEventArgs(currentDirection, pendingDirection));
+                    silentChange = false;
+                }
                 
-                OwnerDirectionChanged(gameObject, new DirectionChangedEventArgs(currentDirection, pendingDirection));
                 var canMove = IgnoresObstacles || nextPosition.IsWalkable();
                 if (!canMove)
                 {

@@ -34,10 +34,10 @@ public class TurnRemainingTimeBehaviour : MonoBehaviour
     {
         if (isWorking)
         {
-            var percantage = Movement.PercentageTillNextPosition;
-            if (percantage <= 0.8f)
+            var percentage = Movement.PercentageTillNextPosition;
+            if (percentage <= 0.8f)
             {
-                TimerMask.fillAmount = 1f - percantage;
+                TimerMask.fillAmount = 1f - percentage;
             }
             else
             {
