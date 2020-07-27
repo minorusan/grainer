@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using System.Linq;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
@@ -33,6 +34,32 @@ public class LevelEditor : Editor
         if (GUILayout.Button("Edit"))
         {
             PlayerPrefs.SetInt("EditLevel", level.Number);
+            UnityEditor.EditorApplication.isPlaying = true    ;
+            EditorSceneManager.OpenScene("Assets/Content/Scenes/level_editor.unity");
+        } 
+        if (GUILayout.Button("Create level end edit"))
+        {
+            var so = ScriptableObject.CreateInstance<Level>();
+            so.version = 1;
+            var levels = Resources.LoadAll<Level>("Levels");;
+            so.Number = levels.Select(x => x.Number).Max(); 
+            var textureNumber = levels.Select(x => int.Parse(x.levelTexture.name) ).Max(); 
+      
+            Texture2D tmpTexture = new Texture2D(10,10);
+      
+            
+            // CurrentLevel.levelTexture.Apply(false);
+      
+            var bytes = tmpTexture.EncodeToPNG();
+            var path = "Assets/Content/Resources/Textures/Maps/"+textureNumber+".png";
+            File.WriteAllBytes(path , bytes);
+            so.name = "level_" + so.Number;
+      
+      
+            EditorUtility.SetDirty(so);
+            AssetDatabase.SaveAssets();
+            
+            PlayerPrefs.SetInt("EditLevel", so.Number);
             UnityEditor.EditorApplication.isPlaying = true    ;
             EditorSceneManager.OpenScene("Assets/Content/Scenes/level_editor.unity");
         } 
