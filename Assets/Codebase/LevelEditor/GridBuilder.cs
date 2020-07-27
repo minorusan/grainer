@@ -15,12 +15,11 @@ namespace LevelEditor
             _gridLayoutGroup.constraintCount = levelMap.width;
             for (int j = 0; j < levelMap.height; j++)
             {
-            for (int i = 0; i < levelMap.width; i++)
-            {
-               
-                    var pixelColor = levelMap.GetPixel(/*Mathf.Abs(levelMap.width-1-*/i/*)*/, Mathf.Abs(levelMap.height-1-j));
-                    var cell = Instantiate(cellTemplate, _gridLayoutGroup.transform).GetComponent<Cell>();
-                    cell.Init(Mathf.Abs(levelMap.height-1-j), i, pixelColor);
+                for (int i = 0; i < levelMap.width; i++)
+                {
+                        var pixelColor = levelMap.GetPixel(/*Mathf.Abs(levelMap.width-1-*/i/*)*/, Mathf.Abs(levelMap.height-1-j));
+                        var cell = Instantiate(cellTemplate, _gridLayoutGroup.transform).GetComponent<Cell>();
+                        cell.Init(Mathf.Abs(levelMap.height-1-j), i, pixelColor);
                 }
             }
 
