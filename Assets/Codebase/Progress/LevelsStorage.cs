@@ -41,7 +41,7 @@ public class LevelsStorage
     {
         var version = LevelVersionForLevelID(levelID);
         var level = currentData.content.FirstOrDefault(x => x.levelID == levelID && x.version == version);
-        if (level == null)
+        if (level == null || level.minTurnsCount==0)
         {
             return 100;
         }

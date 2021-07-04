@@ -1,5 +1,5 @@
 ﻿using System;
-using GameAnalyticsSDK;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -13,7 +13,11 @@ public class GameOutcomeBehaviour : MonoBehaviour
 
     private void OnEnable()
     {
-        GameAnalytics.NewProgressionEvent (GAProgressionStatus.Start, $"level_{AppState.GameplayLevelNumber}", LevelsStorage.TurnsCountForLevelNumber(AppState.GameplayLevelNumber));
+        var dictValue = new Dictionary<string, object>()
+        {
+            {"level_number", AppState.GameplayLevelNumber}
+        };
+        Amplitude.Instance.logEvent("level_start", dictValue);
         IsChampion = false;
     }
 
@@ -29,12 +33,22 @@ public class GameOutcomeBehaviour : MonoBehaviour
                 LevelsStorage.UpdateLevel(AppState.GameplayLevelNumber, TurnsCounter.CurrentTurnsCount);
             }
             AppState.PassLevelIfNeeded();
-            GameAnalytics.NewProgressionEvent (GAProgressionStatus.Complete, $"level_{AppState.GameplayLevelNumber}", TurnsCounter.CurrentTurnsCount);
+            var dictValue = new Dictionary<string, object>()
+            {
+                {"level_number", AppState.GameplayLevelNumber},
+                {"turns_count", TurnsCounter.CurrentTurnsCount}
+            };
+            Amplitude.Instance.logEvent("level_win", dictValue);
             OnWin.Invoke();
         }
         else
-        {
-            GameAnalytics.NewProgressionEvent (GAProgressionStatus.Fail, $"level_{AppState.GameplayLevelNumber}", TurnsCounter.CurrentTurnsCount);
+        {   
+            var dictValue = new Dictionary<string, object>()
+            {
+                {"level_number", AppState.GameplayLevelNumber},
+                {"turns_count", TurnsCounter.CurrentTurnsCount}
+            };
+            Amplitude.Instance.logEvent("level_fail", dictValue);
             OnLose.Invoke();
         }
     }

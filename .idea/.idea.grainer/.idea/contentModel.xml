@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+    <e p="C:\Users\olehk\AppData\local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\olehk\AppData\local\JetBrains\Rider2020.1\resharper-host\local\Transient\ReSharperHost\v201\SolutionCaches\_grainer.-69849161.00" t="ExcludeRecursive" />
+    <e p="C:\Users\olehk\UnityProjects\grainer" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -79,6 +81,11 @@
           <e p="Ads" t="Include">
             <e p="AdsManager.cs" t="Include" />
             <e p="AdvertisementBehaviour.cs" t="Include" />
+          </e>
+          <e p="Analytics" t="Include">
+            <e p="Amplitude" t="Include">
+              <e p="AmplitudeAnalyticsInitBehaviour.cs" t="Include" />
+            </e>
           </e>
           <e p="AndroidBackButton" t="Include">
             <e p="AndroidBackButtonOnPressBehaviour.cs" t="Include" />
@@ -178,7 +185,6 @@
             <e p="SelectColorButton.cs" t="Include" />
           </e>
           <e p="Levels" t="Include">
-            <e p="LevelsHistory.cs" t="Include" />
             <e p="NextLevelBehaviour.cs" t="Include" />
             <e p="RefreshLevelsDataBehaviour.cs" t="Include" />
           </e>
@@ -215,6 +221,10 @@
             <e p="FrameDataBehaviour.cs" t="Include" />
             <e p="OptimizatonBehaviour.cs" t="Include" />
             <e p="ShadowsBehaviour.cs" t="Include" />
+          </e>
+          <e p="Progress" t="Include">
+            <e p="AppState.cs" t="Include" />
+            <e p="LevelsStorage.cs" t="Include" />
           </e>
           <e p="Resources" t="Include">
             <e p="ResourceHelper.cs" t="Include" />
@@ -374,6 +384,9 @@
                   <e p="GAValidator.cs" t="Include" />
                 </e>
                 <e p="GameAnalytics.cs" t="Include" />
+                <e p="Mopub" t="Include">
+                  <e p="GAMopubIntegration.cs" t="Include" />
+                </e>
                 <e p="Setup" t="Include">
                   <e p="Settings.cs" t="Include" />
                 </e>
@@ -456,10 +469,7 @@
       <e p="packages" t="ExcludeRecursive" />
       <e p="Routines.csproj" t="IncludeRecursive" />
       <e p="RoutineTests.csproj" t="IncludeRecursive" />
-      <e p="Temp/bin" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
     </e>
-    <e p="$APPLICATION_CONFIG_DIR$/scratches" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/JetBrains/Rider2020.1/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/JetBrains/Rider2020.1/resharper-host/local/Transient/ReSharperHost/v201/SolutionCaches/_grainer.-1401888764.00" t="ExcludeRecursive" />
   </component>
 </project>
