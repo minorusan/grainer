@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine.Advertisements;
 
 public class AdsManager : IUnityAdsListener
@@ -40,6 +41,7 @@ public class AdsManager : IUnityAdsListener
 
     public static void ShowAd(Action completion)
     {
+        Amplitude.Instance.logEvent("ads_shown");
         Advertisement.Show();
         currentCallback = completion;
     }

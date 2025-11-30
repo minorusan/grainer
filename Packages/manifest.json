@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.amplitude.unityplugin": "https://github.com/amplitude/unity-plugin.git?path=/Assets",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.2d.tilemap": "1.0.0",
     "com.unity.ads": "3.4.7",
